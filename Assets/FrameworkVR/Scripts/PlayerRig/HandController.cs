@@ -1,0 +1,254 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.InputSystem;
+using UnityEngine.InputSystem.XR;
+using UnityEngine.Events;
+
+namespace FrameworkVR 
+{
+    public class HandController : MonoBehaviour
+    {
+        [Header("Input")]
+        [SerializeField]
+        [Tooltip("Input Action Asset. Set from ActionMap folder.")]
+        private InputActionAsset m_ActionAsset;
+        public InputActionAsset actionAsset { get => m_ActionAsset; set => m_ActionAsset = value; }
+
+        public enum HandSide { Left, Right };
+        [SerializeField]
+        [Tooltip("Which hand this component is bound to.")]
+        public HandSide handSide = HandSide.Left;
+
+        [SerializeField]
+        [Range(0f, 1f)]
+        [Tooltip("Determines the amount of force on the controller's grip/trigger to count as trying to hold an object.")]
+        public float holdForce = 0.8f;
+
+        [SerializeField]
+        [Range(0f, 1f)]
+        [Tooltip("Determines the amount of force on the controller's grip/trigger to count as releasing a held object.")]
+        public float releaseForce = 0.5f;
+
+        [SerializeField]
+        [Tooltip("Current controller's grip force.")]
+        public float gripForce = 0;
+
+        [SerializeField]
+        [Tooltip("Current controller's trigger force.")]
+        public float triggerForce = 0;
+
+        [SerializeField]
+        [Tooltip("The multiplier of the amount of force applied after throwing an object.")]
+        public float throwForce = 1500;
+
+        [Header("Grabbing System")]
+        [SerializeField]
+        [Tooltip("Currently held Game Object.")]
+        public Grabbable heldItem;
+
+        [Header("Weight System")]
+        [SerializeField]
+        [Tooltip("If true, the player's hands will move slower while holding heavier objects (Determined by the grabbable's Rigidbody mass). Will override grabbable settings.")]
+        public bool enableWeightSystem = true;
+
+        [SerializeField]
+        [Tooltip("Currently held Game Object.")]
+        public float heldItemMass = 0;
+
+        [Header("Haptics")]
+        [SerializeField]
+        [Tooltip("The amplitude of the controller's rumble when grabbing an object.")]
+        public float grabRumbleAmplitude = 0.5f;
+
+        [SerializeField]
+        [Tooltip("The duration of the amplitude in seconds when grabbing an object.")]
+        public float grabRumbleDuration = 0.1f;
+
+        [SerializeField]
+        [Tooltip("The amplitude of the controller's rumble when releasing an object.")]
+        public float releaseRumbleAmplitude = 0.2f;
+
+        [SerializeField]
+        [Tooltip("The duration of the amplitude in seconds when releasing an object.")]
+        public float releaseRumbleDuration = 0.1f;
+
+        [Header("Unity Events")]
+        public UnityEvent onObjectHold;
+        public UnityEvent onObjectRelease;
+
+        private float prevFrameGripForce = 0;
+        private Vector3 prevFrameHandPosition;
+
+        private SphereCollider grabTrigger;
+
+        InputAction gripButton;
+        InputAction triggerButton;
+        InputControl control;
+        XRControllerWithRumble rumble;
+
+        void Awake()
+        {
+            grabTrigger = GetComponent<SphereCollider>();
+            gripForce = 0;
+            prevFrameGripForce = 0;
+            prevFrameHandPosition = Vector3.zero;
+            gripButton = m_ActionAsset.FindActionMap(handSide + "Hand", true).FindAction("Grip", true);
+            triggerButton = m_ActionAsset.FindActionMap(handSide + "Hand", true).FindAction("Trigger", true);
+        }
+
+        private void OnEnable()
+        {
+            if (m_ActionAsset != null)
+            {
+                m_ActionAsset.Enable();
+            }
+            else
+            {
+                Debug.LogWarning("WARNING: Input Action Asset not set!");
+            }
+        }
+
+        void Update()
+        {
+            GetGripTriggerForce();
+            CheckReleaseForce();
+
+            prevFrameHandPosition = transform.position;
+        }
+
+        void ControllerRumble(float amplitude, float duration)
+        {
+            if (control != null && rumble != null)
+            {
+                rumble.SendImpulse(amplitude, duration);
+            }
+            else
+            {
+                control = gripButton.activeControl;
+                if (control.device is XRControllerWithRumble rum)
+                    rumble = rum;
+
+                rumble.SendImpulse(amplitude, duration);
+            }
+        }
+
+        void GetItemMass()
+        {
+            if (enableWeightSystem)
+            {
+                heldItemMass = heldItem.mass;
+            }
+        }
+
+        void GetGripTriggerForce()
+        {
+            prevFrameGripForce = GetHighestForce();
+            gripForce = gripButton.ReadValue<float>();
+            triggerForce = triggerButton.ReadValue<float>();
+        }
+
+        void OnObjectHold()
+        {
+            if (onObjectHold != null)
+            {
+                onObjectHold.Invoke();
+            }
+        }
+
+        void OnObjectRelease()
+        {
+            if (onObjectRelease != null)
+            {
+                onObjectRelease.Invoke();
+            }
+        }
+
+        public void ObjectGrab(Grabbable grabbable)
+        {
+            if (grabbable == null) return;
+            else if (grabbable.isHeld)
+            {
+                if (grabbable.holder.GetComponent<HandController>() != null)
+                {
+                    grabbable.holder.GetComponent<HandController>().ObjectRelease();
+                }
+                if (grabbable.GetComponent<Magazine>() != null)
+                {
+                    grabbable.GetComponent<Magazine>().SetIsLoaded(false, null);
+                }
+
+                grabbable.Release();
+                //TODO: Desarrollar un nuevo sistema para los parents de los objetos.
+                grabbable.previousParent = null;
+            }
+            heldItem = grabbable;
+            heldItem.transform.parent = transform;
+            heldItem.Hold(gameObject);
+            GetItemMass();
+            ControllerRumble(grabRumbleAmplitude, grabRumbleDuration);
+            OnObjectHold();
+        }
+
+        public void ObjectRelease()
+        {
+            if (heldItem == null) return;
+            heldItem.transform.parent = heldItem.previousParent;
+            heldItem.Release();
+            GetThrowForce();
+            heldItem = null;
+            heldItemMass = 0;
+            ControllerRumble(releaseRumbleAmplitude, releaseRumbleDuration);
+            OnObjectRelease();
+        }
+
+        void GetThrowForce()
+        {
+            Vector3 throwForceDirection = transform.position - prevFrameHandPosition;
+            heldItem.GetComponent<Rigidbody>().AddForce(throwForceDirection * throwForce);
+        }
+
+        void CheckReleaseForce()
+        {
+            if (heldItem != null && GetHighestForce() <= releaseForce)
+            {
+                ObjectRelease();
+            }
+        }
+
+        /// <summary>
+        /// Returns the highest force value from either grip or trigger buttons.
+        /// </summary>
+        public float GetHighestForce()
+        {
+            if (gripForce > triggerForce)
+            {
+                return gripForce;
+            }
+            else return triggerForce;
+        }
+
+
+        private void OnTriggerStay(Collider other)
+        {
+            Grabbable tmpGrabbable = other.GetComponent<Grabbable>();
+            GrabPoint tmpGrabPoint = other.GetComponent<GrabPoint>();
+            if (heldItem == null && GetHighestForce() >= holdForce &&
+                GetHighestForce() > prevFrameGripForce && prevFrameGripForce < holdForce)
+            {
+                if (tmpGrabbable != null)
+                {
+                    if (!tmpGrabbable.hasGrabPoints)
+                    {
+                        ObjectGrab(tmpGrabbable);
+                    }
+                }
+                else if (tmpGrabPoint != null)
+                {
+                    ObjectGrab(tmpGrabPoint.grabbableObjectOrigin);
+                }
+            }
+        }
+    }
+}
+
