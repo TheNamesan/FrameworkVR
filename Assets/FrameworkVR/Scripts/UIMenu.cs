@@ -7,7 +7,7 @@ using UnityEngine.Events;
 
 namespace FrameworkVR
 {
-    public class UIMenu : MonoBehaviour
+    public class UIMenu : MonoBehaviour, IOpenCloseMenu
     {
         [Header("Input")]
         [Tooltip("Set the input action reference to trigger the UI Menu.")]
@@ -32,6 +32,7 @@ namespace FrameworkVR
 
         void Update()
         {
+            if (menuButton == null) menuButton = action.action;
             menuButton.performed += (ctx) =>
             {
                 if (!buttonPressed)
@@ -49,7 +50,7 @@ namespace FrameworkVR
             };
         }
 
-        void OpenCloseMenu()
+        public void OpenCloseMenu()
         {
             canvas.SetActive(canvas.activeInHierarchy ? false : true);
             onMenuOpen?.Invoke();
@@ -60,6 +61,11 @@ namespace FrameworkVR
             canvas.SetActive(false);
             onMenuClose?.Invoke();
         }
+    }
+
+    public interface IOpenCloseMenu
+    {
+        void OpenCloseMenu();
     }
 }
 

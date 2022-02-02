@@ -44,7 +44,7 @@ namespace FrameworkVR
 
         [SerializeField]
         [Tooltip("Currently loaded magazine.")]
-        private Magazine m_mag = null;
+        protected Magazine m_mag = null;
         public Magazine mag
         {
             get { return m_mag; }
@@ -55,11 +55,11 @@ namespace FrameworkVR
             }
         }
 
-        private float cooldownTime = 0;
+        protected float cooldownTime = 0;
 
         [HideInInspector]
         public bool triggerHeld = false;
-        private bool heldAfterShot = false;
+        protected bool heldAfterShot = false;
 
         [Header("Optional")]
         [SerializeField]
@@ -70,8 +70,8 @@ namespace FrameworkVR
         public UnityEvent onShoot;
         public UnityEvent onReload;
 
-        private HandController handController;
-        private InputAction triggerButton;
+        protected HandController handController;
+        protected InputAction triggerButton;
 
         void Update()
         {
@@ -113,7 +113,7 @@ namespace FrameworkVR
             }
         }
 
-        void GetHandController()
+        protected virtual void GetHandController()
         {
             handController = grabbableObjectOrigin.transform.parent.GetComponent<HandController>();
             triggerButton = m_ActionAsset.FindActionMap(handController.handSide + "Hand", true).FindAction("Trigger", true);
@@ -133,7 +133,7 @@ namespace FrameworkVR
             }
         }
 
-        void CheckTriggerHeld()
+        protected virtual void CheckTriggerHeld()
         {
             if (mag != null)
             {
@@ -157,7 +157,7 @@ namespace FrameworkVR
             }
         }
 
-        public void Shoot()
+        public virtual void Shoot()
         {
             mag.ammo--;
             cooldownTime = rateOfFire;
