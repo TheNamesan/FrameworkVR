@@ -17,6 +17,10 @@ namespace FrameworkVR
         [Tooltip("Disables the ability to grab anywhere. Use this if your grabbable object has grab points.")]
         public bool hasGrabPoints = false;
 
+        [SerializeField]
+        [Tooltip("Makes the grabbable object able to be held by both hands.")]
+        public bool grabWithTwoHands = false;
+
         [Header("Weight System")]
         [SerializeField]
         [Tooltip("If true, the player's hands will move slower while this object (Determined by the grabbable's Rigidbody mass).")]
