@@ -171,9 +171,14 @@ namespace FrameworkVR
             {
                 if (grabbable.holder.GetComponent<HandController>() != null)
                 {
-                    grabbable.holder.GetComponent<HandController>().ObjectRelease();
+                    if(grabbable.grabWithTwoHands)
+                    {
+
+                    }
+                    else grabbable.holder.GetComponent<HandController>().ObjectRelease();
                 }
-                if (grabbable.GetComponent<Magazine>() != null)
+                
+                else if (grabbable.GetComponent<Magazine>() != null)
                 {
                     grabbable.GetComponent<Magazine>().SetIsLoaded(false, null);
                 }
@@ -233,7 +238,7 @@ namespace FrameworkVR
         {
             Grabbable tmpGrabbable = other.GetComponent<Grabbable>();
             GrabPoint tmpGrabPoint = other.GetComponent<GrabPoint>();
-            if (heldItem == null && GetHighestForce() >= holdForce &&
+            if (heldItem == null && TriggerIsFullyHeld() &&
                 GetHighestForce() > prevFrameGripForce && prevFrameGripForce < holdForce)
             {
                 if (tmpGrabbable != null)
@@ -245,9 +250,18 @@ namespace FrameworkVR
                 }
                 else if (tmpGrabPoint != null)
                 {
+                    if(tmpGrabPoint.grabbableObjectOrigin.transform.GetComponent<Gun>() != null && tmpGrabPoint.grabbableObjectOrigin.isHeld)
+                    {
+                        return;
+                    }
                     ObjectGrab(tmpGrabPoint.grabbableObjectOrigin);
                 }
             }
+        }
+
+        private bool TriggerIsFullyHeld()
+        {
+            return GetHighestForce() >= holdForce;
         }
     }
 }

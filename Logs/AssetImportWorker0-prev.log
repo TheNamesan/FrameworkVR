@@ -15,12 +15,12 @@ C:/Users/Angelo/Documents/SAE/3Tesis/FrameworkVR/FrameworkVR
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-50400
+59904
 Successfully changed project path to: C:/Users/Angelo/Documents/SAE/3Tesis/FrameworkVR/FrameworkVR
 C:/Users/Angelo/Documents/SAE/3Tesis/FrameworkVR/FrameworkVR
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 53.86 ms, found 9 plugins.
-Preloading 1 native plugins for Editor in 0.71 ms.
+Refreshing native plugins compatible for Editor in 619.47 ms, found 9 plugins.
+Preloading 1 native plugins for Editor in 1.08 ms.
 Initialize engine version: 2020.3.0f1 (c7b5465681fb)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.3.0f1/Editor/Data/Resources/UnitySubsystems
 [Subsystems] Discovering subsystems at path C:/Users/Angelo/Documents/SAE/3Tesis/FrameworkVR/FrameworkVR/Assets
@@ -35,29 +35,29 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.3.0f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.3.0f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.3.0f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56740
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56512
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.0f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.0f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.002156 seconds.
+Registered in 0.210794 seconds.
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 39.82 ms, found 9 plugins.
-Preloading 1 native plugins for Editor in 0.11 ms.
+Refreshing native plugins compatible for Editor in 40.83 ms, found 9 plugins.
+Preloading 1 native plugins for Editor in 0.09 ms.
 Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.656 seconds
+- Completed reload, in  8.004 seconds
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.004478 seconds.
+Registered in 0.202810 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 41.99 ms, found 9 plugins.
-Preloading 1 native plugins for Editor in 0.10 ms.
+Refreshing native plugins compatible for Editor in 42.70 ms, found 9 plugins.
+Preloading 1 native plugins for Editor in 0.12 ms.
 Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
@@ -72,41 +72,1717 @@ NullReferenceException: Object reference not set to an instance of an object
 (Filename: C:/Users/Angelo/Documents/SAE/3Tesis/FrameworkVR/Library/PackageCache/com.unity.xr.oculus@1.8.1/Runtime/OculusLoader.cs Line: 243)
 
 Mono: successfully reloaded assembly
-- Completed reload, in  0.877 seconds
+- Completed reload, in  2.686 seconds
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.05 seconds
-Refreshing native plugins compatible for Editor in 0.85 ms, found 9 plugins.
-Preloading 1 native plugins for Editor in 0.10 ms.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.04 seconds
+Refreshing native plugins compatible for Editor in 0.70 ms, found 9 plugins.
+Preloading 1 native plugins for Editor in 0.08 ms.
 Unloading 1898 Unused Serialized files (Serialized files now loaded: 0)
 System memory in use before: 159.4 MB.
 System memory in use after: 159.5 MB.
 
 Unloading 31 unused Assets to reduce memory usage. Loaded Objects now: 2355.
-Total: 5.169500 ms (FindLiveObjects: 1.324000 ms CreateObjectMapping: 0.246000 ms MarkObjects: 3.452100 ms  DeleteObjects: 0.144600 ms)
+Total: 2.085700 ms (FindLiveObjects: 0.317500 ms CreateObjectMapping: 0.060900 ms MarkObjects: 1.589200 ms  DeleteObjects: 0.116800 ms)
 
 ========================================================================
 Received Import Request.
-  path: Assets/FrameworkVR/Prefabs/Examples/WoodenCrate.prefab
-  artifactKey: Guid(1631e570e4e9dab46b3c41130321e1bc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/FrameworkVR/Prefabs/Examples/WoodenCrate.prefab using Guid(1631e570e4e9dab46b3c41130321e1bc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1acbd6ee41e08aacf9eea6819677100a') in 0.106954 seconds
-  Import took 0.111732 seconds .
+  path: Assets/BoxInTheBox/Prefabs/CreateMag.prefab
+  artifactKey: Guid(cb5ef67bfc9ac1e4592c94feb5ab590a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BoxInTheBox/Prefabs/CreateMag.prefab using Guid(cb5ef67bfc9ac1e4592c94feb5ab590a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2010dbfe07bb7658a7c0458150321242') in 0.141715 seconds
+  Import took 0.147180 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000190 seconds.
-  path: Assets/FrameworkVR/Prefabs/Examples/Barrel.prefab
-  artifactKey: Guid(ab9cb78ba45e2a44f894992e73bbb7e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/FrameworkVR/Prefabs/Examples/Barrel.prefab using Guid(ab9cb78ba45e2a44f894992e73bbb7e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '221c243db4066f747d3e2dc9f9c868d3') in 0.030579 seconds
-  Import took 0.034298 seconds .
+  Time since last request: 0.014168 seconds.
+  path: Assets/BoxInTheBox/Prefabs/CreateGun.prefab
+  artifactKey: Guid(1be17ccc589691b43a1597cf905c386a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BoxInTheBox/Prefabs/CreateGun.prefab using Guid(1be17ccc589691b43a1597cf905c386a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5bcb2238d13865aefef156568f3ca3c3') in 0.265856 seconds
+  Import took 0.271322 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000173 seconds.
-  path: Assets/FrameworkVR/Prefabs/Examples/ShieldGrabbable.prefab
-  artifactKey: Guid(4d6cf998b58abff458cf5caa7a1452ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/FrameworkVR/Prefabs/Examples/ShieldGrabbable.prefab using Guid(4d6cf998b58abff458cf5caa7a1452ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '492ff23e0572209ee1d5f382339fba11') in 0.012974 seconds
-  Import took 0.017122 seconds .
+  Time since last request: 4.053419 seconds.
+  path: Assets/BoxInTheBox/Prefabs/Firearms
+  artifactKey: Guid(e0efa7f5923af224a9f50eb2280aa679) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BoxInTheBox/Prefabs/Firearms using Guid(e0efa7f5923af224a9f50eb2280aa679) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2db17d7eb54eecdb083312bb01c9464d') in 0.006284 seconds
+  Import took 0.010371 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 34.218726 seconds.
+  path: Assets/FrameworkVR/Prefabs/Glock.prefab
+  artifactKey: Guid(80f9334e0d0460c4e92d2db1cdb42f40) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FrameworkVR/Prefabs/Glock.prefab using Guid(80f9334e0d0460c4e92d2db1cdb42f40) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8123d34542045162d8a6224f196a15dd') in 0.049169 seconds
+  Import took 0.053465 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000162 seconds.
+  path: Assets/FrameworkVR/Prefabs/Grabbable.prefab
+  artifactKey: Guid(a14d3c3bba62dfc4fb6f537d10b4e105) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FrameworkVR/Prefabs/Grabbable.prefab using Guid(a14d3c3bba62dfc4fb6f537d10b4e105) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f692a41f0be637c288de9003bd2c6f79') in 0.015199 seconds
+  Import took 0.019521 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000177 seconds.
+  path: Assets/FrameworkVR/Prefabs/Mag.prefab
+  artifactKey: Guid(d85f0e26c4ad7b645ad54ba051ea635f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FrameworkVR/Prefabs/Mag.prefab using Guid(d85f0e26c4ad7b645ad54ba051ea635f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '298c35c8dea0f984c09122fde422ca95') in 0.014502 seconds
+  Import took 0.018815 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000233 seconds.
+  path: Assets/FrameworkVR/Prefabs/SwordGrabbable.prefab
+  artifactKey: Guid(14a2bf6cdc2a7ea4d9df4f98e73a7750) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FrameworkVR/Prefabs/SwordGrabbable.prefab using Guid(14a2bf6cdc2a7ea4d9df4f98e73a7750) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bb8830826a8581d250195212efcc97cb') in 0.015152 seconds
+  Import took 0.018863 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 163.026799 seconds.
+  path: Assets/BoxInTheBox/Assets/Ishikawa1116/LOW-POLY GUNS PACK_SAMPLE/Prefabs/Black and common color/Pistol/Pistol_00.prefab
+  artifactKey: Guid(1f01a7aea7ce1e9419915423dfb24a86) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BoxInTheBox/Assets/Ishikawa1116/LOW-POLY GUNS PACK_SAMPLE/Prefabs/Black and common color/Pistol/Pistol_00.prefab using Guid(1f01a7aea7ce1e9419915423dfb24a86) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '62e36b8d26b222568f146df9eb4fbfd2') in 0.053534 seconds
+  Import took 0.058456 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000221 seconds.
+  path: Assets/BoxInTheBox/Assets/Ishikawa1116/LOW-POLY GUNS PACK_SAMPLE/Prefabs/Black and common color/Pistol/Pistol_00_mag.prefab
+  artifactKey: Guid(698f69cba900d27498554ea51f82b8d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BoxInTheBox/Assets/Ishikawa1116/LOW-POLY GUNS PACK_SAMPLE/Prefabs/Black and common color/Pistol/Pistol_00_mag.prefab using Guid(698f69cba900d27498554ea51f82b8d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9e8e0fd446f261da8865aada5ca1cf31') in 0.018159 seconds
+  Import took 0.022667 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.443933 seconds.
+  path: Assets/BoxInTheBox/Assets/Ishikawa1116/LOW-POLY GUNS PACK_SAMPLE/Prefabs/Black and common color/Rifle/Rifle_00.prefab
+  artifactKey: Guid(cc4156adf6614cb4693b57fd602cf0b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BoxInTheBox/Assets/Ishikawa1116/LOW-POLY GUNS PACK_SAMPLE/Prefabs/Black and common color/Rifle/Rifle_00.prefab using Guid(cc4156adf6614cb4693b57fd602cf0b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4f00a791aee87efa6117e370f7542070') in 0.050738 seconds
+  Import took 0.055500 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000193 seconds.
+  path: Assets/BoxInTheBox/Assets/Ishikawa1116/LOW-POLY GUNS PACK_SAMPLE/Prefabs/Black and common color/Rifle/Rifle_00_07_08_mag.prefab
+  artifactKey: Guid(9176ba4a45d5b604b80b8c5e37e98a61) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BoxInTheBox/Assets/Ishikawa1116/LOW-POLY GUNS PACK_SAMPLE/Prefabs/Black and common color/Rifle/Rifle_00_07_08_mag.prefab using Guid(9176ba4a45d5b604b80b8c5e37e98a61) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6e4f3198137a32d492c8eae54b980d92') in 0.019899 seconds
+  Import took 0.024284 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.660342 seconds.
+  path: Assets/BoxInTheBox/Assets/Ishikawa1116/LOW-POLY GUNS PACK_SAMPLE/Prefabs/Black and common color/Bullet and other prop/Pistolbullet.prefab
+  artifactKey: Guid(7050c910fa7f7934cbf7a468d6f75217) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BoxInTheBox/Assets/Ishikawa1116/LOW-POLY GUNS PACK_SAMPLE/Prefabs/Black and common color/Bullet and other prop/Pistolbullet.prefab using Guid(7050c910fa7f7934cbf7a468d6f75217) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bf1af514729d84c2e0bf09f77c520550') in 0.021282 seconds
+  Import took 0.026042 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000186 seconds.
+  path: Assets/BoxInTheBox/Assets/Ishikawa1116/LOW-POLY GUNS PACK_SAMPLE/Prefabs/Black and common color/Bullet and other prop/Riflebullet.prefab
+  artifactKey: Guid(3e16fe1e040fb1d46906820603db60b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BoxInTheBox/Assets/Ishikawa1116/LOW-POLY GUNS PACK_SAMPLE/Prefabs/Black and common color/Bullet and other prop/Riflebullet.prefab using Guid(3e16fe1e040fb1d46906820603db60b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '482c1afed4fdc417e927ebfc5e9c86eb') in 0.024925 seconds
+  Import took 0.028685 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 515.583318 seconds.
+  path: Assets/BoxInTheBox/Assets/Ishikawa1116/LOW-POLY GUNS PACK_SAMPLE/Prefabs/Snow/Pistol/Pistol_00.prefab
+  artifactKey: Guid(f9508935197c3d74fba04d86d8267f2a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BoxInTheBox/Assets/Ishikawa1116/LOW-POLY GUNS PACK_SAMPLE/Prefabs/Snow/Pistol/Pistol_00.prefab using Guid(f9508935197c3d74fba04d86d8267f2a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e78a77584a7661afca9467c2c56afaeb') in 0.035712 seconds
+  Import took 0.046697 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000151 seconds.
+  path: Assets/BoxInTheBox/Assets/Ishikawa1116/LOW-POLY GUNS PACK_SAMPLE/Prefabs/Snow/Pistol/Pistol_00_mag.prefab
+  artifactKey: Guid(133c3483ac365aa4ebcc847a736d56ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BoxInTheBox/Assets/Ishikawa1116/LOW-POLY GUNS PACK_SAMPLE/Prefabs/Snow/Pistol/Pistol_00_mag.prefab using Guid(133c3483ac365aa4ebcc847a736d56ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '633ea331ffb7fbdceb83d776d90599a3') in 0.016788 seconds
+  Import took 0.021527 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.439429 seconds.
+  path: Assets/BoxInTheBox/Assets/Ishikawa1116/LOW-POLY GUNS PACK_SAMPLE/Prefabs/Snow/Rifle/Rifle_00.prefab
+  artifactKey: Guid(cac4009e596e70b4d872ed77341c039b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BoxInTheBox/Assets/Ishikawa1116/LOW-POLY GUNS PACK_SAMPLE/Prefabs/Snow/Rifle/Rifle_00.prefab using Guid(cac4009e596e70b4d872ed77341c039b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b12cfd1d0c8de39f1e1dd53c99070525') in 0.020154 seconds
+  Import took 0.024182 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000144 seconds.
+  path: Assets/BoxInTheBox/Assets/Ishikawa1116/LOW-POLY GUNS PACK_SAMPLE/Prefabs/Snow/Rifle/Rifle_00_07_08_mag.prefab
+  artifactKey: Guid(397fd93c245c8404792391f60eb9c171) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BoxInTheBox/Assets/Ishikawa1116/LOW-POLY GUNS PACK_SAMPLE/Prefabs/Snow/Rifle/Rifle_00_07_08_mag.prefab using Guid(397fd93c245c8404792391f60eb9c171) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9ca54b6e2063b0240aa13a4e27dea5c3') in 0.011437 seconds
+  Import took 0.015311 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.484160 seconds.
+  path: Assets/BoxInTheBox/Assets/Ishikawa1116/LOW-POLY GUNS PACK_SAMPLE/Prefabs/Tan/Rifle/Rifle_00.prefab
+  artifactKey: Guid(d0ca414bf3cc5ea48a8121dbe115f855) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BoxInTheBox/Assets/Ishikawa1116/LOW-POLY GUNS PACK_SAMPLE/Prefabs/Tan/Rifle/Rifle_00.prefab using Guid(d0ca414bf3cc5ea48a8121dbe115f855) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '110bbfa14cdab50c4103be8c73131561') in 0.022109 seconds
+  Import took 0.027570 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000151 seconds.
+  path: Assets/BoxInTheBox/Assets/Ishikawa1116/LOW-POLY GUNS PACK_SAMPLE/Prefabs/Tan/Rifle/Rifle_00_07_08_mag.prefab
+  artifactKey: Guid(25617adafaf4cd042aa2c930fbd6096f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BoxInTheBox/Assets/Ishikawa1116/LOW-POLY GUNS PACK_SAMPLE/Prefabs/Tan/Rifle/Rifle_00_07_08_mag.prefab using Guid(25617adafaf4cd042aa2c930fbd6096f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0b34fed535d7d4856d42423df1904501') in 0.011321 seconds
+  Import took 0.014895 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.701642 seconds.
+  path: Assets/BoxInTheBox/Assets/Ishikawa1116/LOW-POLY GUNS PACK_SAMPLE/Prefabs/Tan/Pistol/Pistol_00.prefab
+  artifactKey: Guid(21d24e7ba9edf954f8a02c065e8d4d77) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BoxInTheBox/Assets/Ishikawa1116/LOW-POLY GUNS PACK_SAMPLE/Prefabs/Tan/Pistol/Pistol_00.prefab using Guid(21d24e7ba9edf954f8a02c065e8d4d77) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '83e4f7de7d5776e55c386c374246e440') in 0.015316 seconds
+  Import took 0.019059 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000191 seconds.
+  path: Assets/BoxInTheBox/Assets/Ishikawa1116/LOW-POLY GUNS PACK_SAMPLE/Prefabs/Tan/Pistol/Pistol_00_mag.prefab
+  artifactKey: Guid(b3c8d29e2e0ea0948a6ebf8978e7c413) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BoxInTheBox/Assets/Ishikawa1116/LOW-POLY GUNS PACK_SAMPLE/Prefabs/Tan/Pistol/Pistol_00_mag.prefab using Guid(b3c8d29e2e0ea0948a6ebf8978e7c413) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5ec2250301ca2a5411448bf9c8dc8c57') in 0.010310 seconds
+  Import took 0.013927 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1394.921007 seconds.
+  path: Assets/BoxInTheBox/Prefabs/Firearms/Pistol.prefab
+  artifactKey: Guid(09d995e362efcb543b2e3ee899f688c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BoxInTheBox/Prefabs/Firearms/Pistol.prefab using Guid(09d995e362efcb543b2e3ee899f688c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '63f2e0cae53960b0478aac0b80318da5') in 0.016372 seconds
+  Import took 0.024586 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.518413 seconds.
+  path: Assets/BoxInTheBox/Prefabs/Firearms/PistolMag.prefab
+  artifactKey: Guid(d8d4d08a5ed16284e8ef50a01c40982d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BoxInTheBox/Prefabs/Firearms/PistolMag.prefab using Guid(d8d4d08a5ed16284e8ef50a01c40982d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '26e9475c109274ae083f086bcce75b8c') in 0.011082 seconds
+  Import took 0.017029 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.035016 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.78 ms, found 9 plugins.
+Preloading 1 native plugins for Editor in 0.09 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+NullReferenceException: Object reference not set to an instance of an object
+  at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x00048] in C:\Users\Angelo\Documents\SAE\3Tesis\FrameworkVR\Library\PackageCache\com.unity.xr.oculus@1.8.1\Runtime\OculusLoader.cs:243 
+  at Unity.XR.Oculus.OculusLoader.EditorLoadOVRPlugin () [0x0007b] in C:\Users\Angelo\Documents\SAE\3Tesis\FrameworkVR\Library\PackageCache\com.unity.xr.oculus@1.8.1\Runtime\OculusLoader.cs:228 
+
+(Filename: C:/Users/Angelo/Documents/SAE/3Tesis/FrameworkVR/Library/PackageCache/com.unity.xr.oculus@1.8.1/Runtime/OculusLoader.cs Line: 243)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  0.843 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.76 ms, found 9 plugins.
+Preloading 1 native plugins for Editor in 0.08 ms.
+Unloading 1868 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 176.2 MB.
+System memory in use after: 176.3 MB.
+
+Unloading 27 unused Assets to reduce memory usage. Loaded Objects now: 2370.
+Total: 2.222300 ms (FindLiveObjects: 0.284400 ms CreateObjectMapping: 0.043900 ms MarkObjects: 1.737800 ms  DeleteObjects: 0.155100 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 3320.744970 seconds.
+  path: Assets/BoxInTheBox/Prefabs/Firearms/RifleMag.prefab
+  artifactKey: Guid(f52b9a6d08de9a84d9157b7f73eee5a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BoxInTheBox/Prefabs/Firearms/RifleMag.prefab using Guid(f52b9a6d08de9a84d9157b7f73eee5a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b1cf3739643a151a2c1caf7176a44e43') in 0.240789 seconds
+  Import took 0.245565 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.450653 seconds.
+  path: Assets/BoxInTheBox/Prefabs/Firearms/Rifle.prefab
+  artifactKey: Guid(2f87014f678837b43bfee2bf7df053fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BoxInTheBox/Prefabs/Firearms/Rifle.prefab using Guid(2f87014f678837b43bfee2bf7df053fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ed23c236490d26d913bde0e234933b79') in 0.036452 seconds
+  Import took 0.040745 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.002821 seconds.
+  path: Assets/BoxInTheBox/Prefabs/Firearms/Rifle.prefab
+  artifactKey: Guid(2f87014f678837b43bfee2bf7df053fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BoxInTheBox/Prefabs/Firearms/Rifle.prefab using Guid(2f87014f678837b43bfee2bf7df053fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ed23c236490d26d913bde0e234933b79') in 0.012881 seconds
+  Import took 0.016208 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 412.962528 seconds.
+  path: Assets/BoxInTheBox/Assets/Low Poly Weapons VOL.1/Gun_MAT.mat
+  artifactKey: Guid(28f0b13c7e9707746b5e0b3336181560) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BoxInTheBox/Assets/Low Poly Weapons VOL.1/Gun_MAT.mat using Guid(28f0b13c7e9707746b5e0b3336181560) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '20288a91da13cd563e5a1ae53c717389') in 0.057759 seconds
+  Import took 0.061558 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000184 seconds.
+  path: Assets/BoxInTheBox/Assets/Low Poly Weapons VOL.1/Textures_Guns.png
+  artifactKey: Guid(6a376fb3e11ce334ca96f417cead6576) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BoxInTheBox/Assets/Low Poly Weapons VOL.1/Textures_Guns.png using Guid(6a376fb3e11ce334ca96f417cead6576) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3270ae4ad902a7b85fd7edbd4bf49d99') in 0.066500 seconds
+  Import took 0.070114 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.032571 seconds.
+  path: Assets/BoxInTheBox/Assets/Low Poly Weapons VOL.1/Prefabs/AK74.prefab
+  artifactKey: Guid(ee329c3cd08e58645834d20702d7f6c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BoxInTheBox/Assets/Low Poly Weapons VOL.1/Prefabs/AK74.prefab using Guid(ee329c3cd08e58645834d20702d7f6c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0473c382aa18b0fea751eb8796cb7991') in 0.014225 seconds
+  Import took 0.017580 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000169 seconds.
+  path: Assets/BoxInTheBox/Assets/Low Poly Weapons VOL.1/Prefabs/ANPEQ15.prefab
+  artifactKey: Guid(0c4a58b408c72d141bb4ae5633ef3744) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BoxInTheBox/Assets/Low Poly Weapons VOL.1/Prefabs/ANPEQ15.prefab using Guid(0c4a58b408c72d141bb4ae5633ef3744) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '54afa90bfaec314604cb1f86e2f0d53d') in 0.012273 seconds
+  Import took 0.015657 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000211 seconds.
+  path: Assets/BoxInTheBox/Assets/Low Poly Weapons VOL.1/Prefabs/Uzi.prefab
+  artifactKey: Guid(6273e2936e9d6a24e9f64c7c70d6bd19) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BoxInTheBox/Assets/Low Poly Weapons VOL.1/Prefabs/Uzi.prefab using Guid(6273e2936e9d6a24e9f64c7c70d6bd19) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bb7f8a6240ee5a0aad2c5d4bc21ebda6') in 0.026054 seconds
+  Import took 0.029770 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000211 seconds.
+  path: Assets/BoxInTheBox/Assets/Low Poly Weapons VOL.1/Prefabs/M2_50cal.prefab
+  artifactKey: Guid(3077a2b322d12b94c975bb1c7b2993fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BoxInTheBox/Assets/Low Poly Weapons VOL.1/Prefabs/M2_50cal.prefab using Guid(3077a2b322d12b94c975bb1c7b2993fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e2f6a978f30003b0df2fb5c8b9c13588') in 0.035467 seconds
+  Import took 0.039164 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000151 seconds.
+  path: Assets/BoxInTheBox/Assets/Low Poly Weapons VOL.1/Prefabs/TAN_LR_Scope_01.prefab
+  artifactKey: Guid(49535f27af2648646a94c1f9918737d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BoxInTheBox/Assets/Low Poly Weapons VOL.1/Prefabs/TAN_LR_Scope_01.prefab using Guid(49535f27af2648646a94c1f9918737d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6d07af054ef9de4e892b763a11120227') in 0.010586 seconds
+  Import took 0.014082 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000176 seconds.
+  path: Assets/BoxInTheBox/Assets/Low Poly Weapons VOL.1/Prefabs/SR_Scope_00.prefab
+  artifactKey: Guid(cb825447b7c1ef442a049949c3f95ba7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BoxInTheBox/Assets/Low Poly Weapons VOL.1/Prefabs/SR_Scope_00.prefab using Guid(cb825447b7c1ef442a049949c3f95ba7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ec4bbe694885672817a4133ccf272694') in 0.025349 seconds
+  Import took 0.028370 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000144 seconds.
+  path: Assets/BoxInTheBox/Assets/Low Poly Weapons VOL.1/Prefabs/Smoke.prefab
+  artifactKey: Guid(8b4cba336c093ff41ae9321f9f8433d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BoxInTheBox/Assets/Low Poly Weapons VOL.1/Prefabs/Smoke.prefab using Guid(8b4cba336c093ff41ae9321f9f8433d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '13db1b40f5c27013e9f9b50072fb4d92') in 0.030810 seconds
+  Import took 0.034116 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000202 seconds.
+  path: Assets/BoxInTheBox/Assets/Low Poly Weapons VOL.1/Prefabs/Flash.prefab
+  artifactKey: Guid(c0f110e4459b675489b7db1e686d5bc3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BoxInTheBox/Assets/Low Poly Weapons VOL.1/Prefabs/Flash.prefab using Guid(c0f110e4459b675489b7db1e686d5bc3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '082e72238c07acbb806e777dd2d05edb') in 0.013551 seconds
+  Import took 0.017252 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000159 seconds.
+  path: Assets/BoxInTheBox/Assets/Low Poly Weapons VOL.1/Prefabs/M107.prefab
+  artifactKey: Guid(7359baf27e84aa44cafac3788c8be0f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BoxInTheBox/Assets/Low Poly Weapons VOL.1/Prefabs/M107.prefab using Guid(7359baf27e84aa44cafac3788c8be0f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '03bc9f086284c5e3dbe0214520112a40') in 0.021483 seconds
+  Import took 0.024974 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000153 seconds.
+  path: Assets/BoxInTheBox/Assets/Low Poly Weapons VOL.1/Prefabs/RGD-5.prefab
+  artifactKey: Guid(5a2bf64643e1fb0439ea39c0fc9b00ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BoxInTheBox/Assets/Low Poly Weapons VOL.1/Prefabs/RGD-5.prefab using Guid(5a2bf64643e1fb0439ea39c0fc9b00ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f3322f4e1f08328c7fa5df1821242e4d') in 0.010953 seconds
+  Import took 0.014257 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000171 seconds.
+  path: Assets/BoxInTheBox/Assets/Low Poly Weapons VOL.1/Prefabs/Bennelli_M4.prefab
+  artifactKey: Guid(8b0b86b42def11849a8eba21f4a6a684) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BoxInTheBox/Assets/Low Poly Weapons VOL.1/Prefabs/Bennelli_M4.prefab using Guid(8b0b86b42def11849a8eba21f4a6a684) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1d81db069186781b1c9cd0a7524215fd') in 0.020792 seconds
+  Import took 0.024712 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000165 seconds.
+  path: Assets/BoxInTheBox/Assets/Low Poly Weapons VOL.1/Prefabs/M1911.prefab
+  artifactKey: Guid(6f1a7354265853f44b0ed5e2e43676ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BoxInTheBox/Assets/Low Poly Weapons VOL.1/Prefabs/M1911.prefab using Guid(6f1a7354265853f44b0ed5e2e43676ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'abdf1dc139db243124a7e1a44d661e4c') in 0.010835 seconds
+  Import took 0.014112 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000150 seconds.
+  path: Assets/BoxInTheBox/Assets/Low Poly Weapons VOL.1/Prefabs/M4_8.prefab
+  artifactKey: Guid(689946d975a0e55449b1e7ae41933e73) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BoxInTheBox/Assets/Low Poly Weapons VOL.1/Prefabs/M4_8.prefab using Guid(689946d975a0e55449b1e7ae41933e73) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c3f7978c3462d2836dfe498c51876f62') in 0.023186 seconds
+  Import took 0.026603 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000151 seconds.
+  path: Assets/BoxInTheBox/Assets/Low Poly Weapons VOL.1/Prefabs/M249.prefab
+  artifactKey: Guid(432643b6e5110004083fdff3e33e490b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BoxInTheBox/Assets/Low Poly Weapons VOL.1/Prefabs/M249.prefab using Guid(432643b6e5110004083fdff3e33e490b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8be92b41cf8859ecf28bdbd185927492') in 0.019414 seconds
+  Import took 0.022508 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000163 seconds.
+  path: Assets/BoxInTheBox/Assets/Low Poly Weapons VOL.1/Prefabs/RPG7.prefab
+  artifactKey: Guid(02baef62b1bfedf40bb369fb7542b9e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BoxInTheBox/Assets/Low Poly Weapons VOL.1/Prefabs/RPG7.prefab using Guid(02baef62b1bfedf40bb369fb7542b9e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '69928ad9b5de726be8ff51b2f178ff64') in 0.012218 seconds
+  Import took 0.015271 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000146 seconds.
+  path: Assets/BoxInTheBox/Assets/Low Poly Weapons VOL.1/Prefabs/ELCAN.prefab
+  artifactKey: Guid(75aeffeed5a736f46afbef3a42e93fab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BoxInTheBox/Assets/Low Poly Weapons VOL.1/Prefabs/ELCAN.prefab using Guid(75aeffeed5a736f46afbef3a42e93fab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e67847de34635bf74a8406e69b1b3b24') in 0.010220 seconds
+  Import took 0.013172 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.796697 seconds.
+  path: Assets/BoxInTheBox/Assets/Low Poly Guns/Models/Guns/assault2/assault2.mat
+  artifactKey: Guid(35a5af17f562eb044a809af0526a562f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BoxInTheBox/Assets/Low Poly Guns/Models/Guns/assault2/assault2.mat using Guid(35a5af17f562eb044a809af0526a562f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '02e2bc03e39e164a067de62e5c67d243') in 0.080059 seconds
+  Import took 0.083123 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.527470 seconds.
+  path: Assets/BoxInTheBox/Assets/Low Poly Guns/Models/Guns/pistol2/pistol2.fbx
+  artifactKey: Guid(8f9696fb6017be144a307b6586855ac0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BoxInTheBox/Assets/Low Poly Guns/Models/Guns/pistol2/pistol2.fbx using Guid(8f9696fb6017be144a307b6586855ac0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f4e54233c8e8ae25da27ed092b1466c1') in 0.055156 seconds
+  Import took 0.058653 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000150 seconds.
+  path: Assets/BoxInTheBox/Assets/Low Poly Guns/Models/Guns/pistol2/pistol2_normal.png
+  artifactKey: Guid(c575c41cb696525499503e0d1142dd63) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BoxInTheBox/Assets/Low Poly Guns/Models/Guns/pistol2/pistol2_normal.png using Guid(c575c41cb696525499503e0d1142dd63) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e3ffc931a30c97880e20854b9f4d08cf') in 0.050294 seconds
+  Import took 0.053593 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000169 seconds.
+  path: Assets/BoxInTheBox/Assets/Low Poly Guns/Models/Guns/pistol2/pistol2_diffuse.png
+  artifactKey: Guid(4bc3804b3d89750428df34b00abe88d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BoxInTheBox/Assets/Low Poly Guns/Models/Guns/pistol2/pistol2_diffuse.png using Guid(4bc3804b3d89750428df34b00abe88d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7d1acf1ed3c7a752b572cfa1103db552') in 0.040264 seconds
+  Import took 0.043819 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000167 seconds.
+  path: Assets/BoxInTheBox/Assets/Low Poly Guns/Models/Guns/pistol2/pistol2.mat
+  artifactKey: Guid(7c16b6e19b642c247ba765631635ff9e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BoxInTheBox/Assets/Low Poly Guns/Models/Guns/pistol2/pistol2.mat using Guid(7c16b6e19b642c247ba765631635ff9e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3fb79bb935612f819898b36ea788ccd2') in 0.046740 seconds
+  Import took 0.049418 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.162467 seconds.
+  path: Assets/BoxInTheBox/Assets/Low Poly Guns/Models/Guns/pistol1/pistol1.fbx
+  artifactKey: Guid(4df3ce82db8e66645afd54ab1d5b0262) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BoxInTheBox/Assets/Low Poly Guns/Models/Guns/pistol1/pistol1.fbx using Guid(4df3ce82db8e66645afd54ab1d5b0262) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '216edb2dad60ee9550d8a73bc1659980') in 0.020142 seconds
+  Import took 0.023199 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000157 seconds.
+  path: Assets/BoxInTheBox/Assets/Low Poly Guns/Models/Guns/pistol1/pistol1_diffuse.png
+  artifactKey: Guid(0d6b1249a62d53f4e8900c84722db1f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BoxInTheBox/Assets/Low Poly Guns/Models/Guns/pistol1/pistol1_diffuse.png using Guid(0d6b1249a62d53f4e8900c84722db1f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'af78f3e4a640ca5976649cfc19d2513e') in 0.028484 seconds
+  Import took 0.031442 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000172 seconds.
+  path: Assets/BoxInTheBox/Assets/Low Poly Guns/Models/Guns/pistol1/pistol1_normal.png
+  artifactKey: Guid(a21b6f6faa594df4fa1cb1794a16a4b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BoxInTheBox/Assets/Low Poly Guns/Models/Guns/pistol1/pistol1_normal.png using Guid(a21b6f6faa594df4fa1cb1794a16a4b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd8c6b478953618bffcad67ef44a89877') in 0.044898 seconds
+  Import took 0.048298 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000151 seconds.
+  path: Assets/BoxInTheBox/Assets/Low Poly Guns/Models/Guns/pistol1/pistol1.mat
+  artifactKey: Guid(94e64d41f68240c41aabd3ef8e0368e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BoxInTheBox/Assets/Low Poly Guns/Models/Guns/pistol1/pistol1.mat using Guid(94e64d41f68240c41aabd3ef8e0368e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bb34e24edeb5d4fb8e33255a09002e88') in 0.017239 seconds
+  Import took 0.019769 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 8.098303 seconds.
+  path: Assets/BoxInTheBox/Assets/Low Poly Guns/Models/Guns/assault4/assault4.mat
+  artifactKey: Guid(a3de5fdd82f571f4eb16a3c2530b4303) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BoxInTheBox/Assets/Low Poly Guns/Models/Guns/assault4/assault4.mat using Guid(a3de5fdd82f571f4eb16a3c2530b4303) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '90924789fcaa1600b57c5a71d23db061') in 0.071763 seconds
+  Import took 0.076523 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 13.567267 seconds.
+  path: Assets/BoxInTheBox/Assets/Low Poly Weapons VOL.1/Models/AK74.fbx
+  artifactKey: Guid(6f966b9a7c817ed49973b4a8762cbbdf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BoxInTheBox/Assets/Low Poly Weapons VOL.1/Models/AK74.fbx using Guid(6f966b9a7c817ed49973b4a8762cbbdf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '93ecfe31732f3096c52bb57eda0abfed') in 0.044026 seconds
+  Import took 0.047868 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000140 seconds.
+  path: Assets/BoxInTheBox/Assets/Low Poly Weapons VOL.1/Models/RPG7.fbx
+  artifactKey: Guid(4e5ce0b6f97fdbc40b7bc818b06b80ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BoxInTheBox/Assets/Low Poly Weapons VOL.1/Models/RPG7.fbx using Guid(4e5ce0b6f97fdbc40b7bc818b06b80ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cd293e024109edbc4b645a65ca777038') in 0.061793 seconds
+  Import took 0.064923 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000184 seconds.
+  path: Assets/BoxInTheBox/Assets/Low Poly Weapons VOL.1/Models/M4_8.fbx
+  artifactKey: Guid(c7741850eebe1df4ea75a80275b16311) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BoxInTheBox/Assets/Low Poly Weapons VOL.1/Models/M4_8.fbx using Guid(c7741850eebe1df4ea75a80275b16311) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2f5d66265c76e0736e62e70ef471c643') in 0.090726 seconds
+  Import took 0.094280 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000143 seconds.
+  path: Assets/BoxInTheBox/Assets/Low Poly Weapons VOL.1/Models/Flash.fbx
+  artifactKey: Guid(0463b32f3348438449af40d60686807b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BoxInTheBox/Assets/Low Poly Weapons VOL.1/Models/Flash.fbx using Guid(0463b32f3348438449af40d60686807b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'abd3218b1228af0d2571c2a265988aab') in 0.037711 seconds
+  Import took 0.040376 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000204 seconds.
+  path: Assets/BoxInTheBox/Assets/Low Poly Weapons VOL.1/Models/Smoke.fbx
+  artifactKey: Guid(fdd9b790eff3ea74d9c1ccf2c0db76bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BoxInTheBox/Assets/Low Poly Weapons VOL.1/Models/Smoke.fbx using Guid(fdd9b790eff3ea74d9c1ccf2c0db76bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '65f42d3007d8f422581a5cd646607a15') in 0.046224 seconds
+  Import took 0.049494 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000143 seconds.
+  path: Assets/BoxInTheBox/Assets/Low Poly Weapons VOL.1/Models/Bennelli_M4.fbx
+  artifactKey: Guid(bf2593fe0c804b84688e307cfb1ddfae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BoxInTheBox/Assets/Low Poly Weapons VOL.1/Models/Bennelli_M4.fbx using Guid(bf2593fe0c804b84688e307cfb1ddfae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ca5fd4c1d0e299d151a5e9ebdce74cc7') in 0.059217 seconds
+  Import took 0.062474 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000145 seconds.
+  path: Assets/BoxInTheBox/Assets/Low Poly Weapons VOL.1/Models/RGD-5.fbx
+  artifactKey: Guid(cecca25c94780ca428d51ab9f5894270) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BoxInTheBox/Assets/Low Poly Weapons VOL.1/Models/RGD-5.fbx using Guid(cecca25c94780ca428d51ab9f5894270) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1af8bc65b4340f44084ff818b041c309') in 0.062739 seconds
+  Import took 0.065722 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000157 seconds.
+  path: Assets/BoxInTheBox/Assets/Low Poly Weapons VOL.1/Models/M107.fbx
+  artifactKey: Guid(a0e70037533056249a1bcaf8b480c5cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BoxInTheBox/Assets/Low Poly Weapons VOL.1/Models/M107.fbx using Guid(a0e70037533056249a1bcaf8b480c5cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c699da80a6b3ccefddf8ab81cf296587') in 0.039215 seconds
+  Import took 0.042185 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000147 seconds.
+  path: Assets/BoxInTheBox/Assets/Low Poly Weapons VOL.1/Models/Uzi.fbx
+  artifactKey: Guid(ff8c9f278b5bc8e4c894e1122f4a81f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BoxInTheBox/Assets/Low Poly Weapons VOL.1/Models/Uzi.fbx using Guid(ff8c9f278b5bc8e4c894e1122f4a81f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5b6d23767571602e1c3e53a1bfc6385b') in 0.048602 seconds
+  Import took 0.051807 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000258 seconds.
+  path: Assets/BoxInTheBox/Assets/Low Poly Weapons VOL.1/Models/ELCAN.fbx
+  artifactKey: Guid(7430c7a2877dd0b429a981e69ac2ed00) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BoxInTheBox/Assets/Low Poly Weapons VOL.1/Models/ELCAN.fbx using Guid(7430c7a2877dd0b429a981e69ac2ed00) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a0bec3e9690456a9001f18efb290068e') in 0.013000 seconds
+  Import took 0.015964 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000168 seconds.
+  path: Assets/BoxInTheBox/Assets/Low Poly Weapons VOL.1/Models/M249.fbx
+  artifactKey: Guid(01890195b95a26f4fa4aa4f8f5a0cc5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BoxInTheBox/Assets/Low Poly Weapons VOL.1/Models/M249.fbx using Guid(01890195b95a26f4fa4aa4f8f5a0cc5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1662311404885f6c4e58503ea174214c') in 0.049708 seconds
+  Import took 0.053177 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000231 seconds.
+  path: Assets/BoxInTheBox/Assets/Low Poly Weapons VOL.1/Models/TAN_LR_Scope_01.fbx
+  artifactKey: Guid(2bbc7effaf5e34b4e9358a6c93bb1382) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BoxInTheBox/Assets/Low Poly Weapons VOL.1/Models/TAN_LR_Scope_01.fbx using Guid(2bbc7effaf5e34b4e9358a6c93bb1382) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '50f4ef1df400eb02c9eb049043d40ab5') in 0.028665 seconds
+  Import took 0.032164 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000215 seconds.
+  path: Assets/BoxInTheBox/Assets/Low Poly Weapons VOL.1/Models/ANPEQ15.fbx
+  artifactKey: Guid(8cbbb35c5fcc276458e3e8865abf1341) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BoxInTheBox/Assets/Low Poly Weapons VOL.1/Models/ANPEQ15.fbx using Guid(8cbbb35c5fcc276458e3e8865abf1341) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '654398867d94a3bd96a554aa51d84976') in 0.013823 seconds
+  Import took 0.017113 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000157 seconds.
+  path: Assets/BoxInTheBox/Assets/Low Poly Weapons VOL.1/Models/M2_50cal.fbx
+  artifactKey: Guid(018d5bd3bfb8b6a49a8b354ba11e4a8f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BoxInTheBox/Assets/Low Poly Weapons VOL.1/Models/M2_50cal.fbx using Guid(018d5bd3bfb8b6a49a8b354ba11e4a8f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '88449466b7315c80036adc8a90b836b7') in 0.043814 seconds
+  Import took 0.047175 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000185 seconds.
+  path: Assets/BoxInTheBox/Assets/Low Poly Weapons VOL.1/Models/M1911.fbx
+  artifactKey: Guid(b812e42521a5a27499e76cc5ed56e3ac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BoxInTheBox/Assets/Low Poly Weapons VOL.1/Models/M1911.fbx using Guid(b812e42521a5a27499e76cc5ed56e3ac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1961975a8740a69a42a489093525969c') in 0.034430 seconds
+  Import took 0.038271 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000191 seconds.
+  path: Assets/BoxInTheBox/Assets/Low Poly Weapons VOL.1/Models/SR_Scope_00.fbx
+  artifactKey: Guid(2e652e63fbd52af41856733acbfe5c18) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BoxInTheBox/Assets/Low Poly Weapons VOL.1/Models/SR_Scope_00.fbx using Guid(2e652e63fbd52af41856733acbfe5c18) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ebbb71a59a4cbac8d0d5fa88d2289a95') in 0.016968 seconds
+  Import took 0.020756 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000186 seconds.
+  path: Assets/BoxInTheBox/Assets/Low Poly Weapons VOL.1/Models/M1911.fbx
+  artifactKey: Guid(b812e42521a5a27499e76cc5ed56e3ac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BoxInTheBox/Assets/Low Poly Weapons VOL.1/Models/M1911.fbx using Guid(b812e42521a5a27499e76cc5ed56e3ac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1961975a8740a69a42a489093525969c') in 0.026346 seconds
+  Import took 0.029554 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000183 seconds.
+  path: Assets/BoxInTheBox/Assets/Low Poly Weapons VOL.1/Models/SR_Scope_00.fbx
+  artifactKey: Guid(2e652e63fbd52af41856733acbfe5c18) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BoxInTheBox/Assets/Low Poly Weapons VOL.1/Models/SR_Scope_00.fbx using Guid(2e652e63fbd52af41856733acbfe5c18) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ebbb71a59a4cbac8d0d5fa88d2289a95') in 0.016061 seconds
+  Import took 0.019106 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.030367 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.74 ms, found 9 plugins.
+Preloading 1 native plugins for Editor in 0.09 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+NullReferenceException: Object reference not set to an instance of an object
+  at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x00048] in C:\Users\Angelo\Documents\SAE\3Tesis\FrameworkVR\Library\PackageCache\com.unity.xr.oculus@1.8.1\Runtime\OculusLoader.cs:243 
+  at Unity.XR.Oculus.OculusLoader.EditorLoadOVRPlugin () [0x0007b] in C:\Users\Angelo\Documents\SAE\3Tesis\FrameworkVR\Library\PackageCache\com.unity.xr.oculus@1.8.1\Runtime\OculusLoader.cs:228 
+
+(Filename: C:/Users/Angelo/Documents/SAE/3Tesis/FrameworkVR/Library/PackageCache/com.unity.xr.oculus@1.8.1/Runtime/OculusLoader.cs Line: 243)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  0.798 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.70 ms, found 9 plugins.
+Preloading 1 native plugins for Editor in 0.08 ms.
+Unloading 1868 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 176.9 MB.
+System memory in use after: 177.0 MB.
+
+Unloading 26 unused Assets to reduce memory usage. Loaded Objects now: 2415.
+Total: 2.236400 ms (FindLiveObjects: 0.269600 ms CreateObjectMapping: 0.045500 ms MarkObjects: 1.812500 ms  DeleteObjects: 0.107700 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 1992.587935 seconds.
+  path: Assets/BoxInTheBox/Prefabs/Firearms/Uzi.prefab
+  artifactKey: Guid(02c81f56a0fc6084aab1dfd43b9a9a55) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BoxInTheBox/Prefabs/Firearms/Uzi.prefab using Guid(02c81f56a0fc6084aab1dfd43b9a9a55) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '176fae0dede1e7aa0149b83aaf3aa4f3') in 0.102277 seconds
+  Import took 0.106909 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.718568 seconds.
+  path: Assets/BoxInTheBox/Prefabs/Firearms/UziMag.prefab
+  artifactKey: Guid(25bf27ec8dce9524b8c2199ce92a25fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BoxInTheBox/Prefabs/Firearms/UziMag.prefab using Guid(25bf27ec8dce9524b8c2199ce92a25fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '868dbba34c4c9bc85325e53d4637b48d') in 0.014138 seconds
+  Import took 0.017905 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.045656 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.82 ms, found 9 plugins.
+Preloading 1 native plugins for Editor in 0.09 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+NullReferenceException: Object reference not set to an instance of an object
+  at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x00048] in C:\Users\Angelo\Documents\SAE\3Tesis\FrameworkVR\Library\PackageCache\com.unity.xr.oculus@1.8.1\Runtime\OculusLoader.cs:243 
+  at Unity.XR.Oculus.OculusLoader.EditorLoadOVRPlugin () [0x0007b] in C:\Users\Angelo\Documents\SAE\3Tesis\FrameworkVR\Library\PackageCache\com.unity.xr.oculus@1.8.1\Runtime\OculusLoader.cs:228 
+
+(Filename: C:/Users/Angelo/Documents/SAE/3Tesis/FrameworkVR/Library/PackageCache/com.unity.xr.oculus@1.8.1/Runtime/OculusLoader.cs Line: 243)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  0.780 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.74 ms, found 9 plugins.
+Preloading 1 native plugins for Editor in 0.08 ms.
+Unloading 1868 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 176.9 MB.
+System memory in use after: 177.0 MB.
+
+Unloading 26 unused Assets to reduce memory usage. Loaded Objects now: 2420.
+Total: 2.313000 ms (FindLiveObjects: 0.257000 ms CreateObjectMapping: 0.039200 ms MarkObjects: 1.920200 ms  DeleteObjects: 0.095600 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.382646 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.72 ms, found 9 plugins.
+Preloading 1 native plugins for Editor in 0.08 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+NullReferenceException: Object reference not set to an instance of an object
+  at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x00048] in C:\Users\Angelo\Documents\SAE\3Tesis\FrameworkVR\Library\PackageCache\com.unity.xr.oculus@1.8.1\Runtime\OculusLoader.cs:243 
+  at Unity.XR.Oculus.OculusLoader.EditorLoadOVRPlugin () [0x0007b] in C:\Users\Angelo\Documents\SAE\3Tesis\FrameworkVR\Library\PackageCache\com.unity.xr.oculus@1.8.1\Runtime\OculusLoader.cs:228 
+
+(Filename: C:/Users/Angelo/Documents/SAE/3Tesis/FrameworkVR/Library/PackageCache/com.unity.xr.oculus@1.8.1/Runtime/OculusLoader.cs Line: 243)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  0.807 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.69 ms, found 9 plugins.
+Preloading 1 native plugins for Editor in 0.08 ms.
+Unloading 1868 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 177.0 MB.
+System memory in use after: 177.0 MB.
+
+Unloading 24 unused Assets to reduce memory usage. Loaded Objects now: 2424.
+Total: 2.100000 ms (FindLiveObjects: 0.234200 ms CreateObjectMapping: 0.059200 ms MarkObjects: 1.719000 ms  DeleteObjects: 0.086200 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.243579 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.70 ms, found 9 plugins.
+Preloading 1 native plugins for Editor in 0.08 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+NullReferenceException: Object reference not set to an instance of an object
+  at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x00048] in C:\Users\Angelo\Documents\SAE\3Tesis\FrameworkVR\Library\PackageCache\com.unity.xr.oculus@1.8.1\Runtime\OculusLoader.cs:243 
+  at Unity.XR.Oculus.OculusLoader.EditorLoadOVRPlugin () [0x0007b] in C:\Users\Angelo\Documents\SAE\3Tesis\FrameworkVR\Library\PackageCache\com.unity.xr.oculus@1.8.1\Runtime\OculusLoader.cs:228 
+
+(Filename: C:/Users/Angelo/Documents/SAE/3Tesis/FrameworkVR/Library/PackageCache/com.unity.xr.oculus@1.8.1/Runtime/OculusLoader.cs Line: 243)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  0.784 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.79 ms, found 9 plugins.
+Preloading 1 native plugins for Editor in 0.10 ms.
+Unloading 1868 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 177.0 MB.
+System memory in use after: 177.1 MB.
+
+Unloading 24 unused Assets to reduce memory usage. Loaded Objects now: 2428.
+Total: 2.425900 ms (FindLiveObjects: 0.275400 ms CreateObjectMapping: 0.043100 ms MarkObjects: 1.988700 ms  DeleteObjects: 0.117000 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.004498 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.74 ms, found 9 plugins.
+Preloading 1 native plugins for Editor in 0.08 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+NullReferenceException: Object reference not set to an instance of an object
+  at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x00048] in C:\Users\Angelo\Documents\SAE\3Tesis\FrameworkVR\Library\PackageCache\com.unity.xr.oculus@1.8.1\Runtime\OculusLoader.cs:243 
+  at Unity.XR.Oculus.OculusLoader.EditorLoadOVRPlugin () [0x0007b] in C:\Users\Angelo\Documents\SAE\3Tesis\FrameworkVR\Library\PackageCache\com.unity.xr.oculus@1.8.1\Runtime\OculusLoader.cs:228 
+
+(Filename: C:/Users/Angelo/Documents/SAE/3Tesis/FrameworkVR/Library/PackageCache/com.unity.xr.oculus@1.8.1/Runtime/OculusLoader.cs Line: 243)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  0.735 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.71 ms, found 9 plugins.
+Preloading 1 native plugins for Editor in 0.08 ms.
+Unloading 1868 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 177.0 MB.
+System memory in use after: 177.1 MB.
+
+Unloading 24 unused Assets to reduce memory usage. Loaded Objects now: 2432.
+Total: 2.000700 ms (FindLiveObjects: 0.249700 ms CreateObjectMapping: 0.044200 ms MarkObjects: 1.626000 ms  DeleteObjects: 0.079700 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 2512.472385 seconds.
+  path: Assets/BoxInTheBox/Prefabs/Firearms/RocketRPGMag.prefab
+  artifactKey: Guid(7bccb928cde7dad46852dc3bb681516c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BoxInTheBox/Prefabs/Firearms/RocketRPGMag.prefab using Guid(7bccb928cde7dad46852dc3bb681516c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f9e2426f9613cd98dae33c115a6e1294') in 0.074375 seconds
+  Import took 0.078375 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 8.133029 seconds.
+  path: Assets/BoxInTheBox/Prefabs/Firearms/RPG.prefab
+  artifactKey: Guid(6d80a9f3da3cc6d41a109053638bf828) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BoxInTheBox/Prefabs/Firearms/RPG.prefab using Guid(6d80a9f3da3cc6d41a109053638bf828) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '264eaec8d6eb054d3eaae55571c9560c') in 0.023771 seconds
+  Import took 0.027387 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.004553 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.75 ms, found 9 plugins.
+Preloading 1 native plugins for Editor in 0.09 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+NullReferenceException: Object reference not set to an instance of an object
+  at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x00048] in C:\Users\Angelo\Documents\SAE\3Tesis\FrameworkVR\Library\PackageCache\com.unity.xr.oculus@1.8.1\Runtime\OculusLoader.cs:243 
+  at Unity.XR.Oculus.OculusLoader.EditorLoadOVRPlugin () [0x0007b] in C:\Users\Angelo\Documents\SAE\3Tesis\FrameworkVR\Library\PackageCache\com.unity.xr.oculus@1.8.1\Runtime\OculusLoader.cs:228 
+
+(Filename: C:/Users/Angelo/Documents/SAE/3Tesis/FrameworkVR/Library/PackageCache/com.unity.xr.oculus@1.8.1/Runtime/OculusLoader.cs Line: 243)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  0.747 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.71 ms, found 9 plugins.
+Preloading 1 native plugins for Editor in 0.08 ms.
+Unloading 1868 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 177.1 MB.
+System memory in use after: 177.2 MB.
+
+Unloading 24 unused Assets to reduce memory usage. Loaded Objects now: 2437.
+Total: 1.953500 ms (FindLiveObjects: 0.214600 ms CreateObjectMapping: 0.041700 ms MarkObjects: 1.614600 ms  DeleteObjects: 0.081600 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.004666 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.74 ms, found 9 plugins.
+Preloading 1 native plugins for Editor in 0.09 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+NullReferenceException: Object reference not set to an instance of an object
+  at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x00048] in C:\Users\Angelo\Documents\SAE\3Tesis\FrameworkVR\Library\PackageCache\com.unity.xr.oculus@1.8.1\Runtime\OculusLoader.cs:243 
+  at Unity.XR.Oculus.OculusLoader.EditorLoadOVRPlugin () [0x0007b] in C:\Users\Angelo\Documents\SAE\3Tesis\FrameworkVR\Library\PackageCache\com.unity.xr.oculus@1.8.1\Runtime\OculusLoader.cs:228 
+
+(Filename: C:/Users/Angelo/Documents/SAE/3Tesis/FrameworkVR/Library/PackageCache/com.unity.xr.oculus@1.8.1/Runtime/OculusLoader.cs Line: 243)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  0.745 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.71 ms, found 9 plugins.
+Preloading 1 native plugins for Editor in 0.08 ms.
+Unloading 1868 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 177.1 MB.
+System memory in use after: 177.2 MB.
+
+Unloading 24 unused Assets to reduce memory usage. Loaded Objects now: 2441.
+Total: 2.204900 ms (FindLiveObjects: 0.292500 ms CreateObjectMapping: 0.057400 ms MarkObjects: 1.753600 ms  DeleteObjects: 0.100600 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 264.213339 seconds.
+  path: Assets/BoxInTheBox/Scripts/Guns
+  artifactKey: Guid(36a707f75930ad342a888e7162ef1719) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BoxInTheBox/Scripts/Guns using Guid(36a707f75930ad342a888e7162ef1719) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9a97ed037c3ec958e43e98b8a82b9d35') in 0.007078 seconds
+  Import took 0.014365 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 8.003483 seconds.
+  path: Assets/BoxInTheBox/Scripts/Guns/RocketProjectile.cs
+  artifactKey: Guid(9ef1bfba8b2ee35428abc1ad94c90e8f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BoxInTheBox/Scripts/Guns/RocketProjectile.cs using Guid(9ef1bfba8b2ee35428abc1ad94c90e8f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3ec5a05539fa528653446c9232d8a9cd') in 0.027766 seconds
+  Import took 0.035104 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.004831 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.82 ms, found 9 plugins.
+Preloading 1 native plugins for Editor in 0.10 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+NullReferenceException: Object reference not set to an instance of an object
+  at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x00048] in C:\Users\Angelo\Documents\SAE\3Tesis\FrameworkVR\Library\PackageCache\com.unity.xr.oculus@1.8.1\Runtime\OculusLoader.cs:243 
+  at Unity.XR.Oculus.OculusLoader.EditorLoadOVRPlugin () [0x0007b] in C:\Users\Angelo\Documents\SAE\3Tesis\FrameworkVR\Library\PackageCache\com.unity.xr.oculus@1.8.1\Runtime\OculusLoader.cs:228 
+
+(Filename: C:/Users/Angelo/Documents/SAE/3Tesis/FrameworkVR/Library/PackageCache/com.unity.xr.oculus@1.8.1/Runtime/OculusLoader.cs Line: 243)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  0.824 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.76 ms, found 9 plugins.
+Preloading 1 native plugins for Editor in 0.08 ms.
+Unloading 1869 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 177.1 MB.
+System memory in use after: 177.2 MB.
+
+Unloading 24 unused Assets to reduce memory usage. Loaded Objects now: 2446.
+Total: 2.124700 ms (FindLiveObjects: 0.240900 ms CreateObjectMapping: 0.042400 ms MarkObjects: 1.750700 ms  DeleteObjects: 0.089800 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.004933 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.73 ms, found 9 plugins.
+Preloading 1 native plugins for Editor in 0.09 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+NullReferenceException: Object reference not set to an instance of an object
+  at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x00048] in C:\Users\Angelo\Documents\SAE\3Tesis\FrameworkVR\Library\PackageCache\com.unity.xr.oculus@1.8.1\Runtime\OculusLoader.cs:243 
+  at Unity.XR.Oculus.OculusLoader.EditorLoadOVRPlugin () [0x0007b] in C:\Users\Angelo\Documents\SAE\3Tesis\FrameworkVR\Library\PackageCache\com.unity.xr.oculus@1.8.1\Runtime\OculusLoader.cs:228 
+
+(Filename: C:/Users/Angelo/Documents/SAE/3Tesis/FrameworkVR/Library/PackageCache/com.unity.xr.oculus@1.8.1/Runtime/OculusLoader.cs Line: 243)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  0.746 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.79 ms, found 9 plugins.
+Preloading 1 native plugins for Editor in 0.08 ms.
+Unloading 1869 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 177.1 MB.
+System memory in use after: 177.2 MB.
+
+Unloading 24 unused Assets to reduce memory usage. Loaded Objects now: 2450.
+Total: 2.217900 ms (FindLiveObjects: 0.232400 ms CreateObjectMapping: 0.043500 ms MarkObjects: 1.847300 ms  DeleteObjects: 0.093500 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.004727 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.73 ms, found 9 plugins.
+Preloading 1 native plugins for Editor in 0.09 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+NullReferenceException: Object reference not set to an instance of an object
+  at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x00048] in C:\Users\Angelo\Documents\SAE\3Tesis\FrameworkVR\Library\PackageCache\com.unity.xr.oculus@1.8.1\Runtime\OculusLoader.cs:243 
+  at Unity.XR.Oculus.OculusLoader.EditorLoadOVRPlugin () [0x0007b] in C:\Users\Angelo\Documents\SAE\3Tesis\FrameworkVR\Library\PackageCache\com.unity.xr.oculus@1.8.1\Runtime\OculusLoader.cs:228 
+
+(Filename: C:/Users/Angelo/Documents/SAE/3Tesis/FrameworkVR/Library/PackageCache/com.unity.xr.oculus@1.8.1/Runtime/OculusLoader.cs Line: 243)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  0.749 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.73 ms, found 9 plugins.
+Preloading 1 native plugins for Editor in 0.09 ms.
+Unloading 1869 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 177.1 MB.
+System memory in use after: 177.2 MB.
+
+Unloading 24 unused Assets to reduce memory usage. Loaded Objects now: 2454.
+Total: 2.126200 ms (FindLiveObjects: 0.220100 ms CreateObjectMapping: 0.041700 ms MarkObjects: 1.782700 ms  DeleteObjects: 0.080600 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.004483 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.77 ms, found 9 plugins.
+Preloading 1 native plugins for Editor in 0.09 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+NullReferenceException: Object reference not set to an instance of an object
+  at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x00048] in C:\Users\Angelo\Documents\SAE\3Tesis\FrameworkVR\Library\PackageCache\com.unity.xr.oculus@1.8.1\Runtime\OculusLoader.cs:243 
+  at Unity.XR.Oculus.OculusLoader.EditorLoadOVRPlugin () [0x0007b] in C:\Users\Angelo\Documents\SAE\3Tesis\FrameworkVR\Library\PackageCache\com.unity.xr.oculus@1.8.1\Runtime\OculusLoader.cs:228 
+
+(Filename: C:/Users/Angelo/Documents/SAE/3Tesis/FrameworkVR/Library/PackageCache/com.unity.xr.oculus@1.8.1/Runtime/OculusLoader.cs Line: 243)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  0.758 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.70 ms, found 9 plugins.
+Preloading 1 native plugins for Editor in 0.08 ms.
+Unloading 1869 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 177.2 MB.
+System memory in use after: 177.2 MB.
+
+Unloading 24 unused Assets to reduce memory usage. Loaded Objects now: 2458.
+Total: 2.170100 ms (FindLiveObjects: 0.312100 ms CreateObjectMapping: 0.046400 ms MarkObjects: 1.722400 ms  DeleteObjects: 0.088100 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.004881 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.85 ms, found 9 plugins.
+Preloading 1 native plugins for Editor in 0.11 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+NullReferenceException: Object reference not set to an instance of an object
+  at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x00048] in C:\Users\Angelo\Documents\SAE\3Tesis\FrameworkVR\Library\PackageCache\com.unity.xr.oculus@1.8.1\Runtime\OculusLoader.cs:243 
+  at Unity.XR.Oculus.OculusLoader.EditorLoadOVRPlugin () [0x0007b] in C:\Users\Angelo\Documents\SAE\3Tesis\FrameworkVR\Library\PackageCache\com.unity.xr.oculus@1.8.1\Runtime\OculusLoader.cs:228 
+
+(Filename: C:/Users/Angelo/Documents/SAE/3Tesis/FrameworkVR/Library/PackageCache/com.unity.xr.oculus@1.8.1/Runtime/OculusLoader.cs Line: 243)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  0.764 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.75 ms, found 9 plugins.
+Preloading 1 native plugins for Editor in 0.08 ms.
+Unloading 1869 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 177.2 MB.
+System memory in use after: 177.3 MB.
+
+Unloading 24 unused Assets to reduce memory usage. Loaded Objects now: 2462.
+Total: 2.064800 ms (FindLiveObjects: 0.274400 ms CreateObjectMapping: 0.056500 ms MarkObjects: 1.651800 ms  DeleteObjects: 0.080900 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.004817 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.74 ms, found 9 plugins.
+Preloading 1 native plugins for Editor in 0.08 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+NullReferenceException: Object reference not set to an instance of an object
+  at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x00048] in C:\Users\Angelo\Documents\SAE\3Tesis\FrameworkVR\Library\PackageCache\com.unity.xr.oculus@1.8.1\Runtime\OculusLoader.cs:243 
+  at Unity.XR.Oculus.OculusLoader.EditorLoadOVRPlugin () [0x0007b] in C:\Users\Angelo\Documents\SAE\3Tesis\FrameworkVR\Library\PackageCache\com.unity.xr.oculus@1.8.1\Runtime\OculusLoader.cs:228 
+
+(Filename: C:/Users/Angelo/Documents/SAE/3Tesis/FrameworkVR/Library/PackageCache/com.unity.xr.oculus@1.8.1/Runtime/OculusLoader.cs Line: 243)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  0.792 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.77 ms, found 9 plugins.
+Preloading 1 native plugins for Editor in 0.08 ms.
+Unloading 1869 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 177.2 MB.
+System memory in use after: 177.3 MB.
+
+Unloading 24 unused Assets to reduce memory usage. Loaded Objects now: 2466.
+Total: 2.254900 ms (FindLiveObjects: 0.255500 ms CreateObjectMapping: 0.043300 ms MarkObjects: 1.856100 ms  DeleteObjects: 0.098700 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.004693 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.74 ms, found 9 plugins.
+Preloading 1 native plugins for Editor in 0.08 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+NullReferenceException: Object reference not set to an instance of an object
+  at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x00048] in C:\Users\Angelo\Documents\SAE\3Tesis\FrameworkVR\Library\PackageCache\com.unity.xr.oculus@1.8.1\Runtime\OculusLoader.cs:243 
+  at Unity.XR.Oculus.OculusLoader.EditorLoadOVRPlugin () [0x0007b] in C:\Users\Angelo\Documents\SAE\3Tesis\FrameworkVR\Library\PackageCache\com.unity.xr.oculus@1.8.1\Runtime\OculusLoader.cs:228 
+
+(Filename: C:/Users/Angelo/Documents/SAE/3Tesis/FrameworkVR/Library/PackageCache/com.unity.xr.oculus@1.8.1/Runtime/OculusLoader.cs Line: 243)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  0.750 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.78 ms, found 9 plugins.
+Preloading 1 native plugins for Editor in 0.08 ms.
+Unloading 1869 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 177.2 MB.
+System memory in use after: 177.3 MB.
+
+Unloading 24 unused Assets to reduce memory usage. Loaded Objects now: 2470.
+Total: 2.687800 ms (FindLiveObjects: 0.204300 ms CreateObjectMapping: 0.042300 ms MarkObjects: 2.335200 ms  DeleteObjects: 0.104800 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.004590 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.73 ms, found 9 plugins.
+Preloading 1 native plugins for Editor in 0.08 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+NullReferenceException: Object reference not set to an instance of an object
+  at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x00048] in C:\Users\Angelo\Documents\SAE\3Tesis\FrameworkVR\Library\PackageCache\com.unity.xr.oculus@1.8.1\Runtime\OculusLoader.cs:243 
+  at Unity.XR.Oculus.OculusLoader.EditorLoadOVRPlugin () [0x0007b] in C:\Users\Angelo\Documents\SAE\3Tesis\FrameworkVR\Library\PackageCache\com.unity.xr.oculus@1.8.1\Runtime\OculusLoader.cs:228 
+
+(Filename: C:/Users/Angelo/Documents/SAE/3Tesis/FrameworkVR/Library/PackageCache/com.unity.xr.oculus@1.8.1/Runtime/OculusLoader.cs Line: 243)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  0.771 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.76 ms, found 9 plugins.
+Preloading 1 native plugins for Editor in 0.09 ms.
+Unloading 1870 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 177.2 MB.
+System memory in use after: 177.3 MB.
+
+Unloading 24 unused Assets to reduce memory usage. Loaded Objects now: 2475.
+Total: 2.289300 ms (FindLiveObjects: 0.275200 ms CreateObjectMapping: 0.068200 ms MarkObjects: 1.848600 ms  DeleteObjects: 0.096300 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 829.671039 seconds.
+  path: Assets/BoxInTheBox/Scripts/Guns/RocketSpawner.cs
+  artifactKey: Guid(59f537e75f9767f448e205399690ef4e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BoxInTheBox/Scripts/Guns/RocketSpawner.cs using Guid(59f537e75f9767f448e205399690ef4e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0bce3995af0007ce288043ae2a7eacc4') in 0.008006 seconds
+  Import took 0.011796 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.006247 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.73 ms, found 9 plugins.
+Preloading 1 native plugins for Editor in 0.08 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+NullReferenceException: Object reference not set to an instance of an object
+  at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x00048] in C:\Users\Angelo\Documents\SAE\3Tesis\FrameworkVR\Library\PackageCache\com.unity.xr.oculus@1.8.1\Runtime\OculusLoader.cs:243 
+  at Unity.XR.Oculus.OculusLoader.EditorLoadOVRPlugin () [0x0007b] in C:\Users\Angelo\Documents\SAE\3Tesis\FrameworkVR\Library\PackageCache\com.unity.xr.oculus@1.8.1\Runtime\OculusLoader.cs:228 
+
+(Filename: C:/Users/Angelo/Documents/SAE/3Tesis/FrameworkVR/Library/PackageCache/com.unity.xr.oculus@1.8.1/Runtime/OculusLoader.cs Line: 243)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  0.773 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.80 ms, found 9 plugins.
+Preloading 1 native plugins for Editor in 0.11 ms.
+Unloading 1870 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 177.2 MB.
+System memory in use after: 177.3 MB.
+
+Unloading 24 unused Assets to reduce memory usage. Loaded Objects now: 2479.
+Total: 2.123800 ms (FindLiveObjects: 0.208300 ms CreateObjectMapping: 0.043300 ms MarkObjects: 1.783300 ms  DeleteObjects: 0.087900 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.005067 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 1.07 ms, found 9 plugins.
+Preloading 1 native plugins for Editor in 0.11 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+NullReferenceException: Object reference not set to an instance of an object
+  at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x00048] in C:\Users\Angelo\Documents\SAE\3Tesis\FrameworkVR\Library\PackageCache\com.unity.xr.oculus@1.8.1\Runtime\OculusLoader.cs:243 
+  at Unity.XR.Oculus.OculusLoader.EditorLoadOVRPlugin () [0x0007b] in C:\Users\Angelo\Documents\SAE\3Tesis\FrameworkVR\Library\PackageCache\com.unity.xr.oculus@1.8.1\Runtime\OculusLoader.cs:228 
+
+(Filename: C:/Users/Angelo/Documents/SAE/3Tesis/FrameworkVR/Library/PackageCache/com.unity.xr.oculus@1.8.1/Runtime/OculusLoader.cs Line: 243)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  0.763 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.72 ms, found 9 plugins.
+Preloading 1 native plugins for Editor in 0.08 ms.
+Unloading 1870 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 177.2 MB.
+System memory in use after: 177.3 MB.
+
+Unloading 24 unused Assets to reduce memory usage. Loaded Objects now: 2483.
+Total: 2.205300 ms (FindLiveObjects: 0.250400 ms CreateObjectMapping: 0.044600 ms MarkObjects: 1.810800 ms  DeleteObjects: 0.098600 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 473.576678 seconds.
+  path: Assets/BoxInTheBox/Prefabs/Melee/DoubleAxe.prefab
+  artifactKey: Guid(305faffb32f3e47419c6494c7ef162b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BoxInTheBox/Prefabs/Melee/DoubleAxe.prefab using Guid(305faffb32f3e47419c6494c7ef162b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8b7a0359c27d6c1b64e1c7bbf4275f79') in 0.172474 seconds
+  Import took 0.176398 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000165 seconds.
+  path: Assets/BoxInTheBox/Prefabs/Melee/Sword.prefab
+  artifactKey: Guid(b1a506c1f2951f14bacfa942ce22fdea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BoxInTheBox/Prefabs/Melee/Sword.prefab using Guid(b1a506c1f2951f14bacfa942ce22fdea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f427557402e39228fec2e2a7638de813') in 0.099210 seconds
+  Import took 0.102943 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000170 seconds.
+  path: Assets/BoxInTheBox/Prefabs/Melee/OneSideAxe.prefab
+  artifactKey: Guid(5a0d7087cb3fdd24583df5b288723f0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BoxInTheBox/Prefabs/Melee/OneSideAxe.prefab using Guid(5a0d7087cb3fdd24583df5b288723f0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bba57935c0b49284f4bcda9f86cde7c4') in 0.090615 seconds
+  Import took 0.094802 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.174390 seconds.
+  path: Assets/BoxInTheBox/Prefabs/Firearms/RPG.prefab
+  artifactKey: Guid(6d80a9f3da3cc6d41a109053638bf828) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BoxInTheBox/Prefabs/Firearms/RPG.prefab using Guid(6d80a9f3da3cc6d41a109053638bf828) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0cb4de424ec8aac6d00790e8b880b6d0') in 0.022022 seconds
+  Import took 0.026246 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.600951 seconds.
+  path: Assets/BoxInTheBox/Prefabs/Firearms/Rocket.prefab
+  artifactKey: Guid(71dc8514525b4b74cae2c5afecc6a0f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BoxInTheBox/Prefabs/Firearms/Rocket.prefab using Guid(71dc8514525b4b74cae2c5afecc6a0f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '97d91c96f497c77f6895ab2d564c3934') in 0.013821 seconds
+  Import took 0.017939 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001524 seconds.
+  path: Assets/BoxInTheBox/Prefabs/Firearms/Rocket.prefab
+  artifactKey: Guid(71dc8514525b4b74cae2c5afecc6a0f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BoxInTheBox/Prefabs/Firearms/Rocket.prefab using Guid(71dc8514525b4b74cae2c5afecc6a0f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '97d91c96f497c77f6895ab2d564c3934') in 0.007461 seconds
+  Import took 0.010026 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 88.946788 seconds.
+  path: Assets/BoxInTheBox/Prefabs/Firearms/RPG.prefab
+  artifactKey: Guid(6d80a9f3da3cc6d41a109053638bf828) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BoxInTheBox/Prefabs/Firearms/RPG.prefab using Guid(6d80a9f3da3cc6d41a109053638bf828) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0b22ddae6ca3e1683756cf11758da747') in 0.016053 seconds
+  Import took 0.019816 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.005977 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 1.15 ms, found 9 plugins.
+Preloading 1 native plugins for Editor in 0.12 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+NullReferenceException: Object reference not set to an instance of an object
+  at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x00048] in C:\Users\Angelo\Documents\SAE\3Tesis\FrameworkVR\Library\PackageCache\com.unity.xr.oculus@1.8.1\Runtime\OculusLoader.cs:243 
+  at Unity.XR.Oculus.OculusLoader.EditorLoadOVRPlugin () [0x0007b] in C:\Users\Angelo\Documents\SAE\3Tesis\FrameworkVR\Library\PackageCache\com.unity.xr.oculus@1.8.1\Runtime\OculusLoader.cs:228 
+
+(Filename: C:/Users/Angelo/Documents/SAE/3Tesis/FrameworkVR/Library/PackageCache/com.unity.xr.oculus@1.8.1/Runtime/OculusLoader.cs Line: 243)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  0.908 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.91 ms, found 9 plugins.
+Preloading 1 native plugins for Editor in 0.15 ms.
+Unloading 1870 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 177.3 MB.
+System memory in use after: 177.4 MB.
+
+Unloading 26 unused Assets to reduce memory usage. Loaded Objects now: 2488.
+Total: 2.124600 ms (FindLiveObjects: 0.273000 ms CreateObjectMapping: 0.044300 ms MarkObjects: 1.688900 ms  DeleteObjects: 0.117100 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 357.725494 seconds.
+  path: Assets/BoxInTheBox/Prefabs/Firearms/RocketRPGMag.prefab
+  artifactKey: Guid(7bccb928cde7dad46852dc3bb681516c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BoxInTheBox/Prefabs/Firearms/RocketRPGMag.prefab using Guid(7bccb928cde7dad46852dc3bb681516c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '90562a7d65453aa45fc21c7d58abbef9') in 0.060636 seconds
+  Import took 0.066735 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 34.027456 seconds.
+  path: Assets/BoxInTheBox/Prefabs/Firearms/PistolMag.prefab
+  artifactKey: Guid(d8d4d08a5ed16284e8ef50a01c40982d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BoxInTheBox/Prefabs/Firearms/PistolMag.prefab using Guid(d8d4d08a5ed16284e8ef50a01c40982d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b5c68df1443a05f7dc7bb91d61b98d07') in 0.035491 seconds
+  Import took 0.039402 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.752604 seconds.
+  path: Assets/BoxInTheBox/Prefabs/Firearms/PistolMag.prefab
+  artifactKey: Guid(d8d4d08a5ed16284e8ef50a01c40982d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BoxInTheBox/Prefabs/Firearms/PistolMag.prefab using Guid(d8d4d08a5ed16284e8ef50a01c40982d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '646041126b3bd0b63a03075c836d3270') in 0.008125 seconds
+  Import took 0.011965 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.022425 seconds.
+  path: Assets/BoxInTheBox/Prefabs/Firearms/PistolMag.prefab
+  artifactKey: Guid(d8d4d08a5ed16284e8ef50a01c40982d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BoxInTheBox/Prefabs/Firearms/PistolMag.prefab using Guid(d8d4d08a5ed16284e8ef50a01c40982d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7df9a92483bfde652db1422a80cd2c54') in 0.009642 seconds
+  Import took 0.013159 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 60.168335 seconds.
+  path: Assets/BoxInTheBox/Prefabs/Firearms/Pistol.prefab
+  artifactKey: Guid(09d995e362efcb543b2e3ee899f688c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BoxInTheBox/Prefabs/Firearms/Pistol.prefab using Guid(09d995e362efcb543b2e3ee899f688c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b5f9681f5f5e73c3f3c7d5c9651a14f4') in 0.033603 seconds
+  Import took 0.037534 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.124100 seconds.
+  path: Assets/BoxInTheBox/Prefabs/Firearms/Pistol.prefab
+  artifactKey: Guid(09d995e362efcb543b2e3ee899f688c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BoxInTheBox/Prefabs/Firearms/Pistol.prefab using Guid(09d995e362efcb543b2e3ee899f688c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c2227d7cda6067b883ad9b1813ff7fe6') in 0.013059 seconds
+  Import took 0.016936 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.989232 seconds.
+  path: Assets/BoxInTheBox/Prefabs/Firearms/Pistol.prefab
+  artifactKey: Guid(09d995e362efcb543b2e3ee899f688c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BoxInTheBox/Prefabs/Firearms/Pistol.prefab using Guid(09d995e362efcb543b2e3ee899f688c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1d606f6388981a6bb3ed652f97ce4bcc') in 0.011286 seconds
+  Import took 0.015883 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 14.195889 seconds.
+  path: Assets/BoxInTheBox/Prefabs/Firearms/PistolMag.prefab
+  artifactKey: Guid(d8d4d08a5ed16284e8ef50a01c40982d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BoxInTheBox/Prefabs/Firearms/PistolMag.prefab using Guid(d8d4d08a5ed16284e8ef50a01c40982d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a7be82089762e126aef46df3ada50922') in 0.008931 seconds
+  Import took 0.012680 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.004664 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.73 ms, found 9 plugins.
+Preloading 1 native plugins for Editor in 0.08 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+NullReferenceException: Object reference not set to an instance of an object
+  at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x00048] in C:\Users\Angelo\Documents\SAE\3Tesis\FrameworkVR\Library\PackageCache\com.unity.xr.oculus@1.8.1\Runtime\OculusLoader.cs:243 
+  at Unity.XR.Oculus.OculusLoader.EditorLoadOVRPlugin () [0x0007b] in C:\Users\Angelo\Documents\SAE\3Tesis\FrameworkVR\Library\PackageCache\com.unity.xr.oculus@1.8.1\Runtime\OculusLoader.cs:228 
+
+(Filename: C:/Users/Angelo/Documents/SAE/3Tesis/FrameworkVR/Library/PackageCache/com.unity.xr.oculus@1.8.1/Runtime/OculusLoader.cs Line: 243)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  0.792 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.77 ms, found 9 plugins.
+Preloading 1 native plugins for Editor in 0.08 ms.
+Unloading 1870 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 177.3 MB.
+System memory in use after: 177.4 MB.
+
+Unloading 26 unused Assets to reduce memory usage. Loaded Objects now: 2493.
+Total: 2.256300 ms (FindLiveObjects: 0.248300 ms CreateObjectMapping: 0.043100 ms MarkObjects: 1.848500 ms  DeleteObjects: 0.114900 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 150.342113 seconds.
+  path: Assets/BoxInTheBox/Prefabs/Firearms/RocketRPGMag.prefab
+  artifactKey: Guid(7bccb928cde7dad46852dc3bb681516c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BoxInTheBox/Prefabs/Firearms/RocketRPGMag.prefab using Guid(7bccb928cde7dad46852dc3bb681516c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1707d9b812b7b4d60879fe6e26c7e396') in 0.081453 seconds
+  Import took 0.085888 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 15.950012 seconds.
+  path: Assets/BoxInTheBox/Prefabs/Firearms/Rifle.prefab
+  artifactKey: Guid(2f87014f678837b43bfee2bf7df053fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BoxInTheBox/Prefabs/Firearms/Rifle.prefab using Guid(2f87014f678837b43bfee2bf7df053fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0201e2242245fe836dddf62210983985') in 0.044764 seconds
+  Import took 0.049049 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 25.909508 seconds.
+  path: Assets/BoxInTheBox/Prefabs/Firearms/RocketRPGMag.prefab
+  artifactKey: Guid(7bccb928cde7dad46852dc3bb681516c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BoxInTheBox/Prefabs/Firearms/RocketRPGMag.prefab using Guid(7bccb928cde7dad46852dc3bb681516c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1a883fed05d47a862af89087b7907b46') in 0.007794 seconds
+  Import took 0.011684 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 25.207984 seconds.
+  path: Assets/BoxInTheBox/Prefabs/Firearms/RPG.prefab
+  artifactKey: Guid(6d80a9f3da3cc6d41a109053638bf828) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BoxInTheBox/Prefabs/Firearms/RPG.prefab using Guid(6d80a9f3da3cc6d41a109053638bf828) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0c13775cd7a10b2a37e76d675cd983f0') in 0.014250 seconds
+  Import took 0.018493 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.225600 seconds.
+  path: Assets/BoxInTheBox/Prefabs/Firearms/RPG.prefab
+  artifactKey: Guid(6d80a9f3da3cc6d41a109053638bf828) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BoxInTheBox/Prefabs/Firearms/RPG.prefab using Guid(6d80a9f3da3cc6d41a109053638bf828) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9254f007e5f81fc6bd525080f8f42037') in 0.010559 seconds
+  Import took 0.015780 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.028191 seconds.
+  path: Assets/BoxInTheBox/Prefabs/Firearms/RPG.prefab
+  artifactKey: Guid(6d80a9f3da3cc6d41a109053638bf828) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BoxInTheBox/Prefabs/Firearms/RPG.prefab using Guid(6d80a9f3da3cc6d41a109053638bf828) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c4be84bdc8d887c84de536e7c9a402f5') in 0.009601 seconds
+  Import took 0.013740 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.005308 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.76 ms, found 9 plugins.
+Preloading 1 native plugins for Editor in 0.11 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+NullReferenceException: Object reference not set to an instance of an object
+  at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x00048] in C:\Users\Angelo\Documents\SAE\3Tesis\FrameworkVR\Library\PackageCache\com.unity.xr.oculus@1.8.1\Runtime\OculusLoader.cs:243 
+  at Unity.XR.Oculus.OculusLoader.EditorLoadOVRPlugin () [0x0007b] in C:\Users\Angelo\Documents\SAE\3Tesis\FrameworkVR\Library\PackageCache\com.unity.xr.oculus@1.8.1\Runtime\OculusLoader.cs:228 
+
+(Filename: C:/Users/Angelo/Documents/SAE/3Tesis/FrameworkVR/Library/PackageCache/com.unity.xr.oculus@1.8.1/Runtime/OculusLoader.cs Line: 243)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  0.798 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.79 ms, found 9 plugins.
+Preloading 1 native plugins for Editor in 0.09 ms.
+Unloading 1870 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 177.3 MB.
+System memory in use after: 177.4 MB.
+
+Unloading 26 unused Assets to reduce memory usage. Loaded Objects now: 2498.
+Total: 2.406600 ms (FindLiveObjects: 0.323100 ms CreateObjectMapping: 0.046800 ms MarkObjects: 1.924700 ms  DeleteObjects: 0.110200 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.004840 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.86 ms, found 9 plugins.
+Preloading 1 native plugins for Editor in 0.12 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+NullReferenceException: Object reference not set to an instance of an object
+  at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x00048] in C:\Users\Angelo\Documents\SAE\3Tesis\FrameworkVR\Library\PackageCache\com.unity.xr.oculus@1.8.1\Runtime\OculusLoader.cs:243 
+  at Unity.XR.Oculus.OculusLoader.EditorLoadOVRPlugin () [0x0007b] in C:\Users\Angelo\Documents\SAE\3Tesis\FrameworkVR\Library\PackageCache\com.unity.xr.oculus@1.8.1\Runtime\OculusLoader.cs:228 
+
+(Filename: C:/Users/Angelo/Documents/SAE/3Tesis/FrameworkVR/Library/PackageCache/com.unity.xr.oculus@1.8.1/Runtime/OculusLoader.cs Line: 243)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  0.828 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.78 ms, found 9 plugins.
+Preloading 1 native plugins for Editor in 0.09 ms.
+Unloading 1870 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 177.3 MB.
+System memory in use after: 177.4 MB.
+
+Unloading 24 unused Assets to reduce memory usage. Loaded Objects now: 2502.
+Total: 2.293600 ms (FindLiveObjects: 0.297900 ms CreateObjectMapping: 0.044600 ms MarkObjects: 1.834700 ms  DeleteObjects: 0.115000 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.004891 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.80 ms, found 9 plugins.
+Preloading 1 native plugins for Editor in 0.12 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+NullReferenceException: Object reference not set to an instance of an object
+  at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x00048] in C:\Users\Angelo\Documents\SAE\3Tesis\FrameworkVR\Library\PackageCache\com.unity.xr.oculus@1.8.1\Runtime\OculusLoader.cs:243 
+  at Unity.XR.Oculus.OculusLoader.EditorLoadOVRPlugin () [0x0007b] in C:\Users\Angelo\Documents\SAE\3Tesis\FrameworkVR\Library\PackageCache\com.unity.xr.oculus@1.8.1\Runtime\OculusLoader.cs:228 
+
+(Filename: C:/Users/Angelo/Documents/SAE/3Tesis/FrameworkVR/Library/PackageCache/com.unity.xr.oculus@1.8.1/Runtime/OculusLoader.cs Line: 243)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  0.814 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.79 ms, found 9 plugins.
+Preloading 1 native plugins for Editor in 0.08 ms.
+Unloading 1870 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 177.3 MB.
+System memory in use after: 177.4 MB.
+
+Unloading 24 unused Assets to reduce memory usage. Loaded Objects now: 2506.
+Total: 2.536000 ms (FindLiveObjects: 0.311200 ms CreateObjectMapping: 0.061700 ms MarkObjects: 2.065200 ms  DeleteObjects: 0.096700 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.005151 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.87 ms, found 9 plugins.
+Preloading 1 native plugins for Editor in 0.13 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+NullReferenceException: Object reference not set to an instance of an object
+  at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x00048] in C:\Users\Angelo\Documents\SAE\3Tesis\FrameworkVR\Library\PackageCache\com.unity.xr.oculus@1.8.1\Runtime\OculusLoader.cs:243 
+  at Unity.XR.Oculus.OculusLoader.EditorLoadOVRPlugin () [0x0007b] in C:\Users\Angelo\Documents\SAE\3Tesis\FrameworkVR\Library\PackageCache\com.unity.xr.oculus@1.8.1\Runtime\OculusLoader.cs:228 
+
+(Filename: C:/Users/Angelo/Documents/SAE/3Tesis/FrameworkVR/Library/PackageCache/com.unity.xr.oculus@1.8.1/Runtime/OculusLoader.cs Line: 243)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  0.833 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.80 ms, found 9 plugins.
+Preloading 1 native plugins for Editor in 0.09 ms.
+Unloading 1870 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 177.4 MB.
+System memory in use after: 177.4 MB.
+
+Unloading 24 unused Assets to reduce memory usage. Loaded Objects now: 2510.
+Total: 3.385200 ms (FindLiveObjects: 0.311700 ms CreateObjectMapping: 0.048100 ms MarkObjects: 2.896600 ms  DeleteObjects: 0.126600 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.004788 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.83 ms, found 9 plugins.
+Preloading 1 native plugins for Editor in 0.09 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+NullReferenceException: Object reference not set to an instance of an object
+  at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x00048] in C:\Users\Angelo\Documents\SAE\3Tesis\FrameworkVR\Library\PackageCache\com.unity.xr.oculus@1.8.1\Runtime\OculusLoader.cs:243 
+  at Unity.XR.Oculus.OculusLoader.EditorLoadOVRPlugin () [0x0007b] in C:\Users\Angelo\Documents\SAE\3Tesis\FrameworkVR\Library\PackageCache\com.unity.xr.oculus@1.8.1\Runtime\OculusLoader.cs:228 
+
+(Filename: C:/Users/Angelo/Documents/SAE/3Tesis/FrameworkVR/Library/PackageCache/com.unity.xr.oculus@1.8.1/Runtime/OculusLoader.cs Line: 243)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  0.804 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.81 ms, found 9 plugins.
+Preloading 1 native plugins for Editor in 0.08 ms.
+Unloading 1870 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 177.4 MB.
+System memory in use after: 177.5 MB.
+
+Unloading 24 unused Assets to reduce memory usage. Loaded Objects now: 2514.
+Total: 2.067900 ms (FindLiveObjects: 0.253800 ms CreateObjectMapping: 0.045200 ms MarkObjects: 1.683000 ms  DeleteObjects: 0.084600 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.004697 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.93 ms, found 9 plugins.
+Preloading 1 native plugins for Editor in 0.15 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+NullReferenceException: Object reference not set to an instance of an object
+  at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x00048] in C:\Users\Angelo\Documents\SAE\3Tesis\FrameworkVR\Library\PackageCache\com.unity.xr.oculus@1.8.1\Runtime\OculusLoader.cs:243 
+  at Unity.XR.Oculus.OculusLoader.EditorLoadOVRPlugin () [0x0007b] in C:\Users\Angelo\Documents\SAE\3Tesis\FrameworkVR\Library\PackageCache\com.unity.xr.oculus@1.8.1\Runtime\OculusLoader.cs:228 
+
+(Filename: C:/Users/Angelo/Documents/SAE/3Tesis/FrameworkVR/Library/PackageCache/com.unity.xr.oculus@1.8.1/Runtime/OculusLoader.cs Line: 243)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  0.844 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.88 ms, found 9 plugins.
+Preloading 1 native plugins for Editor in 0.11 ms.
+Unloading 1870 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 177.4 MB.
+System memory in use after: 177.5 MB.
+
+Unloading 24 unused Assets to reduce memory usage. Loaded Objects now: 2518.
+Total: 3.285400 ms (FindLiveObjects: 0.342600 ms CreateObjectMapping: 0.212200 ms MarkObjects: 2.593800 ms  DeleteObjects: 0.134900 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.005375 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.74 ms, found 9 plugins.
+Preloading 1 native plugins for Editor in 0.09 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+NullReferenceException: Object reference not set to an instance of an object
+  at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x00048] in C:\Users\Angelo\Documents\SAE\3Tesis\FrameworkVR\Library\PackageCache\com.unity.xr.oculus@1.8.1\Runtime\OculusLoader.cs:243 
+  at Unity.XR.Oculus.OculusLoader.EditorLoadOVRPlugin () [0x0007b] in C:\Users\Angelo\Documents\SAE\3Tesis\FrameworkVR\Library\PackageCache\com.unity.xr.oculus@1.8.1\Runtime\OculusLoader.cs:228 
+
+(Filename: C:/Users/Angelo/Documents/SAE/3Tesis/FrameworkVR/Library/PackageCache/com.unity.xr.oculus@1.8.1/Runtime/OculusLoader.cs Line: 243)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  0.821 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.96 ms, found 9 plugins.
+Preloading 1 native plugins for Editor in 0.09 ms.
+Unloading 1870 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 177.4 MB.
+System memory in use after: 177.5 MB.
+
+Unloading 24 unused Assets to reduce memory usage. Loaded Objects now: 2522.
+Total: 2.373300 ms (FindLiveObjects: 0.250700 ms CreateObjectMapping: 0.079900 ms MarkObjects: 1.944300 ms  DeleteObjects: 0.097200 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.006566 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.72 ms, found 9 plugins.
+Preloading 1 native plugins for Editor in 0.08 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+NullReferenceException: Object reference not set to an instance of an object
+  at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x00048] in C:\Users\Angelo\Documents\SAE\3Tesis\FrameworkVR\Library\PackageCache\com.unity.xr.oculus@1.8.1\Runtime\OculusLoader.cs:243 
+  at Unity.XR.Oculus.OculusLoader.EditorLoadOVRPlugin () [0x0007b] in C:\Users\Angelo\Documents\SAE\3Tesis\FrameworkVR\Library\PackageCache\com.unity.xr.oculus@1.8.1\Runtime\OculusLoader.cs:228 
+
+(Filename: C:/Users/Angelo/Documents/SAE/3Tesis/FrameworkVR/Library/PackageCache/com.unity.xr.oculus@1.8.1/Runtime/OculusLoader.cs Line: 243)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  0.776 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.42 ms, found 9 plugins.
+Preloading 1 native plugins for Editor in 0.15 ms.
+Unloading 1870 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 177.4 MB.
+System memory in use after: 177.5 MB.
+
+Unloading 24 unused Assets to reduce memory usage. Loaded Objects now: 2526.
+Total: 2.224800 ms (FindLiveObjects: 0.299200 ms CreateObjectMapping: 0.043700 ms MarkObjects: 1.775700 ms  DeleteObjects: 0.104900 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.004837 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.81 ms, found 9 plugins.
+Preloading 1 native plugins for Editor in 0.12 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+NullReferenceException: Object reference not set to an instance of an object
+  at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x00048] in C:\Users\Angelo\Documents\SAE\3Tesis\FrameworkVR\Library\PackageCache\com.unity.xr.oculus@1.8.1\Runtime\OculusLoader.cs:243 
+  at Unity.XR.Oculus.OculusLoader.EditorLoadOVRPlugin () [0x0007b] in C:\Users\Angelo\Documents\SAE\3Tesis\FrameworkVR\Library\PackageCache\com.unity.xr.oculus@1.8.1\Runtime\OculusLoader.cs:228 
+
+(Filename: C:/Users/Angelo/Documents/SAE/3Tesis/FrameworkVR/Library/PackageCache/com.unity.xr.oculus@1.8.1/Runtime/OculusLoader.cs Line: 243)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  0.812 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.95 ms, found 9 plugins.
+Preloading 1 native plugins for Editor in 0.10 ms.
+Unloading 1870 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 177.4 MB.
+System memory in use after: 177.5 MB.
+
+Unloading 24 unused Assets to reduce memory usage. Loaded Objects now: 2530.
+Total: 3.082300 ms (FindLiveObjects: 0.470700 ms CreateObjectMapping: 0.070500 ms MarkObjects: 2.423200 ms  DeleteObjects: 0.116000 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.004670 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.72 ms, found 9 plugins.
+Preloading 1 native plugins for Editor in 0.08 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+NullReferenceException: Object reference not set to an instance of an object
+  at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x00048] in C:\Users\Angelo\Documents\SAE\3Tesis\FrameworkVR\Library\PackageCache\com.unity.xr.oculus@1.8.1\Runtime\OculusLoader.cs:243 
+  at Unity.XR.Oculus.OculusLoader.EditorLoadOVRPlugin () [0x0007b] in C:\Users\Angelo\Documents\SAE\3Tesis\FrameworkVR\Library\PackageCache\com.unity.xr.oculus@1.8.1\Runtime\OculusLoader.cs:228 
+
+(Filename: C:/Users/Angelo/Documents/SAE/3Tesis/FrameworkVR/Library/PackageCache/com.unity.xr.oculus@1.8.1/Runtime/OculusLoader.cs Line: 243)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  0.794 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.86 ms, found 9 plugins.
+Preloading 1 native plugins for Editor in 0.11 ms.
+Unloading 1870 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 177.4 MB.
+System memory in use after: 177.5 MB.
+
+Unloading 24 unused Assets to reduce memory usage. Loaded Objects now: 2534.
+Total: 2.384100 ms (FindLiveObjects: 0.273600 ms CreateObjectMapping: 0.046800 ms MarkObjects: 1.955000 ms  DeleteObjects: 0.107200 ms)
 
 AssetImportWorkerClient::OnTransportError - code=2 error=End of file

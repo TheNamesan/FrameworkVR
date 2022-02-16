@@ -44,7 +44,7 @@ namespace FrameworkVR
         private Vector3 angularVelocity = Vector3.zero;
 
 
-        void Start()
+        void Awake()
         {
             rb = GetComponent<Rigidbody>();
             Physics.IgnoreLayerCollision(playerLayerNumber, gameObject.layer);

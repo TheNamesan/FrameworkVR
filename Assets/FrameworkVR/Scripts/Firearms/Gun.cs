@@ -162,7 +162,7 @@ namespace FrameworkVR
             mag.ammo--;
             cooldownTime = rateOfFire;
             heldAfterShot = true;
-            muzzleFlash.Play();
+            if(muzzleFlash != null) muzzleFlash.Play();
             OnShoot();
         }
     }
