@@ -232,7 +232,7 @@ GameObject:
   - component: {fileID: 6909742809855097251}
   - component: {fileID: 6909742809855097248}
   - component: {fileID: 6909742809855097249}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: DoubleAxe
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -347,6 +347,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_isHeld: 0
   hasGrabPoints: 1
+  grabWithTwoHands: 0
   enableWeightSystem: 1
   holder: {fileID: 0}
   previousParent: {fileID: 0}

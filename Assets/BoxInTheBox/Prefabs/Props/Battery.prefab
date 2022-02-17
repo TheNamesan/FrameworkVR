@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 3174554487847218078}
   - component: {fileID: 3174554487847218077}
   - component: {fileID: 3174554487847218076}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Battery
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -128,6 +128,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_isHeld: 0
   hasGrabPoints: 0
+  grabWithTwoHands: 0
   enableWeightSystem: 1
   holder: {fileID: 0}
   previousParent: {fileID: 0}

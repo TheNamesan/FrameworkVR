@@ -922,7 +922,7 @@ GameObject:
   - component: {fileID: 1375787115227536154}
   - component: {fileID: 1375787115227536148}
   - component: {fileID: 1375787115227536149}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: CreateGun
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1014,6 +1014,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_isHeld: 0
   hasGrabPoints: 1
+  grabWithTwoHands: 0
   enableWeightSystem: 1
   holder: {fileID: 0}
   previousParent: {fileID: 0}

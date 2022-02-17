@@ -276,7 +276,7 @@ GameObject:
   - component: {fileID: 7548893196979144842}
   - component: {fileID: 7548893196979144841}
   - component: {fileID: 7548893196979144833}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: RocketRPGMag
   m_TagString: Untagged
   m_Icon: {fileID: 0}

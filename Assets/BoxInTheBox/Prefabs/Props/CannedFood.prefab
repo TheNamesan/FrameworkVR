@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 8721498785215546992}
   - component: {fileID: 8721498785215546993}
   - component: {fileID: 8721498785215546994}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: CannedFood
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -128,6 +128,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_isHeld: 0
   hasGrabPoints: 0
+  grabWithTwoHands: 0
   enableWeightSystem: 1
   holder: {fileID: 0}
   previousParent: {fileID: 0}

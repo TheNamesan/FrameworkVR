@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 103880003242893079}
   - component: {fileID: 103880003242893078}
   - component: {fileID: 103880003242893077}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Barrel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -99,6 +99,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_isHeld: 0
   hasGrabPoints: 0
+  grabWithTwoHands: 0
   enableWeightSystem: 1
   holder: {fileID: 0}
   previousParent: {fileID: 0}

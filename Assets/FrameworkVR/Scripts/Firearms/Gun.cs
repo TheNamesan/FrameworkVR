@@ -73,7 +73,7 @@ namespace FrameworkVR
         protected HandController handController;
         protected InputAction triggerButton;
 
-        void Update()
+        protected virtual void Update()
         {
             if (grabbableObjectOrigin != null)
             {
