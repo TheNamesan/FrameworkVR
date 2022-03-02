@@ -188,8 +188,10 @@ namespace FrameworkVR
                 grabbable.previousParent = null;
             }
             heldItem = grabbable;
-            heldItem.transform.parent = transform;
+            //heldItem.transform.parent = transform;
             heldItem.Hold(gameObject);
+            //heldItem.gameObject.AddComponent<FixedJoint>();
+            //heldItem.gameObject.GetComponent<FixedJoint>().connectedBody = transform.parent.GetComponent<Rigidbody>();
             GetItemMass();
             ControllerRumble(grabRumbleAmplitude, grabRumbleDuration);
             OnObjectHold();
@@ -203,6 +205,7 @@ namespace FrameworkVR
             GetThrowForce();
             heldItem = null;
             heldItemMass = 0;
+            //Destroy(heldItem.gameObject.GetComponent<FixedJoint>());
             ControllerRumble(releaseRumbleAmplitude, releaseRumbleDuration);
             OnObjectRelease();
         }

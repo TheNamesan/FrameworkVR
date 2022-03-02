@@ -36,6 +36,7 @@ namespace FrameworkVR
         public GameObject holder = null;
 
         public Transform previousParent = null;
+        public Rigidbody previousJointBody = null;
 
         [HideInInspector]
         public Rigidbody rb;
@@ -57,8 +58,14 @@ namespace FrameworkVR
         {
             holder = whoHolds;
             m_isHeld = true;
-            rb.isKinematic = true;
-            coll.enabled = false;
+            Physics.IgnoreCollision(holder.transform.parent.GetComponent<Collider>(), coll);
+            FixedJoint fj;
+            if (gameObject.GetComponent<FixedJoint>() == null) fj = gameObject.AddComponent<FixedJoint>();
+            else fj = gameObject.GetComponent<FixedJoint>();
+            previousJointBody = fj.connectedBody;
+            fj.connectedBody = holder.transform.parent.GetComponent<Rigidbody>();
+            //rb.isKinematic = true;
+            //coll.enabled = false;
             if (enableWeightSystem) m_mass = rb.mass;
             OnObjectHold();
         }
@@ -70,6 +77,9 @@ namespace FrameworkVR
             transform.parent = previousParent;
             rb.isKinematic = false;
             coll.enabled = true;
+            FixedJoint fj = gameObject.GetComponent<FixedJoint>();
+            Destroy(fj);
+            if (fj != null) fj.connectedBody = null;
             if (enableWeightSystem) m_mass = rb.mass;
             OnObjectRelease();
         }
