@@ -61,7 +61,7 @@ namespace FrameworkVR
 
         private float rotationValue;
 
-        private float gravityVelocity = 0f;
+        public float gravityVelocity = 0f;
         
 
         private InputAction leftJoystickInput;
@@ -128,7 +128,7 @@ namespace FrameworkVR
 
         private void MoveAndRotation()
         {
-            if(!disableGravity)
+            if (!disableGravity)
             {
                 touchingGround = Physics.Raycast(transform.position - Vector3.up * charController.height * 0.5F, -transform.up, 0.3f, groundLayers);
 
@@ -142,14 +142,14 @@ namespace FrameworkVR
             
             if(!disableWalk)
             {
-                Vector3 moveX = new Vector3(HMDTransform.forward.x, 0, HMDTransform.forward.z);
+                Vector3 moveX = new Vector3(HMDTransform.forward.x, 0, HMDTransform.forward.z) * playerSpeed;
                 float moveY = gravityVelocity;
-                Vector3 moveZ = new Vector3(HMDTransform.right.x, 0, HMDTransform.right.z);
+                Vector3 moveZ = new Vector3(HMDTransform.right.x, 0, HMDTransform.right.z) * playerSpeed;
 
                 Vector3 moveTowards = (moveX * m_LeftJoystick.y +
                                         Vector3.up * moveY +
-                                        moveZ * m_LeftJoystick.x) *
-                                        playerSpeed * Time.deltaTime;
+                                        moveZ * m_LeftJoystick.x)
+                                        * Time.deltaTime;
                 charController.Move(moveTowards);
             }
 

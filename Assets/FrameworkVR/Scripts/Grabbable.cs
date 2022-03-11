@@ -58,14 +58,20 @@ namespace FrameworkVR
         {
             holder = whoHolds;
             m_isHeld = true;
-            Physics.IgnoreCollision(holder.transform.parent.GetComponent<Collider>(), coll);
+            if(holder.transform.parent != null)
+            {
+                if (holder.transform.parent.GetComponent<Collider>() != null)
+                    Physics.IgnoreCollision(holder.transform.parent.GetComponent<Collider>(), coll);
+            }    
             FixedJoint fj;
             if (gameObject.GetComponent<FixedJoint>() == null) fj = gameObject.AddComponent<FixedJoint>();
             else fj = gameObject.GetComponent<FixedJoint>();
             previousJointBody = fj.connectedBody;
-            fj.connectedBody = holder.transform.parent.GetComponent<Rigidbody>();
-            //rb.isKinematic = true;
-            //coll.enabled = false;
+            //fj.connectedBody = holder.transform.parent.GetComponent<Rigidbody>();
+            Rigidbody holderRb = holder.GetComponent<Rigidbody>(); ;
+            if(holderRb != null) fj.connectedBody = holderRb;
+            else fj.connectedBody = holder.transform.parent.GetComponent<Rigidbody>();
+
             if (enableWeightSystem) m_mass = rb.mass;
             OnObjectHold();
         }

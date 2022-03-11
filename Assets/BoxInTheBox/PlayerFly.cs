@@ -64,6 +64,7 @@ public class PlayerFly : MonoBehaviour
         if (flyEnabled)
         {
             Vector3 moveTowards = moveX + moveZ;
+            player.gravityVelocity = 0;
             charController.Move(moveTowards);
         }    
         
