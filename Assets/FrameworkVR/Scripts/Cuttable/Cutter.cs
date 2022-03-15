@@ -11,6 +11,7 @@ namespace FrameworkVR
         [SerializeField]
         [Tooltip("Set the GameObject that corresponds to this edge's grabbable object.")]
         public Grabbable grabbableObjectOrigin;
+        private Collider grabbableCol;
 
         [Header("Cutting Position")]
         [SerializeField]
@@ -31,6 +32,20 @@ namespace FrameworkVR
         private Vector3 enterBasePosition;
         private Vector3 enterTipPosition;
         private Vector3 exitTipPosition;
+
+        void Awake()
+        {
+            grabbableCol = grabbableObjectOrigin.GetComponent<Collider>();
+        }
+
+        void Update()
+        {
+            if (grabbableObjectOrigin.isHeld)
+            {
+                grabbableCol.isTrigger = true;
+            }
+            else grabbableCol.isTrigger = false;
+        }
 
         private void OnTriggerEnter(Collider other)
         {

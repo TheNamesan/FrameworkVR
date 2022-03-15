@@ -25,13 +25,11 @@ namespace FrameworkVR
             }
         }
 
-        [HideInInspector]
         [Tooltip("Read only.")]
         private bool m_isLoaded = false;
         public bool isLoaded { get => m_isLoaded; }
 
         [Header("References")]
-        [HideInInspector]
         [Tooltip("The Gun this is magazine is loaded to.")]
         public Gun gunLoadedTo = null;
 

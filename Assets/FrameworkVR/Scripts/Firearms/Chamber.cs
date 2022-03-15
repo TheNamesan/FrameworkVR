@@ -24,13 +24,17 @@ namespace FrameworkVR
             if (tmp != null)
             {
                 if (tmp.magazineOrigin.firearmType == gunOrigin.firearmType &&
-                    !tmp.magazineOrigin.grabbable.isHeld && !tmp.magazineOrigin.isLoaded)
+                    !tmp.magazineOrigin.grabbable.isHeld && !tmp.magazineOrigin.isLoaded && gunOrigin.mag == null)
                 {
                     tmp.magazineOrigin.SetIsLoaded(true, gunOrigin);
-                    tmp.magazineOrigin.grabbable.Hold(gunOrigin.gameObject);
+                    //tmp.magazineOrigin.grabbable.Hold(gunOrigin.gameObject);
                     tmp.magazineOrigin.transform.position = magTransform.position;
                     tmp.magazineOrigin.transform.rotation = magTransform.rotation;
                     tmp.magazineOrigin.transform.parent = magTransform;
+
+                    tmp.magazineOrigin.grabbable.rb.isKinematic = true;
+                    tmp.magazineOrigin.grabbable.coll.enabled = false;
+
                     gunOrigin.mag = tmp.magazineOrigin;
                 }
             }

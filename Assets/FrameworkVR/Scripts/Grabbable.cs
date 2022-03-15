@@ -54,20 +54,40 @@ namespace FrameworkVR
             if (enableWeightSystem) m_mass = rb.mass;
         }
 
+        void FixedUpdate()
+        {
+            UpdateGrabbablePosition();
+        }
+
+        protected void UpdateGrabbablePosition()
+        {
+            if (holder != null)
+            {
+                Vector3 moveTowards = holder.transform.position;
+                //Vector3 distanceToTarget = moveTowards - transform.position;
+                //Vector3 targetVelocity = (distanceToTarget * 2500f) * Time.fixedDeltaTime;
+                //rb.velocity = Vector3.MoveTowards(rb.velocity, targetVelocity, 1f);
+                rb.collisionDetectionMode = CollisionDetectionMode.ContinuousDynamic;
+                //rb.MovePosition(moveTowards);
+                //rb.velocity = Vector3.zero;
+            }
+        }
+
         public void Hold(GameObject whoHolds)
         {
             holder = whoHolds;
             m_isHeld = true;
+            //rb.useGravity = false;
+            
             if(holder.transform.parent != null)
             {
                 if (holder.transform.parent.GetComponent<Collider>() != null)
                     Physics.IgnoreCollision(holder.transform.parent.GetComponent<Collider>(), coll);
-            }    
+            }
             FixedJoint fj;
             if (gameObject.GetComponent<FixedJoint>() == null) fj = gameObject.AddComponent<FixedJoint>();
             else fj = gameObject.GetComponent<FixedJoint>();
             previousJointBody = fj.connectedBody;
-            //fj.connectedBody = holder.transform.parent.GetComponent<Rigidbody>();
             Rigidbody holderRb = holder.GetComponent<Rigidbody>(); ;
             if(holderRb != null) fj.connectedBody = holderRb;
             else fj.connectedBody = holder.transform.parent.GetComponent<Rigidbody>();
@@ -84,8 +104,7 @@ namespace FrameworkVR
             rb.isKinematic = false;
             coll.enabled = true;
             FixedJoint fj = gameObject.GetComponent<FixedJoint>();
-            Destroy(fj);
-            if (fj != null) fj.connectedBody = null;
+            if(fj != null) Destroy(fj);
             if (enableWeightSystem) m_mass = rb.mass;
             OnObjectRelease();
         }

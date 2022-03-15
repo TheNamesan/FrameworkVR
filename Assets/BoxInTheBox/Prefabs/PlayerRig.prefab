@@ -322,6 +322,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 128
   touchingGround: 0
+  gravityVelocity: 0
   disableWalk: 0
   disableGravity: 0
   disableRotation: 0
@@ -337,7 +338,7 @@ CharacterController:
   m_Enabled: 1
   serializedVersion: 2
   m_Height: 2
-  m_Radius: 0.1
+  m_Radius: 0.05
   m_SlopeLimit: 50
   m_StepOffset: 0.3
   m_SkinWidth: 0.08
@@ -1197,6 +1198,7 @@ MonoBehaviour:
   grabRumbleDuration: 0.1
   releaseRumbleAmplitude: 0.2
   releaseRumbleDuration: 0.1
+  handModel: {fileID: 2130263430140191918}
   onObjectHold:
     m_PersistentCalls:
       m_Calls: []
@@ -1275,6 +1277,7 @@ MonoBehaviour:
   grabRumbleDuration: 0.1
   releaseRumbleAmplitude: 0.2
   releaseRumbleDuration: 0.1
+  handModel: {fileID: 2130263430551165219}
   onObjectHold:
     m_PersistentCalls:
       m_Calls: []

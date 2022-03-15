@@ -73,6 +73,11 @@ namespace FrameworkVR
         [Tooltip("The duration of the amplitude in seconds when releasing an object.")]
         public float releaseRumbleDuration = 0.1f;
 
+        [Header("Models")]
+        [Tooltip("Set the model of the hand.")]
+        public GameObject handModel;
+        protected GameObject modelClone;
+
         [Header("Unity Events")]
         public UnityEvent onObjectHold;
         public UnityEvent onObjectRelease;
@@ -178,17 +183,27 @@ namespace FrameworkVR
                     else grabbable.holder.GetComponent<HandController>().ObjectRelease();
                 }
                 
-                else if (grabbable.GetComponent<Magazine>() != null)
-                {
-                    grabbable.GetComponent<Magazine>().SetIsLoaded(false, null);
-                }
-
+                
                 grabbable.Release();
-                //TODO: Desarrollar un nuevo sistema para los parents de los objetos.
+                grabbable.previousParent = null;
+            }
+            if (grabbable.GetComponent<Magazine>() != null)
+            {
+                Magazine tmpMag = grabbable.GetComponent<Magazine>();
+                tmpMag.SetIsLoaded(false, null);
+                tmpMag.transform.parent = null;
+                grabbable.Release();
                 grabbable.previousParent = null;
             }
             heldItem = grabbable;
             //heldItem.transform.parent = transform;
+            modelClone = Instantiate(handModel);
+            modelClone.transform.position = handModel.transform.position;
+            modelClone.transform.rotation = handModel.transform.rotation;
+            modelClone.transform.localScale = handModel.transform.localScale;
+            modelClone.transform.parent = grabbable.transform;
+            handModel.SetActive(false);
+
             heldItem.Hold(gameObject);
             //heldItem.gameObject.AddComponent<FixedJoint>();
             //heldItem.gameObject.GetComponent<FixedJoint>().connectedBody = transform.parent.GetComponent<Rigidbody>();
@@ -199,6 +214,8 @@ namespace FrameworkVR
 
         public void ObjectRelease()
         {
+            if (modelClone != null) Destroy(modelClone);
+            handModel.SetActive(true);
             if (heldItem == null) return;
             heldItem.transform.parent = heldItem.previousParent;
             heldItem.Release();
