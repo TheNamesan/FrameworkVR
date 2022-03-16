@@ -17,10 +17,6 @@ namespace FrameworkVR
         [Tooltip("Disables the ability to grab anywhere. Use this if your grabbable object has grab points.")]
         public bool hasGrabPoints = false;
 
-        [SerializeField]
-        [Tooltip("Makes the grabbable object able to be held by both hands.")]
-        public bool grabWithTwoHands = false;
-
         [Header("Weight System")]
         [SerializeField]
         [Tooltip("If true, the player's hands will move slower while this object (Determined by the grabbable's Rigidbody mass).")]
@@ -30,7 +26,6 @@ namespace FrameworkVR
         private float m_mass = 0;
         public float mass { get => m_mass; }
 
-        //TODO: Hacer clase holder
         [SerializeField]
         [Tooltip("Current holder.")]
         public GameObject holder = null;
@@ -54,30 +49,10 @@ namespace FrameworkVR
             if (enableWeightSystem) m_mass = rb.mass;
         }
 
-        void FixedUpdate()
-        {
-            UpdateGrabbablePosition();
-        }
-
-        protected void UpdateGrabbablePosition()
-        {
-            if (holder != null)
-            {
-                Vector3 moveTowards = holder.transform.position;
-                //Vector3 distanceToTarget = moveTowards - transform.position;
-                //Vector3 targetVelocity = (distanceToTarget * 2500f) * Time.fixedDeltaTime;
-                //rb.velocity = Vector3.MoveTowards(rb.velocity, targetVelocity, 1f);
-                rb.collisionDetectionMode = CollisionDetectionMode.ContinuousDynamic;
-                //rb.MovePosition(moveTowards);
-                //rb.velocity = Vector3.zero;
-            }
-        }
-
         public void Hold(GameObject whoHolds)
         {
             holder = whoHolds;
             m_isHeld = true;
-            //rb.useGravity = false;
             
             if(holder.transform.parent != null)
             {

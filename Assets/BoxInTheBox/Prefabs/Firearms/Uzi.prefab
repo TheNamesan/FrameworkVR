@@ -5364,8 +5364,6 @@ GameObject:
   - component: {fileID: 8507065978759964594}
   - component: {fileID: 8507065978759964604}
   - component: {fileID: 8507065978759964605}
-  - component: {fileID: 8507065978759964606}
-  - component: {fileID: 8507065978759964593}
   m_Layer: 9
   m_Name: Uzi
   m_TagString: Untagged
@@ -5382,7 +5380,7 @@ Transform:
   m_GameObject: {fileID: 8507065978759964592}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 4.3485, y: 1.2175, z: -4.141}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 2, y: 2, z: 2}
   m_Children:
   - {fileID: 8113149894443994139}
   - {fileID: 8507065978895201920}
@@ -5434,10 +5432,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_isHeld: 0
   hasGrabPoints: 1
-  grabWithTwoHands: 0
   enableWeightSystem: 1
   holder: {fileID: 0}
   previousParent: {fileID: 0}
+  previousJointBody: {fileID: 0}
   rb: {fileID: 0}
   coll: {fileID: 0}
   onObjectHold:
@@ -5475,32 +5473,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!65 &8507065978759964606
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8507065978759964592}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.017026901, y: 0.050577283, z: 0.019416332}
-  m_Center: {x: 0.0034546852, y: -0.040070713, z: -0.1038568}
---- !u!65 &8507065978759964593
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8507065978759964592}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.015352249, y: 0.04509902, z: 0.030220985}
-  m_Center: {x: 0.0027775764, y: -0.039386034, z: -0.027197838}
 --- !u!1 &8507065978895201921
 GameObject:
   m_ObjectHideFlags: 0

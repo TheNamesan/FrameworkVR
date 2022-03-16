@@ -44,7 +44,7 @@ namespace BoxInTheBox
                 GameObject objectToSpawn = mag.GetComponent<CreateMagazine>().objectToSpawn;
                 if(objectToSpawn != null)
                 {
-                    GameObject go = Instantiate(objectToSpawn, hit.point + new Vector3(0,0.1f,0), transform.rotation);
+                    GameObject go = Instantiate(objectToSpawn, hit.point + new Vector3(0, 0.1f, 0), transform.rotation);
                 }
             }            
             cooldownTime = rateOfFire;

@@ -176,11 +176,7 @@ namespace FrameworkVR
             {
                 if (grabbable.holder.GetComponent<HandController>() != null)
                 {
-                    if(grabbable.grabWithTwoHands)
-                    {
-
-                    }
-                    else grabbable.holder.GetComponent<HandController>().ObjectRelease();
+                    grabbable.holder.GetComponent<HandController>().ObjectRelease();
                 }
                 
                 
@@ -196,7 +192,6 @@ namespace FrameworkVR
                 grabbable.previousParent = null;
             }
             heldItem = grabbable;
-            //heldItem.transform.parent = transform;
             modelClone = Instantiate(handModel);
             modelClone.transform.position = handModel.transform.position;
             modelClone.transform.rotation = handModel.transform.rotation;
@@ -205,8 +200,6 @@ namespace FrameworkVR
             handModel.SetActive(false);
 
             heldItem.Hold(gameObject);
-            //heldItem.gameObject.AddComponent<FixedJoint>();
-            //heldItem.gameObject.GetComponent<FixedJoint>().connectedBody = transform.parent.GetComponent<Rigidbody>();
             GetItemMass();
             ControllerRumble(grabRumbleAmplitude, grabRumbleDuration);
             OnObjectHold();
@@ -222,7 +215,6 @@ namespace FrameworkVR
             GetThrowForce();
             heldItem = null;
             heldItemMass = 0;
-            //Destroy(heldItem.gameObject.GetComponent<FixedJoint>());
             ControllerRumble(releaseRumbleAmplitude, releaseRumbleDuration);
             OnObjectRelease();
         }

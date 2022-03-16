@@ -839,7 +839,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_isHeld: 0
   hasGrabPoints: 1
-  grabWithTwoHands: 0
   enableWeightSystem: 1
   holder: {fileID: 0}
   previousParent: {fileID: 0}
@@ -5878,7 +5877,6 @@ GameObject:
   - component: {fileID: 9159726841414990413}
   - component: {fileID: 1313951335}
   - component: {fileID: 1313951334}
-  - component: {fileID: 1313951337}
   - component: {fileID: 1313951336}
   m_Layer: 0
   m_Name: trigger
@@ -5930,21 +5928,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.03, y: 0.1, z: 0.2}
   m_Center: {x: 0, y: -0.05, z: -0.03}
---- !u!138 &1313951337
-FixedJoint:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3470578717210593054}
-  m_ConnectedBody: {fileID: 3462475032817178190}
-  m_ConnectedArticulationBody: {fileID: 0}
-  m_BreakForce: Infinity
-  m_BreakTorque: Infinity
-  m_EnableCollision: 0
-  m_EnablePreprocessing: 1
-  m_MassScale: 1
-  m_ConnectedMassScale: 1
 --- !u!114 &1313951336
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5959,7 +5942,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_isHeld: 0
   hasGrabPoints: 0
-  grabWithTwoHands: 0
   enableWeightSystem: 1
   holder: {fileID: 0}
   previousParent: {fileID: 0}

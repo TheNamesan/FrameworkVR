@@ -358,8 +358,6 @@ GameObject:
   - component: {fileID: 8106020671757377467}
   - component: {fileID: 6243192143232605206}
   - component: {fileID: 6243192143232605207}
-  - component: {fileID: 6243192143232605204}
-  - component: {fileID: 6243192143232605211}
   m_Layer: 9
   m_Name: RPG
   m_TagString: Untagged
@@ -441,10 +439,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_isHeld: 0
   hasGrabPoints: 1
-  grabWithTwoHands: 0
   enableWeightSystem: 1
   holder: {fileID: 0}
   previousParent: {fileID: 0}
+  previousJointBody: {fileID: 0}
   rb: {fileID: 0}
   coll: {fileID: 0}
   onObjectHold:
@@ -498,32 +496,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!65 &6243192143232605204
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6243192143232605210}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.015693188, y: 0.07112765, z: 0.0363307}
-  m_Center: {x: 0.009295702, y: -0.050345898, z: -0.13961005}
---- !u!65 &6243192143232605211
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6243192143232605210}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.017819881, y: 0.10547674, z: 0.04139328}
-  m_Center: {x: 0.007663965, y: -0.06957489, z: -0.018404484}
 --- !u!1 &6243192143407477082
 GameObject:
   m_ObjectHideFlags: 0

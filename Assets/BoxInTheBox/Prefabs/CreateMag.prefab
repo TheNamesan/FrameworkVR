@@ -86,10 +86,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_isHeld: 0
   hasGrabPoints: 1
-  grabWithTwoHands: 0
   enableWeightSystem: 1
   holder: {fileID: 0}
   previousParent: {fileID: 0}
+  previousJointBody: {fileID: 0}
   rb: {fileID: 0}
   coll: {fileID: 0}
   onObjectHold:
@@ -186,7 +186,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 0b939a0913efa664082ccca240ddbdf6, type: 2}
+  - {fileID: 2100000, guid: 11e0eb22631f98e439e2c7d414c0fb76, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0

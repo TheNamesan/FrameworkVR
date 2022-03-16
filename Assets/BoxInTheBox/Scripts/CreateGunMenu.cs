@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEditor;
 using FrameworkVR;
 
 namespace BoxInTheBox
@@ -42,13 +43,12 @@ namespace BoxInTheBox
         void InitializeButton(GameObject button, int index)
         {
             button.GetComponent<Button>().onClick.AddListener(() => {
-                //createGun.AssignObjectToSpawn(createGun.prefabs[index]); 
                 GameObject go = Instantiate(createMagPrefab);
                 go.transform.position = transform.position;
                 go.GetComponent<CreateMagazine>().objectToSpawn = createGun.prefabs[index];
                 OpenCloseMenu(); 
             });
-            button.transform.GetChild(0).GetComponent<Text>().text = index.ToString();
+            button.transform.GetChild(0).GetComponent<Image>().sprite = Sprite.Create(AssetPreview.GetAssetPreview(createGun.prefabs[index]), new Rect(0.0f, 0.0f, 128, 128), new Vector2(0.5f, 0.5f), 100.0f);
         }
 
         
