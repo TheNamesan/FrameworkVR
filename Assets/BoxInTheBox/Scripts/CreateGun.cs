@@ -10,6 +10,7 @@ namespace BoxInTheBox
     public class CreateGun : Gun
     {
         public List<GameObject> prefabs;
+        public List<Sprite> prefabPreview;
         public CreateGunMenu menu;
         public Transform muzzlePosition;
         protected override void GetHandController()

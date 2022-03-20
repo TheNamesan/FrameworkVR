@@ -47,6 +47,11 @@ namespace FrameworkVR
         [Tooltip("Currently held Game Object.")]
         public Grabbable heldItem;
 
+        [Header("Character Collision")]
+        [SerializeField]
+        [Tooltip("Set the GameObject with the Player Rig Controller component. This is used to avoid the grabbable's collision with the Player Rig.")]
+        public GameObject characterRig;
+
         [Header("Weight System")]
         [SerializeField]
         [Tooltip("If true, the player's hands will move slower while holding heavier objects (Determined by the grabbable's Rigidbody mass). Will override grabbable settings.")]
@@ -178,8 +183,6 @@ namespace FrameworkVR
                 {
                     grabbable.holder.GetComponent<HandController>().ObjectRelease();
                 }
-                
-                
                 grabbable.Release();
                 grabbable.previousParent = null;
             }
@@ -191,6 +194,7 @@ namespace FrameworkVR
                 grabbable.Release();
                 grabbable.previousParent = null;
             }
+
             heldItem = grabbable;
             modelClone = Instantiate(handModel);
             modelClone.transform.position = handModel.transform.position;
@@ -198,6 +202,8 @@ namespace FrameworkVR
             modelClone.transform.localScale = handModel.transform.localScale;
             modelClone.transform.parent = grabbable.transform;
             handModel.SetActive(false);
+
+            Physics.IgnoreCollision(characterRig.GetComponent<CharacterController>(), heldItem.GetComponent<Collider>(), true);
 
             heldItem.Hold(gameObject);
             GetItemMass();
@@ -210,6 +216,7 @@ namespace FrameworkVR
             if (modelClone != null) Destroy(modelClone);
             handModel.SetActive(true);
             if (heldItem == null) return;
+            Physics.IgnoreCollision(characterRig.GetComponent<CharacterController>(), heldItem.GetComponent<Collider>(), false);
             heldItem.transform.parent = heldItem.previousParent;
             heldItem.Release();
             GetThrowForce();

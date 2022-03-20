@@ -273,6 +273,7 @@ GameObject:
   - component: {fileID: 2130263429985640429}
   - component: {fileID: 7913092935947781399}
   - component: {fileID: 7913092935947781398}
+  - component: {fileID: 3749151964292658809}
   m_Layer: 6
   m_Name: Controller
   m_TagString: Untagged
@@ -392,6 +393,19 @@ MonoBehaviour:
   action: {fileID: 5113088590926889233, guid: ec1f13e0cb1acfb4ca71dd3731138b8c, type: 3}
   joystick: {fileID: 7596212294181904713, guid: ec1f13e0cb1acfb4ca71dd3731138b8c, type: 3}
   flyEnabled: 0
+--- !u!114 &3749151964292658809
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2130263429985640419}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b8d604a68d38ffe47afc3c70d35c5d33, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  resetPosition: {x: 0, y: 9, z: 0}
 --- !u!1 &2130263430052862683
 GameObject:
   m_ObjectHideFlags: 0
@@ -1192,6 +1206,7 @@ MonoBehaviour:
   triggerForce: 0
   throwForce: 1500
   heldItem: {fileID: 0}
+  characterRig: {fileID: 2130263429985640419}
   enableWeightSystem: 1
   heldItemMass: 0
   grabRumbleAmplitude: 0.5
@@ -1271,6 +1286,7 @@ MonoBehaviour:
   triggerForce: 0
   throwForce: 1500
   heldItem: {fileID: 0}
+  characterRig: {fileID: 2130263429985640419}
   enableWeightSystem: 1
   heldItemMass: 0
   grabRumbleAmplitude: 0.5

@@ -1656,6 +1656,7 @@ MonoBehaviour:
   triggerForce: 0
   throwForce: 1500
   heldItem: {fileID: 0}
+  characterRig: {fileID: 8088679696832568009}
   enableWeightSystem: 1
   heldItemMass: 0
   grabRumbleAmplitude: 0.5
@@ -1735,6 +1736,7 @@ MonoBehaviour:
   triggerForce: 0
   throwForce: 1500
   heldItem: {fileID: 0}
+  characterRig: {fileID: 8088679696832568009}
   enableWeightSystem: 1
   heldItemMass: 0
   grabRumbleAmplitude: 0.5

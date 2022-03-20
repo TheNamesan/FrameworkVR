@@ -48,10 +48,9 @@ namespace BoxInTheBox
                 go.GetComponent<CreateMagazine>().objectToSpawn = createGun.prefabs[index];
                 OpenCloseMenu(); 
             });
-            button.transform.GetChild(0).GetComponent<Image>().sprite = Sprite.Create(AssetPreview.GetAssetPreview(createGun.prefabs[index]), new Rect(0.0f, 0.0f, 128, 128), new Vector2(0.5f, 0.5f), 100.0f);
+            //button.transform.GetChild(0).GetComponent<Image>().sprite = Sprite.Create(AssetPreview.GetAssetPreview(createGun.prefabs[index]), new Rect(0.0f, 0.0f, 128, 128), new Vector2(0.5f, 0.5f), 100.0f);
+            button.transform.GetChild(0).GetComponent<Image>().sprite = createGun.prefabPreview[index];
         }
-
-        
     }
 }
 

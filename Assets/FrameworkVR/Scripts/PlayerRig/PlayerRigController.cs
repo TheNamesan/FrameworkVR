@@ -26,7 +26,7 @@ namespace FrameworkVR
         public float playerTurnSpeed = 1f;
 
         [SerializeField]
-        [Tooltip("Forced applied to player jump.")]
+        [Tooltip("Force applied to player jump.")]
         public float jumpForce = 1f;
 
         [SerializeField]

@@ -59,6 +59,7 @@ namespace FrameworkVR
                 if (holder.transform.parent.GetComponent<Collider>() != null)
                     Physics.IgnoreCollision(holder.transform.parent.GetComponent<Collider>(), coll);
             }
+
             FixedJoint fj;
             if (gameObject.GetComponent<FixedJoint>() == null) fj = gameObject.AddComponent<FixedJoint>();
             else fj = gameObject.GetComponent<FixedJoint>();

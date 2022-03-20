@@ -15,12 +15,12 @@ C:/Users/Angelo/Documents/SAE/3Tesis/FrameworkVR/FrameworkVR
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-53449
+50921
 Successfully changed project path to: C:/Users/Angelo/Documents/SAE/3Tesis/FrameworkVR/FrameworkVR
 C:/Users/Angelo/Documents/SAE/3Tesis/FrameworkVR/FrameworkVR
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 77.48 ms, found 9 plugins.
-Preloading 1 native plugins for Editor in 1.20 ms.
+Refreshing native plugins compatible for Editor in 114.69 ms, found 9 plugins.
+Preloading 1 native plugins for Editor in 1.66 ms.
 Initialize engine version: 2020.3.0f1 (c7b5465681fb)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.3.0f1/Editor/Data/Resources/UnitySubsystems
 [Subsystems] Discovering subsystems at path C:/Users/Angelo/Documents/SAE/3Tesis/FrameworkVR/FrameworkVR/Assets
@@ -35,29 +35,29 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.3.0f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.3.0f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.3.0f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56800
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56888
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.0f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.0f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.002416 seconds.
+Registered in 0.314561 seconds.
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 57.68 ms, found 9 plugins.
-Preloading 1 native plugins for Editor in 0.15 ms.
+Refreshing native plugins compatible for Editor in 53.06 ms, found 9 plugins.
+Preloading 1 native plugins for Editor in 0.09 ms.
 Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.736 seconds
+- Completed reload, in  4.225 seconds
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.006069 seconds.
+Registered in 0.017068 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 59.08 ms, found 9 plugins.
-Preloading 1 native plugins for Editor in 0.17 ms.
+Refreshing native plugins compatible for Editor in 44.48 ms, found 9 plugins.
+Preloading 1 native plugins for Editor in 0.09 ms.
 Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
@@ -66,1564 +66,527 @@ RoslynAnalysisRunner has terminated.
 [XR] Oculus Input lifecycle provider registered.
 [XR] Unable to register input lifecyle provider: [1]
 NullReferenceException: Object reference not set to an instance of an object
-  at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x00048] in C:\Users\Angelo\Documents\SAE\3Tesis\FrameworkVR\Library\PackageCache\com.unity.xr.oculus@1.8.1\Runtime\OculusLoader.cs:243 
-  at Unity.XR.Oculus.OculusLoader.EditorLoadOVRPlugin () [0x0007b] in C:\Users\Angelo\Documents\SAE\3Tesis\FrameworkVR\Library\PackageCache\com.unity.xr.oculus@1.8.1\Runtime\OculusLoader.cs:228 
+  at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x00048] in C:\Users\Angelo\Documents\SAE\3Tesis\FrameworkVR\FrameworkVR\Library\PackageCache\com.unity.xr.oculus@1.8.1\Runtime\OculusLoader.cs:243 
+  at Unity.XR.Oculus.OculusLoader.EditorLoadOVRPlugin () [0x0007b] in C:\Users\Angelo\Documents\SAE\3Tesis\FrameworkVR\FrameworkVR\Library\PackageCache\com.unity.xr.oculus@1.8.1\Runtime\OculusLoader.cs:228 
 
-(Filename: C:/Users/Angelo/Documents/SAE/3Tesis/FrameworkVR/Library/PackageCache/com.unity.xr.oculus@1.8.1/Runtime/OculusLoader.cs Line: 243)
+(Filename: Library/PackageCache/com.unity.xr.oculus@1.8.1/Runtime/OculusLoader.cs Line: 243)
 
 Mono: successfully reloaded assembly
-- Completed reload, in  1.017 seconds
+- Completed reload, in  0.933 seconds
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.06 seconds
-Refreshing native plugins compatible for Editor in 0.97 ms, found 9 plugins.
-Preloading 1 native plugins for Editor in 0.13 ms.
-Unloading 1902 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 172.3 MB.
-System memory in use after: 172.3 MB.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.08 seconds
+Refreshing native plugins compatible for Editor in 0.75 ms, found 9 plugins.
+Preloading 1 native plugins for Editor in 0.08 ms.
+Unloading 1903 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 172.6 MB.
+System memory in use after: 172.7 MB.
 
-Unloading 31 unused Assets to reduce memory usage. Loaded Objects now: 2380.
-Total: 2.990000 ms (FindLiveObjects: 0.426800 ms CreateObjectMapping: 0.066600 ms MarkObjects: 2.347100 ms  DeleteObjects: 0.148000 ms)
+Unloading 31 unused Assets to reduce memory usage. Loaded Objects now: 2381.
+Total: 2.475100 ms (FindLiveObjects: 0.230100 ms CreateObjectMapping: 0.044300 ms MarkObjects: 2.051200 ms  DeleteObjects: 0.148300 ms)
 
 ========================================================================
 Received Import Request.
-  path: Assets/BoxInTheBox/Prefabs/PlayerRig.prefab
-  artifactKey: Guid(d23443ada89cb7a4ea9c5012188ec61f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/BoxInTheBox/Prefabs/PlayerRig.prefab using Guid(d23443ada89cb7a4ea9c5012188ec61f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '900c7ab2c66d5f11c756dab697278275') in 0.196081 seconds
-  Import took 0.203563 seconds .
+  path: Assets/BoxInTheBox/Sprites/propimages0.png
+  artifactKey: Guid(700bd71ddaa277647812907963f444db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BoxInTheBox/Sprites/propimages0.png using Guid(700bd71ddaa277647812907963f444db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e1c845aaadfb649ed72d2aae766c59f7') in 0.133556 seconds
+  Import took 0.137310 seconds .
 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.006063 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 1.18 ms, found 9 plugins.
-Preloading 1 native plugins for Editor in 0.18 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-NullReferenceException: Object reference not set to an instance of an object
-  at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x00048] in C:\Users\Angelo\Documents\SAE\3Tesis\FrameworkVR\Library\PackageCache\com.unity.xr.oculus@1.8.1\Runtime\OculusLoader.cs:243 
-  at Unity.XR.Oculus.OculusLoader.EditorLoadOVRPlugin () [0x0007b] in C:\Users\Angelo\Documents\SAE\3Tesis\FrameworkVR\Library\PackageCache\com.unity.xr.oculus@1.8.1\Runtime\OculusLoader.cs:228 
-
-(Filename: C:/Users/Angelo/Documents/SAE/3Tesis/FrameworkVR/Library/PackageCache/com.unity.xr.oculus@1.8.1/Runtime/OculusLoader.cs Line: 243)
-
-Mono: successfully reloaded assembly
-- Completed reload, in  0.990 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 1.18 ms, found 9 plugins.
-Preloading 1 native plugins for Editor in 0.13 ms.
-Unloading 1872 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 188.7 MB.
-System memory in use after: 188.8 MB.
-
-Unloading 27 unused Assets to reduce memory usage. Loaded Objects now: 2394.
-Total: 2.668000 ms (FindLiveObjects: 0.299400 ms CreateObjectMapping: 0.045100 ms MarkObjects: 2.191000 ms  DeleteObjects: 0.131300 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.006869 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 1.64 ms, found 9 plugins.
-Preloading 1 native plugins for Editor in 0.23 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-NullReferenceException: Object reference not set to an instance of an object
-  at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x00048] in C:\Users\Angelo\Documents\SAE\3Tesis\FrameworkVR\Library\PackageCache\com.unity.xr.oculus@1.8.1\Runtime\OculusLoader.cs:243 
-  at Unity.XR.Oculus.OculusLoader.EditorLoadOVRPlugin () [0x0007b] in C:\Users\Angelo\Documents\SAE\3Tesis\FrameworkVR\Library\PackageCache\com.unity.xr.oculus@1.8.1\Runtime\OculusLoader.cs:228 
-
-(Filename: C:/Users/Angelo/Documents/SAE/3Tesis/FrameworkVR/Library/PackageCache/com.unity.xr.oculus@1.8.1/Runtime/OculusLoader.cs Line: 243)
-
-Mono: successfully reloaded assembly
-- Completed reload, in  1.069 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.94 ms, found 9 plugins.
-Preloading 1 native plugins for Editor in 0.11 ms.
-Unloading 1872 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 188.7 MB.
-System memory in use after: 188.8 MB.
-
-Unloading 24 unused Assets to reduce memory usage. Loaded Objects now: 2398.
-Total: 4.234200 ms (FindLiveObjects: 0.649000 ms CreateObjectMapping: 0.061400 ms MarkObjects: 3.369600 ms  DeleteObjects: 0.152100 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.004794 seconds.
+Registered in 0.036858 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
 Refreshing native plugins compatible for Editor in 0.81 ms, found 9 plugins.
-Preloading 1 native plugins for Editor in 0.09 ms.
+Preloading 1 native plugins for Editor in 0.12 ms.
 Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
 NullReferenceException: Object reference not set to an instance of an object
-  at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x00048] in C:\Users\Angelo\Documents\SAE\3Tesis\FrameworkVR\Library\PackageCache\com.unity.xr.oculus@1.8.1\Runtime\OculusLoader.cs:243 
-  at Unity.XR.Oculus.OculusLoader.EditorLoadOVRPlugin () [0x0007b] in C:\Users\Angelo\Documents\SAE\3Tesis\FrameworkVR\Library\PackageCache\com.unity.xr.oculus@1.8.1\Runtime\OculusLoader.cs:228 
+  at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x00048] in C:\Users\Angelo\Documents\SAE\3Tesis\FrameworkVR\FrameworkVR\Library\PackageCache\com.unity.xr.oculus@1.8.1\Runtime\OculusLoader.cs:243 
+  at Unity.XR.Oculus.OculusLoader.EditorLoadOVRPlugin () [0x0007b] in C:\Users\Angelo\Documents\SAE\3Tesis\FrameworkVR\FrameworkVR\Library\PackageCache\com.unity.xr.oculus@1.8.1\Runtime\OculusLoader.cs:228 
 
-(Filename: C:/Users/Angelo/Documents/SAE/3Tesis/FrameworkVR/Library/PackageCache/com.unity.xr.oculus@1.8.1/Runtime/OculusLoader.cs Line: 243)
-
-Mono: successfully reloaded assembly
-- Completed reload, in  0.793 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.78 ms, found 9 plugins.
-Preloading 1 native plugins for Editor in 0.08 ms.
-Unloading 1872 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 188.8 MB.
-System memory in use after: 188.8 MB.
-
-Unloading 24 unused Assets to reduce memory usage. Loaded Objects now: 2402.
-Total: 2.643500 ms (FindLiveObjects: 0.255700 ms CreateObjectMapping: 0.061200 ms MarkObjects: 2.184700 ms  DeleteObjects: 0.140300 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.005126 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.79 ms, found 9 plugins.
-Preloading 1 native plugins for Editor in 0.09 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-NullReferenceException: Object reference not set to an instance of an object
-  at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x00048] in C:\Users\Angelo\Documents\SAE\3Tesis\FrameworkVR\Library\PackageCache\com.unity.xr.oculus@1.8.1\Runtime\OculusLoader.cs:243 
-  at Unity.XR.Oculus.OculusLoader.EditorLoadOVRPlugin () [0x0007b] in C:\Users\Angelo\Documents\SAE\3Tesis\FrameworkVR\Library\PackageCache\com.unity.xr.oculus@1.8.1\Runtime\OculusLoader.cs:228 
-
-(Filename: C:/Users/Angelo/Documents/SAE/3Tesis/FrameworkVR/Library/PackageCache/com.unity.xr.oculus@1.8.1/Runtime/OculusLoader.cs Line: 243)
+(Filename: Library/PackageCache/com.unity.xr.oculus@1.8.1/Runtime/OculusLoader.cs Line: 243)
 
 Mono: successfully reloaded assembly
-- Completed reload, in  0.800 seconds
+- Completed reload, in  0.860 seconds
 Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.79 ms, found 9 plugins.
-Preloading 1 native plugins for Editor in 0.09 ms.
-Unloading 1872 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 188.8 MB.
-System memory in use after: 188.9 MB.
-
-Unloading 24 unused Assets to reduce memory usage. Loaded Objects now: 2406.
-Total: 2.348200 ms (FindLiveObjects: 0.320300 ms CreateObjectMapping: 0.045300 ms MarkObjects: 1.859700 ms  DeleteObjects: 0.121700 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.004744 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.91 ms, found 9 plugins.
-Preloading 1 native plugins for Editor in 0.11 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-NullReferenceException: Object reference not set to an instance of an object
-  at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x00048] in C:\Users\Angelo\Documents\SAE\3Tesis\FrameworkVR\Library\PackageCache\com.unity.xr.oculus@1.8.1\Runtime\OculusLoader.cs:243 
-  at Unity.XR.Oculus.OculusLoader.EditorLoadOVRPlugin () [0x0007b] in C:\Users\Angelo\Documents\SAE\3Tesis\FrameworkVR\Library\PackageCache\com.unity.xr.oculus@1.8.1\Runtime\OculusLoader.cs:228 
-
-(Filename: C:/Users/Angelo/Documents/SAE/3Tesis/FrameworkVR/Library/PackageCache/com.unity.xr.oculus@1.8.1/Runtime/OculusLoader.cs Line: 243)
-
-Mono: successfully reloaded assembly
-- Completed reload, in  0.784 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.85 ms, found 9 plugins.
-Preloading 1 native plugins for Editor in 0.09 ms.
-Unloading 1872 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 188.8 MB.
-System memory in use after: 188.9 MB.
-
-Unloading 24 unused Assets to reduce memory usage. Loaded Objects now: 2410.
-Total: 2.478000 ms (FindLiveObjects: 0.330400 ms CreateObjectMapping: 0.062700 ms MarkObjects: 1.951200 ms  DeleteObjects: 0.132600 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.005110 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.82 ms, found 9 plugins.
-Preloading 1 native plugins for Editor in 0.09 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-NullReferenceException: Object reference not set to an instance of an object
-  at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x00048] in C:\Users\Angelo\Documents\SAE\3Tesis\FrameworkVR\Library\PackageCache\com.unity.xr.oculus@1.8.1\Runtime\OculusLoader.cs:243 
-  at Unity.XR.Oculus.OculusLoader.EditorLoadOVRPlugin () [0x0007b] in C:\Users\Angelo\Documents\SAE\3Tesis\FrameworkVR\Library\PackageCache\com.unity.xr.oculus@1.8.1\Runtime\OculusLoader.cs:228 
-
-(Filename: C:/Users/Angelo/Documents/SAE/3Tesis/FrameworkVR/Library/PackageCache/com.unity.xr.oculus@1.8.1/Runtime/OculusLoader.cs Line: 243)
-
-Mono: successfully reloaded assembly
-- Completed reload, in  0.800 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.93 ms, found 9 plugins.
+Refreshing native plugins compatible for Editor in 1.00 ms, found 9 plugins.
 Preloading 1 native plugins for Editor in 0.10 ms.
-Unloading 1872 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 188.8 MB.
-System memory in use after: 188.9 MB.
+Unloading 1907 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 176.2 MB.
+System memory in use after: 176.3 MB.
 
-Unloading 24 unused Assets to reduce memory usage. Loaded Objects now: 2414.
-Total: 2.209200 ms (FindLiveObjects: 0.301900 ms CreateObjectMapping: 0.044700 ms MarkObjects: 1.741700 ms  DeleteObjects: 0.119800 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.004954 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 1.13 ms, found 9 plugins.
-Preloading 1 native plugins for Editor in 0.15 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-NullReferenceException: Object reference not set to an instance of an object
-  at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x00048] in C:\Users\Angelo\Documents\SAE\3Tesis\FrameworkVR\Library\PackageCache\com.unity.xr.oculus@1.8.1\Runtime\OculusLoader.cs:243 
-  at Unity.XR.Oculus.OculusLoader.EditorLoadOVRPlugin () [0x0007b] in C:\Users\Angelo\Documents\SAE\3Tesis\FrameworkVR\Library\PackageCache\com.unity.xr.oculus@1.8.1\Runtime\OculusLoader.cs:228 
-
-(Filename: C:/Users/Angelo/Documents/SAE/3Tesis/FrameworkVR/Library/PackageCache/com.unity.xr.oculus@1.8.1/Runtime/OculusLoader.cs Line: 243)
-
-Mono: successfully reloaded assembly
-- Completed reload, in  0.847 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.87 ms, found 9 plugins.
-Preloading 1 native plugins for Editor in 0.11 ms.
-Unloading 1872 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 188.8 MB.
-System memory in use after: 188.9 MB.
-
-Unloading 24 unused Assets to reduce memory usage. Loaded Objects now: 2418.
-Total: 2.582300 ms (FindLiveObjects: 0.297200 ms CreateObjectMapping: 0.045200 ms MarkObjects: 2.106300 ms  DeleteObjects: 0.132400 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.004896 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.82 ms, found 9 plugins.
-Preloading 1 native plugins for Editor in 0.08 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-NullReferenceException: Object reference not set to an instance of an object
-  at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x00048] in C:\Users\Angelo\Documents\SAE\3Tesis\FrameworkVR\Library\PackageCache\com.unity.xr.oculus@1.8.1\Runtime\OculusLoader.cs:243 
-  at Unity.XR.Oculus.OculusLoader.EditorLoadOVRPlugin () [0x0007b] in C:\Users\Angelo\Documents\SAE\3Tesis\FrameworkVR\Library\PackageCache\com.unity.xr.oculus@1.8.1\Runtime\OculusLoader.cs:228 
-
-(Filename: C:/Users/Angelo/Documents/SAE/3Tesis/FrameworkVR/Library/PackageCache/com.unity.xr.oculus@1.8.1/Runtime/OculusLoader.cs Line: 243)
-
-Mono: successfully reloaded assembly
-- Completed reload, in  0.797 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.91 ms, found 9 plugins.
-Preloading 1 native plugins for Editor in 0.08 ms.
-Unloading 1872 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 188.8 MB.
-System memory in use after: 188.9 MB.
-
-Unloading 24 unused Assets to reduce memory usage. Loaded Objects now: 2422.
-Total: 2.206100 ms (FindLiveObjects: 0.273700 ms CreateObjectMapping: 0.043600 ms MarkObjects: 1.770300 ms  DeleteObjects: 0.117400 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.004898 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.79 ms, found 9 plugins.
-Preloading 1 native plugins for Editor in 0.08 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-NullReferenceException: Object reference not set to an instance of an object
-  at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x00048] in C:\Users\Angelo\Documents\SAE\3Tesis\FrameworkVR\Library\PackageCache\com.unity.xr.oculus@1.8.1\Runtime\OculusLoader.cs:243 
-  at Unity.XR.Oculus.OculusLoader.EditorLoadOVRPlugin () [0x0007b] in C:\Users\Angelo\Documents\SAE\3Tesis\FrameworkVR\Library\PackageCache\com.unity.xr.oculus@1.8.1\Runtime\OculusLoader.cs:228 
-
-(Filename: C:/Users/Angelo/Documents/SAE/3Tesis/FrameworkVR/Library/PackageCache/com.unity.xr.oculus@1.8.1/Runtime/OculusLoader.cs Line: 243)
-
-Mono: successfully reloaded assembly
-- Completed reload, in  0.782 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.86 ms, found 9 plugins.
-Preloading 1 native plugins for Editor in 0.08 ms.
-Unloading 1872 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 188.9 MB.
-System memory in use after: 188.9 MB.
-
-Unloading 24 unused Assets to reduce memory usage. Loaded Objects now: 2426.
-Total: 2.268700 ms (FindLiveObjects: 0.307900 ms CreateObjectMapping: 0.047500 ms MarkObjects: 1.789100 ms  DeleteObjects: 0.123000 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.005030 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.86 ms, found 9 plugins.
-Preloading 1 native plugins for Editor in 0.13 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-NullReferenceException: Object reference not set to an instance of an object
-  at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x00048] in C:\Users\Angelo\Documents\SAE\3Tesis\FrameworkVR\Library\PackageCache\com.unity.xr.oculus@1.8.1\Runtime\OculusLoader.cs:243 
-  at Unity.XR.Oculus.OculusLoader.EditorLoadOVRPlugin () [0x0007b] in C:\Users\Angelo\Documents\SAE\3Tesis\FrameworkVR\Library\PackageCache\com.unity.xr.oculus@1.8.1\Runtime\OculusLoader.cs:228 
-
-(Filename: C:/Users/Angelo/Documents/SAE/3Tesis/FrameworkVR/Library/PackageCache/com.unity.xr.oculus@1.8.1/Runtime/OculusLoader.cs Line: 243)
-
-Mono: successfully reloaded assembly
-- Completed reload, in  0.887 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.99 ms, found 9 plugins.
-Preloading 1 native plugins for Editor in 0.10 ms.
-Unloading 1872 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 188.9 MB.
-System memory in use after: 188.9 MB.
-
-Unloading 24 unused Assets to reduce memory usage. Loaded Objects now: 2430.
-Total: 2.487000 ms (FindLiveObjects: 0.391400 ms CreateObjectMapping: 0.045600 ms MarkObjects: 1.938900 ms  DeleteObjects: 0.110300 ms)
+Unloading 24 unused Assets to reduce memory usage. Loaded Objects now: 2425.
+Total: 3.039200 ms (FindLiveObjects: 0.482100 ms CreateObjectMapping: 0.080000 ms MarkObjects: 2.356600 ms  DeleteObjects: 0.118600 ms)
 
 ========================================================================
 Received Import Request.
-  Time since last request: 2436.250119 seconds.
-  path: Assets/BoxInTheBox/Prefabs/CreateGun.prefab
-  artifactKey: Guid(1be17ccc589691b43a1597cf905c386a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/BoxInTheBox/Prefabs/CreateGun.prefab using Guid(1be17ccc589691b43a1597cf905c386a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ae607d78fcdc89f89fa887b7ffccab31') in 0.196928 seconds
-  Import took 0.202763 seconds .
+  Time since last request: 192.345403 seconds.
+  path: Assets/BoxInTheBox/Sprites/propimages0.png
+  artifactKey: Guid(700bd71ddaa277647812907963f444db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BoxInTheBox/Sprites/propimages0.png using Guid(700bd71ddaa277647812907963f444db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7ce03afa935892bac85771b6ddb7e45e') in 0.040827 seconds
+  Import took 0.043997 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000241 seconds.
-  path: Assets/BoxInTheBox/Prefabs/CreateMag.prefab
-  artifactKey: Guid(cb5ef67bfc9ac1e4592c94feb5ab590a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/BoxInTheBox/Prefabs/CreateMag.prefab using Guid(cb5ef67bfc9ac1e4592c94feb5ab590a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '44a021595ed74df2284bcf8f5cf2a48c') in 0.019593 seconds
-  Import took 0.023537 seconds .
+  Time since last request: 436.806210 seconds.
+  path: Assets/BoxInTheBox/Sprites/propimages0.png
+  artifactKey: Guid(700bd71ddaa277647812907963f444db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BoxInTheBox/Sprites/propimages0.png using Guid(700bd71ddaa277647812907963f444db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c6b77db64029657a843bd5dfcd95091a') in 0.048993 seconds
+  Import took 0.052234 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000172 seconds.
-  path: Assets/BoxInTheBox/Prefabs/CreateGun.prefab
-  artifactKey: Guid(1be17ccc589691b43a1597cf905c386a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/BoxInTheBox/Prefabs/CreateGun.prefab using Guid(1be17ccc589691b43a1597cf905c386a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ae607d78fcdc89f89fa887b7ffccab31') in 0.033819 seconds
-  Import took 0.038110 seconds .
+  Time since last request: 12.918935 seconds.
+  path: Packages/com.unity.2d.spriteshape/Editor/ObjectMenuCreation/DefaultAssets/Sprite Shapes/Closed Sprite Shape.prefab
+  artifactKey: Guid(c0583b4e855c74b8c82e7b9b5efb5ce9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.2d.spriteshape/Editor/ObjectMenuCreation/DefaultAssets/Sprite Shapes/Closed Sprite Shape.prefab using Guid(c0583b4e855c74b8c82e7b9b5efb5ce9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.010063 seconds
+  ERROR: Build asset version error: packages/com.unity.2d.spriteshape/editor/objectmenucreation/defaultassets/sprite shapes/closed sprite shape.prefab in SourceAssetDB has modification time of '2021-12-13T17:44:09Z' while content on disk has modification time of '0001-01-01T00:00:00Z'
+  Import took 0.012771 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000166 seconds.
-  path: Assets/BoxInTheBox/Prefabs/TransformGun.prefab
-  artifactKey: Guid(96fde2be9295b4a4c90bac9e0a9b8573) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/BoxInTheBox/Prefabs/TransformGun.prefab using Guid(96fde2be9295b4a4c90bac9e0a9b8573) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '15d6484a27ed72a35dca8207a6749e02') in 0.025484 seconds
-  Import took 0.029553 seconds .
+  Time since last request: 0.075083 seconds.
+  path: Packages/com.unity.2d.spriteshape/Editor/ObjectMenuCreation/DefaultAssets/Sprite Shapes/Closed Sprite Shape.prefab
+  artifactKey: Guid(c0583b4e855c74b8c82e7b9b5efb5ce9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.2d.spriteshape/Editor/ObjectMenuCreation/DefaultAssets/Sprite Shapes/Closed Sprite Shape.prefab using Guid(c0583b4e855c74b8c82e7b9b5efb5ce9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.002006 seconds
+  ERROR: Build asset version error: packages/com.unity.2d.spriteshape/editor/objectmenucreation/defaultassets/sprite shapes/closed sprite shape.prefab in SourceAssetDB has modification time of '2021-12-13T17:44:09Z' while content on disk has modification time of '0001-01-01T00:00:00Z'
+  Import took 0.004637 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.152502 seconds.
-  path: Assets/BoxInTheBox/Prefabs/Firearms/Pistol.prefab
-  artifactKey: Guid(09d995e362efcb543b2e3ee899f688c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/BoxInTheBox/Prefabs/Firearms/Pistol.prefab using Guid(09d995e362efcb543b2e3ee899f688c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '657759681bcd155a206936dde9bb02a3') in 0.027469 seconds
-  Import took 0.032135 seconds .
+  Time since last request: 0.052463 seconds.
+  path: Packages/com.unity.2d.spriteshape/Editor/ObjectMenuCreation/DefaultAssets/Sprite Shapes/Closed Sprite Shape.prefab
+  artifactKey: Guid(c0583b4e855c74b8c82e7b9b5efb5ce9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.2d.spriteshape/Editor/ObjectMenuCreation/DefaultAssets/Sprite Shapes/Closed Sprite Shape.prefab using Guid(c0583b4e855c74b8c82e7b9b5efb5ce9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.001937 seconds
+  ERROR: Build asset version error: packages/com.unity.2d.spriteshape/editor/objectmenucreation/defaultassets/sprite shapes/closed sprite shape.prefab in SourceAssetDB has modification time of '2021-12-13T17:44:09Z' while content on disk has modification time of '0001-01-01T00:00:00Z'
+  Import took 0.004506 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000169 seconds.
-  path: Assets/BoxInTheBox/Prefabs/Firearms/Rifle.prefab
-  artifactKey: Guid(2f87014f678837b43bfee2bf7df053fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/BoxInTheBox/Prefabs/Firearms/Rifle.prefab using Guid(2f87014f678837b43bfee2bf7df053fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ad178cd3bca6bdb8d58c86030994320b') in 0.024976 seconds
-  Import took 0.028800 seconds .
+  Time since last request: 0.052729 seconds.
+  path: Packages/com.unity.2d.spriteshape/Editor/ObjectMenuCreation/DefaultAssets/Sprite Shapes/Closed Sprite Shape.prefab
+  artifactKey: Guid(c0583b4e855c74b8c82e7b9b5efb5ce9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.2d.spriteshape/Editor/ObjectMenuCreation/DefaultAssets/Sprite Shapes/Closed Sprite Shape.prefab using Guid(c0583b4e855c74b8c82e7b9b5efb5ce9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.002030 seconds
+  ERROR: Build asset version error: packages/com.unity.2d.spriteshape/editor/objectmenucreation/defaultassets/sprite shapes/closed sprite shape.prefab in SourceAssetDB has modification time of '2021-12-13T17:44:09Z' while content on disk has modification time of '0001-01-01T00:00:00Z'
+  Import took 0.004488 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000185 seconds.
-  path: Assets/BoxInTheBox/Prefabs/Firearms/UziMag.prefab
-  artifactKey: Guid(25bf27ec8dce9524b8c2199ce92a25fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/BoxInTheBox/Prefabs/Firearms/UziMag.prefab using Guid(25bf27ec8dce9524b8c2199ce92a25fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2cae2f5a3ab6c1df4ff405cd278b2a9a') in 0.016546 seconds
-  Import took 0.020229 seconds .
+  Time since last request: 0.152934 seconds.
+  path: Packages/com.unity.2d.spriteshape/Editor/ObjectMenuCreation/DefaultAssets/Sprite Shapes/Closed Sprite Shape.prefab
+  artifactKey: Guid(c0583b4e855c74b8c82e7b9b5efb5ce9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.2d.spriteshape/Editor/ObjectMenuCreation/DefaultAssets/Sprite Shapes/Closed Sprite Shape.prefab using Guid(c0583b4e855c74b8c82e7b9b5efb5ce9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.001843 seconds
+  ERROR: Build asset version error: packages/com.unity.2d.spriteshape/editor/objectmenucreation/defaultassets/sprite shapes/closed sprite shape.prefab in SourceAssetDB has modification time of '2021-12-13T17:44:09Z' while content on disk has modification time of '0001-01-01T00:00:00Z'
+  Import took 0.004253 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000226 seconds.
-  path: Assets/BoxInTheBox/Prefabs/Firearms/RifleMag.prefab
-  artifactKey: Guid(f52b9a6d08de9a84d9157b7f73eee5a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/BoxInTheBox/Prefabs/Firearms/RifleMag.prefab using Guid(f52b9a6d08de9a84d9157b7f73eee5a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e83462dde10838e13cd2b2743d66166d') in 0.012912 seconds
-  Import took 0.017168 seconds .
+  Time since last request: 0.051721 seconds.
+  path: Packages/com.unity.2d.spriteshape/Editor/ObjectMenuCreation/DefaultAssets/Sprite Shapes/Closed Sprite Shape.prefab
+  artifactKey: Guid(c0583b4e855c74b8c82e7b9b5efb5ce9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.2d.spriteshape/Editor/ObjectMenuCreation/DefaultAssets/Sprite Shapes/Closed Sprite Shape.prefab using Guid(c0583b4e855c74b8c82e7b9b5efb5ce9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.001958 seconds
+  ERROR: Build asset version error: packages/com.unity.2d.spriteshape/editor/objectmenucreation/defaultassets/sprite shapes/closed sprite shape.prefab in SourceAssetDB has modification time of '2021-12-13T17:44:09Z' while content on disk has modification time of '0001-01-01T00:00:00Z'
+  Import took 0.004507 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000165 seconds.
-  path: Assets/BoxInTheBox/Prefabs/Firearms/PistolMag.prefab
-  artifactKey: Guid(d8d4d08a5ed16284e8ef50a01c40982d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/BoxInTheBox/Prefabs/Firearms/PistolMag.prefab using Guid(d8d4d08a5ed16284e8ef50a01c40982d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '72d571339ec7580f7a83eaac66bc9b04') in 0.011930 seconds
-  Import took 0.016300 seconds .
+  Time since last request: 0.053217 seconds.
+  path: Packages/com.unity.2d.spriteshape/Editor/ObjectMenuCreation/DefaultAssets/Sprite Shapes/Closed Sprite Shape.prefab
+  artifactKey: Guid(c0583b4e855c74b8c82e7b9b5efb5ce9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.2d.spriteshape/Editor/ObjectMenuCreation/DefaultAssets/Sprite Shapes/Closed Sprite Shape.prefab using Guid(c0583b4e855c74b8c82e7b9b5efb5ce9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.001919 seconds
+  ERROR: Build asset version error: packages/com.unity.2d.spriteshape/editor/objectmenucreation/defaultassets/sprite shapes/closed sprite shape.prefab in SourceAssetDB has modification time of '2021-12-13T17:44:09Z' while content on disk has modification time of '0001-01-01T00:00:00Z'
+  Import took 0.004475 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000245 seconds.
-  path: Assets/BoxInTheBox/Prefabs/Firearms/RPG.prefab
-  artifactKey: Guid(6d80a9f3da3cc6d41a109053638bf828) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/BoxInTheBox/Prefabs/Firearms/RPG.prefab using Guid(6d80a9f3da3cc6d41a109053638bf828) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f8ee04e4821f1563ebe943a274030422') in 0.015462 seconds
-  Import took 0.019741 seconds .
+  Time since last request: 0.050930 seconds.
+  path: Packages/com.unity.2d.spriteshape/Editor/ObjectMenuCreation/DefaultAssets/Sprite Shapes/Closed Sprite Shape.prefab
+  artifactKey: Guid(c0583b4e855c74b8c82e7b9b5efb5ce9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.2d.spriteshape/Editor/ObjectMenuCreation/DefaultAssets/Sprite Shapes/Closed Sprite Shape.prefab using Guid(c0583b4e855c74b8c82e7b9b5efb5ce9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.001823 seconds
+  ERROR: Build asset version error: packages/com.unity.2d.spriteshape/editor/objectmenucreation/defaultassets/sprite shapes/closed sprite shape.prefab in SourceAssetDB has modification time of '2021-12-13T17:44:09Z' while content on disk has modification time of '0001-01-01T00:00:00Z'
+  Import took 0.004231 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000158 seconds.
-  path: Assets/BoxInTheBox/Prefabs/Firearms/RocketRPGMag.prefab
-  artifactKey: Guid(7bccb928cde7dad46852dc3bb681516c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/BoxInTheBox/Prefabs/Firearms/RocketRPGMag.prefab using Guid(7bccb928cde7dad46852dc3bb681516c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6e381403e10d847148ee9f5a825ecd40') in 0.011451 seconds
-  Import took 0.015238 seconds .
+  Time since last request: 0.033655 seconds.
+  path: Packages/com.unity.2d.spriteshape/Editor/ObjectMenuCreation/DefaultAssets/Sprite Shapes/Closed Sprite Shape.prefab
+  artifactKey: Guid(c0583b4e855c74b8c82e7b9b5efb5ce9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.2d.spriteshape/Editor/ObjectMenuCreation/DefaultAssets/Sprite Shapes/Closed Sprite Shape.prefab using Guid(c0583b4e855c74b8c82e7b9b5efb5ce9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.001941 seconds
+  ERROR: Build asset version error: packages/com.unity.2d.spriteshape/editor/objectmenucreation/defaultassets/sprite shapes/closed sprite shape.prefab in SourceAssetDB has modification time of '2021-12-13T17:44:09Z' while content on disk has modification time of '0001-01-01T00:00:00Z'
+  Import took 0.004308 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000260 seconds.
-  path: Assets/BoxInTheBox/Prefabs/Firearms/Uzi.prefab
-  artifactKey: Guid(02c81f56a0fc6084aab1dfd43b9a9a55) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/BoxInTheBox/Prefabs/Firearms/Uzi.prefab using Guid(02c81f56a0fc6084aab1dfd43b9a9a55) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '41188ab5d73ca85eba8894f30d06e92f') in 0.012818 seconds
-  Import took 0.016778 seconds .
+  Time since last request: 0.141852 seconds.
+  path: Packages/com.unity.2d.spriteshape/Editor/ObjectMenuCreation/DefaultAssets/Sprite Shapes/Closed Sprite Shape.prefab
+  artifactKey: Guid(c0583b4e855c74b8c82e7b9b5efb5ce9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.2d.spriteshape/Editor/ObjectMenuCreation/DefaultAssets/Sprite Shapes/Closed Sprite Shape.prefab using Guid(c0583b4e855c74b8c82e7b9b5efb5ce9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.001837 seconds
+  ERROR: Build asset version error: packages/com.unity.2d.spriteshape/editor/objectmenucreation/defaultassets/sprite shapes/closed sprite shape.prefab in SourceAssetDB has modification time of '2021-12-13T17:44:09Z' while content on disk has modification time of '0001-01-01T00:00:00Z'
+  Import took 0.004345 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.222517 seconds.
-  path: Assets/BoxInTheBox/Prefabs/Melee/DoubleAxe.prefab
-  artifactKey: Guid(305faffb32f3e47419c6494c7ef162b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/BoxInTheBox/Prefabs/Melee/DoubleAxe.prefab using Guid(305faffb32f3e47419c6494c7ef162b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4f925d850fc6facec349cd7410a78a9a') in 0.085488 seconds
-  Import took 0.089919 seconds .
+  Time since last request: 0.054835 seconds.
+  path: Packages/com.unity.2d.spriteshape/Editor/ObjectMenuCreation/DefaultAssets/Sprite Shapes/Closed Sprite Shape.prefab
+  artifactKey: Guid(c0583b4e855c74b8c82e7b9b5efb5ce9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.2d.spriteshape/Editor/ObjectMenuCreation/DefaultAssets/Sprite Shapes/Closed Sprite Shape.prefab using Guid(c0583b4e855c74b8c82e7b9b5efb5ce9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.001888 seconds
+  ERROR: Build asset version error: packages/com.unity.2d.spriteshape/editor/objectmenucreation/defaultassets/sprite shapes/closed sprite shape.prefab in SourceAssetDB has modification time of '2021-12-13T17:44:09Z' while content on disk has modification time of '0001-01-01T00:00:00Z'
+  Import took 0.004448 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000158 seconds.
-  path: Assets/BoxInTheBox/Prefabs/Melee/Sword.prefab
-  artifactKey: Guid(b1a506c1f2951f14bacfa942ce22fdea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/BoxInTheBox/Prefabs/Melee/Sword.prefab using Guid(b1a506c1f2951f14bacfa942ce22fdea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c0ec13ea01ba71c7a0f1b7da89cdeca3') in 0.078472 seconds
-  Import took 0.082129 seconds .
+  Time since last request: 0.069871 seconds.
+  path: Packages/com.unity.2d.spriteshape/Editor/ObjectMenuCreation/DefaultAssets/Sprite Shapes/Closed Sprite Shape.prefab
+  artifactKey: Guid(c0583b4e855c74b8c82e7b9b5efb5ce9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.2d.spriteshape/Editor/ObjectMenuCreation/DefaultAssets/Sprite Shapes/Closed Sprite Shape.prefab using Guid(c0583b4e855c74b8c82e7b9b5efb5ce9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.001829 seconds
+  ERROR: Build asset version error: packages/com.unity.2d.spriteshape/editor/objectmenucreation/defaultassets/sprite shapes/closed sprite shape.prefab in SourceAssetDB has modification time of '2021-12-13T17:44:09Z' while content on disk has modification time of '0001-01-01T00:00:00Z'
+  Import took 0.004222 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000190 seconds.
-  path: Assets/BoxInTheBox/Prefabs/Melee/OneSideAxe.prefab
-  artifactKey: Guid(5a0d7087cb3fdd24583df5b288723f0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/BoxInTheBox/Prefabs/Melee/OneSideAxe.prefab using Guid(5a0d7087cb3fdd24583df5b288723f0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '12cde10f6cd8389c4bdcc46a4a02d982') in 0.073613 seconds
-  Import took 0.077307 seconds .
+  Time since last request: 0.050917 seconds.
+  path: Assets/BoxInTheBox/Assets/UF Creator LITE/Prefabs/Bandits, Camps/Boats, Ships, Docks/Quays, Docks/Dock_1A.prefab
+  artifactKey: Guid(5ff7f0772a02a864db5812b541ee07d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BoxInTheBox/Assets/UF Creator LITE/Prefabs/Bandits, Camps/Boats, Ships, Docks/Quays, Docks/Dock_1A.prefab using Guid(5ff7f0772a02a864db5812b541ee07d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00a7b83e3b4ded4600809d8b1aabeba8') in 0.094605 seconds
+  Import took 0.097938 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 30.608961 seconds.
-  path: Assets/BoxInTheBox/Prefabs/Props/Banana.prefab
-  artifactKey: Guid(d37f9d362b2f6744abd55503601cf08b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/BoxInTheBox/Prefabs/Props/Banana.prefab using Guid(d37f9d362b2f6744abd55503601cf08b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eb040f63e0966829fe2ad91ea8bf11b0') in 0.016800 seconds
-  Import took 0.020610 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000175 seconds.
-  path: Assets/BoxInTheBox/Prefabs/Props/Battery.prefab
-  artifactKey: Guid(913fc2ebef66bb14481af28bc0e83886) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/BoxInTheBox/Prefabs/Props/Battery.prefab using Guid(913fc2ebef66bb14481af28bc0e83886) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3df8f18038a29a6dac4b7deaf5a6bc25') in 0.060012 seconds
-  Import took 0.063470 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000199 seconds.
-  path: Assets/BoxInTheBox/Prefabs/Props/Barrel.prefab
-  artifactKey: Guid(144abd136e13f7f4d8349c76fd07022f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/BoxInTheBox/Prefabs/Props/Barrel.prefab using Guid(144abd136e13f7f4d8349c76fd07022f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '91de301ca1dbd971fdf615d9bcbc0e9d') in 0.032812 seconds
-  Import took 0.036219 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000189 seconds.
-  path: Assets/BoxInTheBox/Prefabs/Props/CardboardBox.prefab
-  artifactKey: Guid(7073baebd8e330d4384e4966f20f2315) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/BoxInTheBox/Prefabs/Props/CardboardBox.prefab using Guid(7073baebd8e330d4384e4966f20f2315) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'afa54e5ef71c312a601e225a0f918f8b') in 0.022146 seconds
-  Import took 0.025838 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000206 seconds.
-  path: Assets/BoxInTheBox/Prefabs/Props/OpenCardboardBox.prefab
-  artifactKey: Guid(6ef83dd8f0ab651489485ba58bd08b8e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/BoxInTheBox/Prefabs/Props/OpenCardboardBox.prefab using Guid(6ef83dd8f0ab651489485ba58bd08b8e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ad10615c49ba8ebe60b0b3555cc6abc4') in 0.026247 seconds
-  Import took 0.029390 seconds .
+  Time since last request: 0.000161 seconds.
+  path: Assets/BoxInTheBox/Assets/UF Creator LITE/Prefabs/Bandits, Camps/Boats, Ships, Docks/Quays, Docks/Dock_2B2.prefab
+  artifactKey: Guid(830927180039fe04593f9fef5ea0f001) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BoxInTheBox/Assets/UF Creator LITE/Prefabs/Bandits, Camps/Boats, Ships, Docks/Quays, Docks/Dock_2B2.prefab using Guid(830927180039fe04593f9fef5ea0f001) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f982b99bb29ecb740c7d765014b5115f') in 0.018581 seconds
+  Import took 0.021211 seconds .
 
 ========================================================================
 Received Import Request.
   Time since last request: 0.000171 seconds.
-  path: Assets/BoxInTheBox/Prefabs/Props/FireHydrant.prefab
-  artifactKey: Guid(303c677a157175c4eadf6be2e0d91d35) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/BoxInTheBox/Prefabs/Props/FireHydrant.prefab using Guid(303c677a157175c4eadf6be2e0d91d35) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f7c04f5ad8c6e7e7ff36cbb0cdb5a3c3') in 0.070017 seconds
-  Import took 0.073251 seconds .
+  path: Assets/BoxInTheBox/Assets/UF Creator LITE/Prefabs/Bandits, Camps/Boats, Ships, Docks/Quays, Docks/Dock_1A2.prefab
+  artifactKey: Guid(b43c66f626d7201498062137d082df3e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BoxInTheBox/Assets/UF Creator LITE/Prefabs/Bandits, Camps/Boats, Ships, Docks/Quays, Docks/Dock_1A2.prefab using Guid(b43c66f626d7201498062137d082df3e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '72ba60fe7249d624126aef7476736965') in 0.015415 seconds
+  Import took 0.018995 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000245 seconds.
-  path: Assets/BoxInTheBox/Prefabs/Props/Pot.prefab
-  artifactKey: Guid(b6ae6ef1ea14d1049b5918c6638a55c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/BoxInTheBox/Prefabs/Props/Pot.prefab using Guid(b6ae6ef1ea14d1049b5918c6638a55c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'de2c7f04502216006bf3dbd25e0ecf4c') in 0.072057 seconds
-  Import took 0.076292 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000181 seconds.
-  path: Assets/BoxInTheBox/Prefabs/Props/Pills.prefab
-  artifactKey: Guid(7eaf04b82bd45eb4f8e6f185c7872fc7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/BoxInTheBox/Prefabs/Props/Pills.prefab using Guid(7eaf04b82bd45eb4f8e6f185c7872fc7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bfa200d68f04398e325e8bbe2069c691') in 0.039776 seconds
-  Import took 0.042658 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000251 seconds.
-  path: Assets/BoxInTheBox/Prefabs/Props/Flashlight.prefab
-  artifactKey: Guid(2d638d7b73e4e694b96f75c37e374ed4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/BoxInTheBox/Prefabs/Props/Flashlight.prefab using Guid(2d638d7b73e4e694b96f75c37e374ed4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3a40cf01d0ad0af1d381d1e98297474e') in 0.078392 seconds
-  Import took 0.082909 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000172 seconds.
-  path: Assets/BoxInTheBox/Prefabs/Props/Cheese.prefab
-  artifactKey: Guid(3693dfede52ffaa43aca5eca4fbc0923) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/BoxInTheBox/Prefabs/Props/Cheese.prefab using Guid(3693dfede52ffaa43aca5eca4fbc0923) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4bf43ebdadc9032b34ab0acd8f379e11') in 0.011700 seconds
-  Import took 0.015453 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000186 seconds.
-  path: Assets/BoxInTheBox/Prefabs/Props/Walkie.prefab
-  artifactKey: Guid(ad3c92f09cf56ec4a89c69e33c18ddea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/BoxInTheBox/Prefabs/Props/Walkie.prefab using Guid(ad3c92f09cf56ec4a89c69e33c18ddea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7d6665c6911e0e0c36931897213cf221') in 0.073784 seconds
-  Import took 0.077653 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000183 seconds.
-  path: Assets/BoxInTheBox/Prefabs/Props/Chair.prefab
-  artifactKey: Guid(6b9e45c5e92046849bc309a4be352693) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/BoxInTheBox/Prefabs/Props/Chair.prefab using Guid(6b9e45c5e92046849bc309a4be352693) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c2d603cf847d94aad1b4a10c69ae10f8') in 0.072695 seconds
-  Import took 0.077248 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000179 seconds.
-  path: Assets/BoxInTheBox/Prefabs/Props/CannedFood.prefab
-  artifactKey: Guid(d2cf0b113aaddb0438a12a2289473627) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/BoxInTheBox/Prefabs/Props/CannedFood.prefab using Guid(d2cf0b113aaddb0438a12a2289473627) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e15a784317804d81ae06f05257f08361') in 0.058874 seconds
-  Import took 0.062938 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000239 seconds.
-  path: Assets/BoxInTheBox/Prefabs/Props/Book.prefab
-  artifactKey: Guid(5aa203bec9a8f9a47a0de20914bd7da1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/BoxInTheBox/Prefabs/Props/Book.prefab using Guid(5aa203bec9a8f9a47a0de20914bd7da1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a6401c3c50d89c64e929ab6617ec337f') in 0.069837 seconds
-  Import took 0.073947 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000177 seconds.
-  path: Assets/BoxInTheBox/Prefabs/Props/MatchBox.prefab
-  artifactKey: Guid(7773d7a175b821646a3369081b561396) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/BoxInTheBox/Prefabs/Props/MatchBox.prefab using Guid(7773d7a175b821646a3369081b561396) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '92ba148d72021fe8f3bc4bb50b058c92') in 0.056654 seconds
-  Import took 0.060194 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000194 seconds.
-  path: Assets/BoxInTheBox/Prefabs/Props/OldSchoolBarstoolBacked.prefab
-  artifactKey: Guid(60447e745caf0d34b917af8613324229) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/BoxInTheBox/Prefabs/Props/OldSchoolBarstoolBacked.prefab using Guid(60447e745caf0d34b917af8613324229) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd8a617e6e54b34862c0f895f81976736') in 0.070047 seconds
-  Import took 0.073860 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000163 seconds.
-  path: Assets/BoxInTheBox/Prefabs/Props/RoundTable.prefab
-  artifactKey: Guid(99a48659a9e90e643ad127bbe44ce9f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/BoxInTheBox/Prefabs/Props/RoundTable.prefab using Guid(99a48659a9e90e643ad127bbe44ce9f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '219713ffe8148ac0def25b0f8b999a7c') in 0.058638 seconds
-  Import took 0.062057 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000171 seconds.
-  path: Assets/BoxInTheBox/Prefabs/Props/WoodenChair.prefab
-  artifactKey: Guid(d5c2348fd86e6aa4d93f9c54d60aacaa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/BoxInTheBox/Prefabs/Props/WoodenChair.prefab using Guid(d5c2348fd86e6aa4d93f9c54d60aacaa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '08f9d5ef89853350ec9f9668054101f3') in 0.061149 seconds
-  Import took 0.065443 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000177 seconds.
-  path: Assets/BoxInTheBox/Prefabs/Props/Mailbox.prefab
-  artifactKey: Guid(874134a3d40c4f74fbff142596b09c83) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/BoxInTheBox/Prefabs/Props/Mailbox.prefab using Guid(874134a3d40c4f74fbff142596b09c83) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2ef3973e4bee89965cdc8c608c3e909e') in 0.072256 seconds
-  Import took 0.076545 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000163 seconds.
-  path: Assets/BoxInTheBox/Prefabs/Props/Pillow.prefab
-  artifactKey: Guid(c99769515b0eb1447b1e06b85c49534f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/BoxInTheBox/Prefabs/Props/Pillow.prefab using Guid(c99769515b0eb1447b1e06b85c49534f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cf4a36076f4465d216ec625af8d91131') in 0.058620 seconds
-  Import took 0.062184 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000193 seconds.
-  path: Assets/BoxInTheBox/Prefabs/Props/WoodenSwivelStoolNoBack.prefab
-  artifactKey: Guid(0b353159db010a641984e888e8cf4400) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/BoxInTheBox/Prefabs/Props/WoodenSwivelStoolNoBack.prefab using Guid(0b353159db010a641984e888e8cf4400) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'be5eb244bf71ee4f3c94c5a7055b9688') in 0.064046 seconds
-  Import took 0.067289 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000179 seconds.
-  path: Assets/BoxInTheBox/Prefabs/Props/Maki.prefab
-  artifactKey: Guid(570020f95e576df498b0a9d37043c20b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/BoxInTheBox/Prefabs/Props/Maki.prefab using Guid(570020f95e576df498b0a9d37043c20b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '016080327514699eb913661cbda0e7bc') in 0.012240 seconds
-  Import took 0.015517 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000214 seconds.
-  path: Assets/BoxInTheBox/Prefabs/Props/WaterBottle.prefab
-  artifactKey: Guid(56e18cc0d0f399a4694df315adef4102) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/BoxInTheBox/Prefabs/Props/WaterBottle.prefab using Guid(56e18cc0d0f399a4694df315adef4102) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'af6049bb4848a7102638f0e8a238b391') in 0.068622 seconds
-  Import took 0.072425 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000235 seconds.
-  path: Assets/BoxInTheBox/Prefabs/Props/FirstAid.prefab
-  artifactKey: Guid(c43e0c5711ec3544d8fa450fd7f3b1ca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/BoxInTheBox/Prefabs/Props/FirstAid.prefab using Guid(c43e0c5711ec3544d8fa450fd7f3b1ca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9aa0e743e874760a8d55431fa68f677b') in 0.041281 seconds
-  Import took 0.044782 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000167 seconds.
-  path: Assets/BoxInTheBox/Prefabs/Props/Match.prefab
-  artifactKey: Guid(c224732b990f7d349a67d48d95c802a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/BoxInTheBox/Prefabs/Props/Match.prefab using Guid(c224732b990f7d349a67d48d95c802a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b8c72d266a7260051a0a69150279d410') in 0.039254 seconds
-  Import took 0.042751 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000139 seconds.
-  path: Assets/BoxInTheBox/Prefabs/Props/SquareTable.prefab
-  artifactKey: Guid(a62f2bb0370b1864e8516bdca23376b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/BoxInTheBox/Prefabs/Props/SquareTable.prefab using Guid(a62f2bb0370b1864e8516bdca23376b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eb2aa8c5484ddd62a83e89b15508da98') in 0.060789 seconds
-  Import took 0.063619 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 79.652920 seconds.
-  path: Assets/BoxInTheBox/Prefabs/Props/WoodenCrate Variant.prefab
-  artifactKey: Guid(a30b54a48cabd034dba0c17f33284bbb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/BoxInTheBox/Prefabs/Props/WoodenCrate Variant.prefab using Guid(a30b54a48cabd034dba0c17f33284bbb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4971a6d7da470519edf6cb7ed0df4a58') in 0.033510 seconds
-  Import took 0.037583 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 16.302815 seconds.
-  path: Assets/BoxInTheBox/Prefabs/CreateGun.prefab
-  artifactKey: Guid(1be17ccc589691b43a1597cf905c386a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/BoxInTheBox/Prefabs/CreateGun.prefab using Guid(1be17ccc589691b43a1597cf905c386a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bc86ab6bb3fefc119290350b69df1129') in 0.034053 seconds
-  Import took 0.039900 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 69.981527 seconds.
-  path: Assets/BoxInTheBox/Prefabs/CreateGun.prefab
-  artifactKey: Guid(1be17ccc589691b43a1597cf905c386a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/BoxInTheBox/Prefabs/CreateGun.prefab using Guid(1be17ccc589691b43a1597cf905c386a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4e095b1ab3c5509ff87df6fc469c9068') in 0.034038 seconds
-  Import took 0.039265 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 15.374970 seconds.
-  path: Assets/BoxInTheBox/Prefabs/CreateGun.prefab
-  artifactKey: Guid(1be17ccc589691b43a1597cf905c386a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/BoxInTheBox/Prefabs/CreateGun.prefab using Guid(1be17ccc589691b43a1597cf905c386a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4dcf3677559f28ed0230151b648a4b5f') in 0.038016 seconds
-  Import took 0.044576 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 4.052394 seconds.
-  path: Assets/BoxInTheBox/Prefabs/CreateGun.prefab
-  artifactKey: Guid(1be17ccc589691b43a1597cf905c386a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/BoxInTheBox/Prefabs/CreateGun.prefab using Guid(1be17ccc589691b43a1597cf905c386a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a0d25bba58680f2e9f60ec2b937bae9e') in 0.030289 seconds
-  Import took 0.035499 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 4.999895 seconds.
-  path: Assets/BoxInTheBox/Prefabs/CreateGun.prefab
-  artifactKey: Guid(1be17ccc589691b43a1597cf905c386a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/BoxInTheBox/Prefabs/CreateGun.prefab using Guid(1be17ccc589691b43a1597cf905c386a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2438839c31e16ed48765050b82a102af') in 0.044110 seconds
-  Import took 0.049626 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 6.394857 seconds.
-  path: Assets/BoxInTheBox/Prefabs/CreateGun.prefab
-  artifactKey: Guid(1be17ccc589691b43a1597cf905c386a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/BoxInTheBox/Prefabs/CreateGun.prefab using Guid(1be17ccc589691b43a1597cf905c386a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '29f012ecd70812291fc3225f7c8ae45d') in 0.034155 seconds
-  Import took 0.040422 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 5.818628 seconds.
-  path: Assets/BoxInTheBox/Prefabs/CreateGun.prefab
-  artifactKey: Guid(1be17ccc589691b43a1597cf905c386a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/BoxInTheBox/Prefabs/CreateGun.prefab using Guid(1be17ccc589691b43a1597cf905c386a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7a7840f7f43de3cdddcd0aab22d7ce6b') in 0.031029 seconds
-  Import took 0.035700 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.977381 seconds.
-  path: Assets/BoxInTheBox/Prefabs/CreateGun.prefab
-  artifactKey: Guid(1be17ccc589691b43a1597cf905c386a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/BoxInTheBox/Prefabs/CreateGun.prefab using Guid(1be17ccc589691b43a1597cf905c386a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1694de7dbe8d5cf23b1a43ec0d0e1f11') in 0.035985 seconds
-  Import took 0.041708 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 7.428902 seconds.
-  path: Assets/BoxInTheBox/Prefabs/CreateGun.prefab
-  artifactKey: Guid(1be17ccc589691b43a1597cf905c386a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/BoxInTheBox/Prefabs/CreateGun.prefab using Guid(1be17ccc589691b43a1597cf905c386a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '57a54fa655d9b9b154c85d5cf06507c0') in 0.029737 seconds
-  Import took 0.035125 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 1.372448 seconds.
-  path: Assets/BoxInTheBox/Prefabs/CreateGun.prefab
-  artifactKey: Guid(1be17ccc589691b43a1597cf905c386a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/BoxInTheBox/Prefabs/CreateGun.prefab using Guid(1be17ccc589691b43a1597cf905c386a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b68d756fb1fdecd3352be11f91d58a3b') in 0.031037 seconds
-  Import took 0.036907 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 6.452116 seconds.
-  path: Assets/BoxInTheBox/Prefabs/CreateGun.prefab
-  artifactKey: Guid(1be17ccc589691b43a1597cf905c386a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/BoxInTheBox/Prefabs/CreateGun.prefab using Guid(1be17ccc589691b43a1597cf905c386a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7d94dc36808f3fa931111806ac3ef3cc') in 0.033398 seconds
-  Import took 0.038381 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 4.390570 seconds.
-  path: Assets/BoxInTheBox/Prefabs/CreateGun.prefab
-  artifactKey: Guid(1be17ccc589691b43a1597cf905c386a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/BoxInTheBox/Prefabs/CreateGun.prefab using Guid(1be17ccc589691b43a1597cf905c386a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '611b9f3c6fb260d09ac8366cc418f01e') in 0.031618 seconds
-  Import took 0.037296 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 4.802599 seconds.
-  path: Assets/BoxInTheBox/Prefabs/CreateGun.prefab
-  artifactKey: Guid(1be17ccc589691b43a1597cf905c386a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/BoxInTheBox/Prefabs/CreateGun.prefab using Guid(1be17ccc589691b43a1597cf905c386a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0964258657b629348d1a04893141c43c') in 0.032383 seconds
-  Import took 0.038010 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 1.575495 seconds.
-  path: Assets/BoxInTheBox/Prefabs/CreateGun.prefab
-  artifactKey: Guid(1be17ccc589691b43a1597cf905c386a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/BoxInTheBox/Prefabs/CreateGun.prefab using Guid(1be17ccc589691b43a1597cf905c386a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2d24d8eb3af37a6a44ccf15286183078') in 0.035257 seconds
-  Import took 0.040323 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 1.589952 seconds.
-  path: Assets/BoxInTheBox/Prefabs/CreateGun.prefab
-  artifactKey: Guid(1be17ccc589691b43a1597cf905c386a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/BoxInTheBox/Prefabs/CreateGun.prefab using Guid(1be17ccc589691b43a1597cf905c386a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd2726a472eea539ea6896f8e80c08128') in 0.030461 seconds
-  Import took 0.035755 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 1.365285 seconds.
-  path: Assets/BoxInTheBox/Prefabs/CreateGun.prefab
-  artifactKey: Guid(1be17ccc589691b43a1597cf905c386a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/BoxInTheBox/Prefabs/CreateGun.prefab using Guid(1be17ccc589691b43a1597cf905c386a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '65dd982104edd9fdb1b7cbf975d4c019') in 0.034846 seconds
-  Import took 0.040978 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 3.603544 seconds.
-  path: Assets/BoxInTheBox/Prefabs/CreateGun.prefab
-  artifactKey: Guid(1be17ccc589691b43a1597cf905c386a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/BoxInTheBox/Prefabs/CreateGun.prefab using Guid(1be17ccc589691b43a1597cf905c386a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ee8fcb541a398ede95b9161508f2101a') in 0.030583 seconds
-  Import took 0.036935 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 2.390035 seconds.
-  path: Assets/BoxInTheBox/Prefabs/CreateGun.prefab
-  artifactKey: Guid(1be17ccc589691b43a1597cf905c386a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/BoxInTheBox/Prefabs/CreateGun.prefab using Guid(1be17ccc589691b43a1597cf905c386a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5200307dfe9d9d574302b3b6e1381d62') in 0.043413 seconds
-  Import took 0.049551 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 4.164235 seconds.
-  path: Assets/BoxInTheBox/Prefabs/CreateGun.prefab
-  artifactKey: Guid(1be17ccc589691b43a1597cf905c386a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/BoxInTheBox/Prefabs/CreateGun.prefab using Guid(1be17ccc589691b43a1597cf905c386a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '14d8e806bf3ef37fbbd49cd7a3549b7e') in 0.031068 seconds
-  Import took 0.036401 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 366.696374 seconds.
-  path: Assets/BoxInTheBox/Prefabs/CreateGun.prefab
-  artifactKey: Guid(1be17ccc589691b43a1597cf905c386a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/BoxInTheBox/Prefabs/CreateGun.prefab using Guid(1be17ccc589691b43a1597cf905c386a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '60fb901747f0cee0ffc86bd277dd4419') in 0.038869 seconds
-  Import took 0.043743 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000166 seconds.
-  path: Assets/BoxInTheBox/Prefabs/TransformGun.prefab
-  artifactKey: Guid(96fde2be9295b4a4c90bac9e0a9b8573) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/BoxInTheBox/Prefabs/TransformGun.prefab using Guid(96fde2be9295b4a4c90bac9e0a9b8573) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aeeea7ba99796842db6cee0c40a0ed5e') in 0.018316 seconds
-  Import took 0.022167 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 5.762912 seconds.
-  path: Assets/BoxInTheBox/Prefabs/CreateGun.prefab
-  artifactKey: Guid(1be17ccc589691b43a1597cf905c386a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/BoxInTheBox/Prefabs/CreateGun.prefab using Guid(1be17ccc589691b43a1597cf905c386a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '08795087987b84fbb4954cc90b0616f8') in 0.034683 seconds
-  Import took 0.039778 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000260 seconds.
-  path: Assets/BoxInTheBox/Prefabs/TransformGun.prefab
-  artifactKey: Guid(96fde2be9295b4a4c90bac9e0a9b8573) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/BoxInTheBox/Prefabs/TransformGun.prefab using Guid(96fde2be9295b4a4c90bac9e0a9b8573) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0693d7f694f242c929e1290b266bc3f5') in 0.017634 seconds
-  Import took 0.027551 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.008327 seconds.
-  path: Assets/BoxInTheBox/Prefabs/TransformGun.prefab
-  artifactKey: Guid(96fde2be9295b4a4c90bac9e0a9b8573) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/BoxInTheBox/Prefabs/TransformGun.prefab using Guid(96fde2be9295b4a4c90bac9e0a9b8573) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0693d7f694f242c929e1290b266bc3f5') in 0.017067 seconds
-  Import took 0.021039 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 2.170256 seconds.
-  path: Assets/BoxInTheBox/Prefabs/CreateGun.prefab
-  artifactKey: Guid(1be17ccc589691b43a1597cf905c386a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/BoxInTheBox/Prefabs/CreateGun.prefab using Guid(1be17ccc589691b43a1597cf905c386a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f3a4dcd5389cb5d2c14bb3eaf5e7305e') in 0.032402 seconds
-  Import took 0.043389 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000193 seconds.
-  path: Assets/BoxInTheBox/Prefabs/TransformGun.prefab
-  artifactKey: Guid(96fde2be9295b4a4c90bac9e0a9b8573) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/BoxInTheBox/Prefabs/TransformGun.prefab using Guid(96fde2be9295b4a4c90bac9e0a9b8573) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e26bf12d5307cdb49411849a745957d3') in 0.019388 seconds
-  Import took 0.023472 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 3.550744 seconds.
-  path: Assets/BoxInTheBox/Prefabs/CreateGun.prefab
-  artifactKey: Guid(1be17ccc589691b43a1597cf905c386a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/BoxInTheBox/Prefabs/CreateGun.prefab using Guid(1be17ccc589691b43a1597cf905c386a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a826684832481c7af046174c491a28d1') in 0.033544 seconds
-  Import took 0.045660 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000242 seconds.
-  path: Assets/BoxInTheBox/Prefabs/TransformGun.prefab
-  artifactKey: Guid(96fde2be9295b4a4c90bac9e0a9b8573) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/BoxInTheBox/Prefabs/TransformGun.prefab using Guid(96fde2be9295b4a4c90bac9e0a9b8573) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '90ad6b30881b9ea991b665c13813737f') in 0.019507 seconds
-  Import took 0.023360 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 2.568654 seconds.
-  path: Assets/BoxInTheBox/Prefabs/CreateGun.prefab
-  artifactKey: Guid(1be17ccc589691b43a1597cf905c386a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/BoxInTheBox/Prefabs/CreateGun.prefab using Guid(1be17ccc589691b43a1597cf905c386a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2df3031d9cdbe5d0a0dc31e73b68f599') in 0.032436 seconds
-  Import took 0.038645 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000215 seconds.
-  path: Assets/BoxInTheBox/Prefabs/TransformGun.prefab
-  artifactKey: Guid(96fde2be9295b4a4c90bac9e0a9b8573) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/BoxInTheBox/Prefabs/TransformGun.prefab using Guid(96fde2be9295b4a4c90bac9e0a9b8573) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7b43ab3d59aa13c844f384ae4dfeb245') in 0.017199 seconds
-  Import took 0.020544 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 3.189435 seconds.
-  path: Assets/BoxInTheBox/Prefabs/CreateGun.prefab
-  artifactKey: Guid(1be17ccc589691b43a1597cf905c386a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/BoxInTheBox/Prefabs/CreateGun.prefab using Guid(1be17ccc589691b43a1597cf905c386a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4cc38478b2200ecd96e364e8cf293fe7') in 0.032673 seconds
-  Import took 0.041363 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000191 seconds.
-  path: Assets/BoxInTheBox/Prefabs/TransformGun.prefab
-  artifactKey: Guid(96fde2be9295b4a4c90bac9e0a9b8573) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/BoxInTheBox/Prefabs/TransformGun.prefab using Guid(96fde2be9295b4a4c90bac9e0a9b8573) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7b1b2f20321d9100aa7b3a2c4d9c02e7') in 0.018339 seconds
-  Import took 0.027754 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 3.149195 seconds.
-  path: Assets/BoxInTheBox/Prefabs/CreateGun.prefab
-  artifactKey: Guid(1be17ccc589691b43a1597cf905c386a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/BoxInTheBox/Prefabs/CreateGun.prefab using Guid(1be17ccc589691b43a1597cf905c386a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aa75e79e6a44ca4e5ceb7560e6835669') in 0.032275 seconds
-  Import took 0.041389 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000238 seconds.
-  path: Assets/BoxInTheBox/Prefabs/TransformGun.prefab
-  artifactKey: Guid(96fde2be9295b4a4c90bac9e0a9b8573) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/BoxInTheBox/Prefabs/TransformGun.prefab using Guid(96fde2be9295b4a4c90bac9e0a9b8573) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cfcffadf32e90295b46f216ba65143d3') in 0.018114 seconds
-  Import took 0.023416 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 11.439743 seconds.
-  path: Assets/BoxInTheBox/Prefabs/CreateGun.prefab
-  artifactKey: Guid(1be17ccc589691b43a1597cf905c386a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/BoxInTheBox/Prefabs/CreateGun.prefab using Guid(1be17ccc589691b43a1597cf905c386a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4f2b2f0a9800947ac9c0eda15f4902ed') in 0.033606 seconds
-  Import took 0.038963 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000203 seconds.
-  path: Assets/BoxInTheBox/Prefabs/TransformGun.prefab
-  artifactKey: Guid(96fde2be9295b4a4c90bac9e0a9b8573) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/BoxInTheBox/Prefabs/TransformGun.prefab using Guid(96fde2be9295b4a4c90bac9e0a9b8573) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '12b9d05be89fb7ea4d773f8d3628dc2d') in 0.018032 seconds
-  Import took 0.021284 seconds .
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.009815 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.99 ms, found 9 plugins.
-Preloading 1 native plugins for Editor in 0.10 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-NullReferenceException: Object reference not set to an instance of an object
-  at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x00048] in C:\Users\Angelo\Documents\SAE\3Tesis\FrameworkVR\Library\PackageCache\com.unity.xr.oculus@1.8.1\Runtime\OculusLoader.cs:243 
-  at Unity.XR.Oculus.OculusLoader.EditorLoadOVRPlugin () [0x0007b] in C:\Users\Angelo\Documents\SAE\3Tesis\FrameworkVR\Library\PackageCache\com.unity.xr.oculus@1.8.1\Runtime\OculusLoader.cs:228 
-
-(Filename: C:/Users/Angelo/Documents/SAE/3Tesis/FrameworkVR/Library/PackageCache/com.unity.xr.oculus@1.8.1/Runtime/OculusLoader.cs Line: 243)
-
-Mono: successfully reloaded assembly
-- Completed reload, in  0.800 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.80 ms, found 9 plugins.
-Preloading 1 native plugins for Editor in 0.09 ms.
-Unloading 1872 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 189.5 MB.
-System memory in use after: 189.5 MB.
-
-Unloading 27 unused Assets to reduce memory usage. Loaded Objects now: 2435.
-Total: 2.479400 ms (FindLiveObjects: 0.236100 ms CreateObjectMapping: 0.043100 ms MarkObjects: 2.021000 ms  DeleteObjects: 0.177700 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.005471 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 1.59 ms, found 9 plugins.
-Preloading 1 native plugins for Editor in 0.12 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-NullReferenceException: Object reference not set to an instance of an object
-  at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x00048] in C:\Users\Angelo\Documents\SAE\3Tesis\FrameworkVR\Library\PackageCache\com.unity.xr.oculus@1.8.1\Runtime\OculusLoader.cs:243 
-  at Unity.XR.Oculus.OculusLoader.EditorLoadOVRPlugin () [0x0007b] in C:\Users\Angelo\Documents\SAE\3Tesis\FrameworkVR\Library\PackageCache\com.unity.xr.oculus@1.8.1\Runtime\OculusLoader.cs:228 
-
-(Filename: C:/Users/Angelo/Documents/SAE/3Tesis/FrameworkVR/Library/PackageCache/com.unity.xr.oculus@1.8.1/Runtime/OculusLoader.cs Line: 243)
-
-Mono: successfully reloaded assembly
-- Completed reload, in  0.987 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.84 ms, found 9 plugins.
-Preloading 1 native plugins for Editor in 0.09 ms.
-Unloading 1872 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 189.5 MB.
-System memory in use after: 189.6 MB.
-
-Unloading 24 unused Assets to reduce memory usage. Loaded Objects now: 2439.
-Total: 3.678000 ms (FindLiveObjects: 0.371500 ms CreateObjectMapping: 0.048400 ms MarkObjects: 3.062400 ms  DeleteObjects: 0.193700 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.005293 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.91 ms, found 9 plugins.
-Preloading 1 native plugins for Editor in 0.09 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-NullReferenceException: Object reference not set to an instance of an object
-  at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x00048] in C:\Users\Angelo\Documents\SAE\3Tesis\FrameworkVR\Library\PackageCache\com.unity.xr.oculus@1.8.1\Runtime\OculusLoader.cs:243 
-  at Unity.XR.Oculus.OculusLoader.EditorLoadOVRPlugin () [0x0007b] in C:\Users\Angelo\Documents\SAE\3Tesis\FrameworkVR\Library\PackageCache\com.unity.xr.oculus@1.8.1\Runtime\OculusLoader.cs:228 
-
-(Filename: C:/Users/Angelo/Documents/SAE/3Tesis/FrameworkVR/Library/PackageCache/com.unity.xr.oculus@1.8.1/Runtime/OculusLoader.cs Line: 243)
-
-Mono: successfully reloaded assembly
-- Completed reload, in  0.802 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.92 ms, found 9 plugins.
-Preloading 1 native plugins for Editor in 0.08 ms.
-Unloading 1872 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 189.5 MB.
-System memory in use after: 189.6 MB.
-
-Unloading 24 unused Assets to reduce memory usage. Loaded Objects now: 2443.
-Total: 2.426600 ms (FindLiveObjects: 0.291900 ms CreateObjectMapping: 0.046200 ms MarkObjects: 1.957300 ms  DeleteObjects: 0.129800 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.005373 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 1.15 ms, found 9 plugins.
-Preloading 1 native plugins for Editor in 0.16 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-NullReferenceException: Object reference not set to an instance of an object
-  at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x00048] in C:\Users\Angelo\Documents\SAE\3Tesis\FrameworkVR\Library\PackageCache\com.unity.xr.oculus@1.8.1\Runtime\OculusLoader.cs:243 
-  at Unity.XR.Oculus.OculusLoader.EditorLoadOVRPlugin () [0x0007b] in C:\Users\Angelo\Documents\SAE\3Tesis\FrameworkVR\Library\PackageCache\com.unity.xr.oculus@1.8.1\Runtime\OculusLoader.cs:228 
-
-(Filename: C:/Users/Angelo/Documents/SAE/3Tesis/FrameworkVR/Library/PackageCache/com.unity.xr.oculus@1.8.1/Runtime/OculusLoader.cs Line: 243)
-
-Mono: successfully reloaded assembly
-- Completed reload, in  0.919 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 1.31 ms, found 9 plugins.
-Preloading 1 native plugins for Editor in 0.12 ms.
-Unloading 1872 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 189.5 MB.
-System memory in use after: 189.6 MB.
-
-Unloading 24 unused Assets to reduce memory usage. Loaded Objects now: 2447.
-Total: 2.343900 ms (FindLiveObjects: 0.250100 ms CreateObjectMapping: 0.050900 ms MarkObjects: 1.884700 ms  DeleteObjects: 0.157100 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.005423 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 1.03 ms, found 9 plugins.
-Preloading 1 native plugins for Editor in 0.12 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-NullReferenceException: Object reference not set to an instance of an object
-  at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x00048] in C:\Users\Angelo\Documents\SAE\3Tesis\FrameworkVR\Library\PackageCache\com.unity.xr.oculus@1.8.1\Runtime\OculusLoader.cs:243 
-  at Unity.XR.Oculus.OculusLoader.EditorLoadOVRPlugin () [0x0007b] in C:\Users\Angelo\Documents\SAE\3Tesis\FrameworkVR\Library\PackageCache\com.unity.xr.oculus@1.8.1\Runtime\OculusLoader.cs:228 
-
-(Filename: C:/Users/Angelo/Documents/SAE/3Tesis/FrameworkVR/Library/PackageCache/com.unity.xr.oculus@1.8.1/Runtime/OculusLoader.cs Line: 243)
-
-Mono: successfully reloaded assembly
-- Completed reload, in  0.842 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.86 ms, found 9 plugins.
-Preloading 1 native plugins for Editor in 0.08 ms.
-Unloading 1872 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 189.5 MB.
-System memory in use after: 189.6 MB.
-
-Unloading 24 unused Assets to reduce memory usage. Loaded Objects now: 2451.
-Total: 2.904100 ms (FindLiveObjects: 0.622300 ms CreateObjectMapping: 0.070200 ms MarkObjects: 2.072300 ms  DeleteObjects: 0.137900 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.006398 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.85 ms, found 9 plugins.
-Preloading 1 native plugins for Editor in 0.12 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-NullReferenceException: Object reference not set to an instance of an object
-  at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x00048] in C:\Users\Angelo\Documents\SAE\3Tesis\FrameworkVR\Library\PackageCache\com.unity.xr.oculus@1.8.1\Runtime\OculusLoader.cs:243 
-  at Unity.XR.Oculus.OculusLoader.EditorLoadOVRPlugin () [0x0007b] in C:\Users\Angelo\Documents\SAE\3Tesis\FrameworkVR\Library\PackageCache\com.unity.xr.oculus@1.8.1\Runtime\OculusLoader.cs:228 
-
-(Filename: C:/Users/Angelo/Documents/SAE/3Tesis/FrameworkVR/Library/PackageCache/com.unity.xr.oculus@1.8.1/Runtime/OculusLoader.cs Line: 243)
-
-Mono: successfully reloaded assembly
-- Completed reload, in  0.829 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.84 ms, found 9 plugins.
-Preloading 1 native plugins for Editor in 0.09 ms.
-Unloading 1872 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 189.5 MB.
-System memory in use after: 189.6 MB.
-
-Unloading 24 unused Assets to reduce memory usage. Loaded Objects now: 2455.
-Total: 2.702700 ms (FindLiveObjects: 0.281700 ms CreateObjectMapping: 0.049100 ms MarkObjects: 2.236900 ms  DeleteObjects: 0.134100 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.007036 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.98 ms, found 9 plugins.
-Preloading 1 native plugins for Editor in 0.13 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-NullReferenceException: Object reference not set to an instance of an object
-  at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x00048] in C:\Users\Angelo\Documents\SAE\3Tesis\FrameworkVR\Library\PackageCache\com.unity.xr.oculus@1.8.1\Runtime\OculusLoader.cs:243 
-  at Unity.XR.Oculus.OculusLoader.EditorLoadOVRPlugin () [0x0007b] in C:\Users\Angelo\Documents\SAE\3Tesis\FrameworkVR\Library\PackageCache\com.unity.xr.oculus@1.8.1\Runtime\OculusLoader.cs:228 
-
-(Filename: C:/Users/Angelo/Documents/SAE/3Tesis/FrameworkVR/Library/PackageCache/com.unity.xr.oculus@1.8.1/Runtime/OculusLoader.cs Line: 243)
-
-Mono: successfully reloaded assembly
-- Completed reload, in  0.897 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.83 ms, found 9 plugins.
-Preloading 1 native plugins for Editor in 0.09 ms.
-Unloading 1872 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 189.5 MB.
-System memory in use after: 189.6 MB.
-
-Unloading 24 unused Assets to reduce memory usage. Loaded Objects now: 2459.
-Total: 2.962000 ms (FindLiveObjects: 0.425800 ms CreateObjectMapping: 0.047900 ms MarkObjects: 2.333000 ms  DeleteObjects: 0.153500 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.005855 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 1.61 ms, found 9 plugins.
-Preloading 1 native plugins for Editor in 0.28 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-NullReferenceException: Object reference not set to an instance of an object
-  at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x00048] in C:\Users\Angelo\Documents\SAE\3Tesis\FrameworkVR\Library\PackageCache\com.unity.xr.oculus@1.8.1\Runtime\OculusLoader.cs:243 
-  at Unity.XR.Oculus.OculusLoader.EditorLoadOVRPlugin () [0x0007b] in C:\Users\Angelo\Documents\SAE\3Tesis\FrameworkVR\Library\PackageCache\com.unity.xr.oculus@1.8.1\Runtime\OculusLoader.cs:228 
-
-(Filename: C:/Users/Angelo/Documents/SAE/3Tesis/FrameworkVR/Library/PackageCache/com.unity.xr.oculus@1.8.1/Runtime/OculusLoader.cs Line: 243)
-
-Mono: successfully reloaded assembly
-- Completed reload, in  1.007 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 2.12 ms, found 9 plugins.
-Preloading 1 native plugins for Editor in 0.12 ms.
-Unloading 1872 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 189.5 MB.
-System memory in use after: 189.6 MB.
-
-Unloading 24 unused Assets to reduce memory usage. Loaded Objects now: 2463.
-Total: 2.970800 ms (FindLiveObjects: 0.440500 ms CreateObjectMapping: 0.050600 ms MarkObjects: 2.341000 ms  DeleteObjects: 0.137000 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.005724 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 1.52 ms, found 9 plugins.
-Preloading 1 native plugins for Editor in 0.20 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-NullReferenceException: Object reference not set to an instance of an object
-  at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x00048] in C:\Users\Angelo\Documents\SAE\3Tesis\FrameworkVR\Library\PackageCache\com.unity.xr.oculus@1.8.1\Runtime\OculusLoader.cs:243 
-  at Unity.XR.Oculus.OculusLoader.EditorLoadOVRPlugin () [0x0007b] in C:\Users\Angelo\Documents\SAE\3Tesis\FrameworkVR\Library\PackageCache\com.unity.xr.oculus@1.8.1\Runtime\OculusLoader.cs:228 
-
-(Filename: C:/Users/Angelo/Documents/SAE/3Tesis/FrameworkVR/Library/PackageCache/com.unity.xr.oculus@1.8.1/Runtime/OculusLoader.cs Line: 243)
-
-Mono: successfully reloaded assembly
-- Completed reload, in  1.097 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 1.60 ms, found 9 plugins.
-Preloading 1 native plugins for Editor in 0.21 ms.
-Unloading 1872 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 189.5 MB.
-System memory in use after: 189.6 MB.
-
-Unloading 24 unused Assets to reduce memory usage. Loaded Objects now: 2467.
-Total: 2.845700 ms (FindLiveObjects: 0.661900 ms CreateObjectMapping: 0.067300 ms MarkObjects: 1.980400 ms  DeleteObjects: 0.133600 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.006543 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 1.10 ms, found 9 plugins.
-Preloading 1 native plugins for Editor in 0.13 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-NullReferenceException: Object reference not set to an instance of an object
-  at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x00048] in C:\Users\Angelo\Documents\SAE\3Tesis\FrameworkVR\Library\PackageCache\com.unity.xr.oculus@1.8.1\Runtime\OculusLoader.cs:243 
-  at Unity.XR.Oculus.OculusLoader.EditorLoadOVRPlugin () [0x0007b] in C:\Users\Angelo\Documents\SAE\3Tesis\FrameworkVR\Library\PackageCache\com.unity.xr.oculus@1.8.1\Runtime\OculusLoader.cs:228 
-
-(Filename: C:/Users/Angelo/Documents/SAE/3Tesis/FrameworkVR/Library/PackageCache/com.unity.xr.oculus@1.8.1/Runtime/OculusLoader.cs Line: 243)
-
-Mono: successfully reloaded assembly
-- Completed reload, in  0.983 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 1.63 ms, found 9 plugins.
-Preloading 1 native plugins for Editor in 0.30 ms.
-Unloading 1872 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 189.5 MB.
-System memory in use after: 189.6 MB.
-
-Unloading 24 unused Assets to reduce memory usage. Loaded Objects now: 2471.
-Total: 3.168100 ms (FindLiveObjects: 0.479700 ms CreateObjectMapping: 0.074900 ms MarkObjects: 2.442000 ms  DeleteObjects: 0.170300 ms)
-
-========================================================================
-Received Import Request.
-  Time since last request: 2059.365295 seconds.
-  path: Assets/BoxInTheBox/Prefabs/CreateGun.prefab
-  artifactKey: Guid(1be17ccc589691b43a1597cf905c386a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/BoxInTheBox/Prefabs/CreateGun.prefab using Guid(1be17ccc589691b43a1597cf905c386a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1e9e6501607d5b77ef3c467042e5e038') in 0.243450 seconds
-  Import took 0.248976 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.821110 seconds.
-  path: Assets/BoxInTheBox/Prefabs/UI/Button.prefab
-  artifactKey: Guid(5f5a5fd319658a24383fef3e28ee624e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/BoxInTheBox/Prefabs/UI/Button.prefab using Guid(5f5a5fd319658a24383fef3e28ee624e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '08fe29d953673ec499dc76845ec8e8a4') in 0.007616 seconds
-  Import took 0.011553 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 5.341703 seconds.
-  path: Assets/BoxInTheBox/Prefabs/UI/Button.prefab
-  artifactKey: Guid(5f5a5fd319658a24383fef3e28ee624e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/BoxInTheBox/Prefabs/UI/Button.prefab using Guid(5f5a5fd319658a24383fef3e28ee624e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5943864f392ebde6c809fb260d085d56') in 0.005383 seconds
-  Import took 0.009257 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 2.467427 seconds.
-  path: Assets/BoxInTheBox/Prefabs/UI/Button.prefab
-  artifactKey: Guid(5f5a5fd319658a24383fef3e28ee624e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/BoxInTheBox/Prefabs/UI/Button.prefab using Guid(5f5a5fd319658a24383fef3e28ee624e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '89b7634fc64323cbfd361e890accbb4a') in 0.004350 seconds
-  Import took 0.007942 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 116.809913 seconds.
-  path: Assets/BoxInTheBox/Resources/UI/WhitePx.png
-  artifactKey: Guid(79809ded92ce85543b4842d805f0a820) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/BoxInTheBox/Resources/UI/WhitePx.png using Guid(79809ded92ce85543b4842d805f0a820) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6c255d7572a1bb6eda6e16279c34c5dc') in 0.063188 seconds
-  Import took 0.067787 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 8.120109 seconds.
-  path: Assets/BoxInTheBox/Resources/UI/WhitePx.png
-  artifactKey: Guid(79809ded92ce85543b4842d805f0a820) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/BoxInTheBox/Resources/UI/WhitePx.png using Guid(79809ded92ce85543b4842d805f0a820) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cd7a24e54ec9ee969d392b3d2576c9e1') in 0.017942 seconds
-  Import took 0.024072 seconds .
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.061163 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.79 ms, found 9 plugins.
-Preloading 1 native plugins for Editor in 0.08 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-NullReferenceException: Object reference not set to an instance of an object
-  at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x00048] in C:\Users\Angelo\Documents\SAE\3Tesis\FrameworkVR\Library\PackageCache\com.unity.xr.oculus@1.8.1\Runtime\OculusLoader.cs:243 
-  at Unity.XR.Oculus.OculusLoader.EditorLoadOVRPlugin () [0x0007b] in C:\Users\Angelo\Documents\SAE\3Tesis\FrameworkVR\Library\PackageCache\com.unity.xr.oculus@1.8.1\Runtime\OculusLoader.cs:228 
-
-(Filename: C:/Users/Angelo/Documents/SAE/3Tesis/FrameworkVR/Library/PackageCache/com.unity.xr.oculus@1.8.1/Runtime/OculusLoader.cs Line: 243)
-
-Mono: successfully reloaded assembly
-- Completed reload, in  0.795 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.87 ms, found 9 plugins.
-Preloading 1 native plugins for Editor in 0.09 ms.
-Unloading 1872 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 189.6 MB.
-System memory in use after: 189.7 MB.
-
-Unloading 24 unused Assets to reduce memory usage. Loaded Objects now: 2479.
-Total: 2.530500 ms (FindLiveObjects: 0.218400 ms CreateObjectMapping: 0.043600 ms MarkObjects: 2.146300 ms  DeleteObjects: 0.120800 ms)
-
-========================================================================
-Received Import Request.
-  Time since last request: 648.072168 seconds.
-  path: Assets/BoxInTheBox/Materials/CreateMag.mat
-  artifactKey: Guid(11e0eb22631f98e439e2c7d414c0fb76) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/BoxInTheBox/Materials/CreateMag.mat using Guid(11e0eb22631f98e439e2c7d414c0fb76) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9fe5ef01b099ca075279b3f1251d96d6') in 0.141418 seconds
-  Import took 0.144744 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 38.462680 seconds.
-  path: Assets/BoxInTheBox/Prefabs/CreateGun.prefab
-  artifactKey: Guid(1be17ccc589691b43a1597cf905c386a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/BoxInTheBox/Prefabs/CreateGun.prefab using Guid(1be17ccc589691b43a1597cf905c386a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7667fe9382e8f52b440129d8cd20554c') in 0.139585 seconds
-  Import took 0.144540 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000150 seconds.
-  path: Assets/BoxInTheBox/Prefabs/TransformGun.prefab
-  artifactKey: Guid(96fde2be9295b4a4c90bac9e0a9b8573) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/BoxInTheBox/Prefabs/TransformGun.prefab using Guid(96fde2be9295b4a4c90bac9e0a9b8573) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b5bec2f583a61dc21b7b383815fa4513') in 0.031745 seconds
-  Import took 0.035639 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 58.988160 seconds.
-  path: Assets/BoxInTheBox/Materials/CreateMagMat.mat
-  artifactKey: Guid(11e0eb22631f98e439e2c7d414c0fb76) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/BoxInTheBox/Materials/CreateMagMat.mat using Guid(11e0eb22631f98e439e2c7d414c0fb76) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd7a7586e056b7ea3310086ac91f37d8d') in 0.010311 seconds
-  Import took 0.013378 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 162.320920 seconds.
-  path: Assets/BoxInTheBox/Prefabs/CreateGun.prefab
-  artifactKey: Guid(1be17ccc589691b43a1597cf905c386a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/BoxInTheBox/Prefabs/CreateGun.prefab using Guid(1be17ccc589691b43a1597cf905c386a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '522fa3aee72261ed09e666ddbbecef4e') in 0.281944 seconds
-  Import took 0.288392 seconds .
+  Time since last request: 0.000154 seconds.
+  path: Assets/BoxInTheBox/Assets/UF Creator LITE/Prefabs/Bandits, Camps/Boats, Ships, Docks/Quays, Docks/Dock_2C2.prefab
+  artifactKey: Guid(a2bc2b7009e396048bd16e78dd25bb32) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BoxInTheBox/Assets/UF Creator LITE/Prefabs/Bandits, Camps/Boats, Ships, Docks/Quays, Docks/Dock_2C2.prefab using Guid(a2bc2b7009e396048bd16e78dd25bb32) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '45a706f4b1fb7bbdc13736c484e3542d') in 0.014573 seconds
+  Import took 0.017176 seconds .
 
 ========================================================================
 Received Import Request.
   Time since last request: 0.000141 seconds.
-  path: Assets/BoxInTheBox/Prefabs/CreateMag.prefab
-  artifactKey: Guid(cb5ef67bfc9ac1e4592c94feb5ab590a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/BoxInTheBox/Prefabs/CreateMag.prefab using Guid(cb5ef67bfc9ac1e4592c94feb5ab590a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '20871588f5a884e1b2f770dc1976d908') in 0.012363 seconds
-  Import took 0.015703 seconds .
+  path: Assets/BoxInTheBox/Assets/UF Creator LITE/Prefabs/Bandits, Camps/Boats, Ships, Docks/Quays, Docks/Dock_2C.prefab
+  artifactKey: Guid(bc367d5b078c5de4598d66d840e3ee48) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BoxInTheBox/Assets/UF Creator LITE/Prefabs/Bandits, Camps/Boats, Ships, Docks/Quays, Docks/Dock_2C.prefab using Guid(bc367d5b078c5de4598d66d840e3ee48) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7f245a3f46ea1216e90ec2af09f7e451') in 0.016684 seconds
+  Import took 0.019404 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 1.973312 seconds.
-  path: Assets/BoxInTheBox/Prefabs/CreateGun.prefab
-  artifactKey: Guid(1be17ccc589691b43a1597cf905c386a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/BoxInTheBox/Prefabs/CreateGun.prefab using Guid(1be17ccc589691b43a1597cf905c386a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '25a86072dae2b294dbeccb6aed3c51c7') in 0.043310 seconds
-  Import took 0.049918 seconds .
+  Time since last request: 0.000200 seconds.
+  path: Assets/BoxInTheBox/Assets/UF Creator LITE/Prefabs/Bandits, Camps/Boats, Ships, Docks/Quays, Docks/Dock_1B.prefab
+  artifactKey: Guid(c90bdef480e59894aa5e16f0ad1bd067) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BoxInTheBox/Assets/UF Creator LITE/Prefabs/Bandits, Camps/Boats, Ships, Docks/Quays, Docks/Dock_1B.prefab using Guid(c90bdef480e59894aa5e16f0ad1bd067) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8b69fc9343e3993e96f76e4da0bcd953') in 0.015601 seconds
+  Import took 0.018775 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 2.061955 seconds.
-  path: Assets/BoxInTheBox/Prefabs/CreateGun.prefab
-  artifactKey: Guid(1be17ccc589691b43a1597cf905c386a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/BoxInTheBox/Prefabs/CreateGun.prefab using Guid(1be17ccc589691b43a1597cf905c386a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c41c16c8bf3ce772278f333558f66663') in 0.044765 seconds
-  Import took 0.051462 seconds .
+  Time since last request: 0.000187 seconds.
+  path: Assets/BoxInTheBox/Assets/UF Creator LITE/Prefabs/Bandits, Camps/Boats, Ships, Docks/Quays, Docks/Dock_1C.prefab
+  artifactKey: Guid(e69f31b4a9eacc240abb4113548d3141) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BoxInTheBox/Assets/UF Creator LITE/Prefabs/Bandits, Camps/Boats, Ships, Docks/Quays, Docks/Dock_1C.prefab using Guid(e69f31b4a9eacc240abb4113548d3141) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'edc4c7aacac03d0d32f507c39bcab953') in 0.016348 seconds
+  Import took 0.019682 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.756167 seconds.
-  path: Assets/BoxInTheBox/Prefabs/CreateGun.prefab
-  artifactKey: Guid(1be17ccc589691b43a1597cf905c386a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/BoxInTheBox/Prefabs/CreateGun.prefab using Guid(1be17ccc589691b43a1597cf905c386a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '94a7309b2b928d98b37b70a6cc00741e') in 0.042328 seconds
-  Import took 0.050088 seconds .
+  Time since last request: 0.000193 seconds.
+  path: Assets/BoxInTheBox/Assets/UF Creator LITE/Prefabs/Bandits, Camps/Boats, Ships, Docks/Quays, Docks/Dock_1D.prefab
+  artifactKey: Guid(e62d183b4bfb22b46a40bdd1af2e3a2c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BoxInTheBox/Assets/UF Creator LITE/Prefabs/Bandits, Camps/Boats, Ships, Docks/Quays, Docks/Dock_1D.prefab using Guid(e62d183b4bfb22b46a40bdd1af2e3a2c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '38cc0e0c706ed6a123ed65f9b17a495a') in 0.015939 seconds
+  Import took 0.019077 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 1.248074 seconds.
-  path: Assets/BoxInTheBox/Prefabs/CreateGun.prefab
-  artifactKey: Guid(1be17ccc589691b43a1597cf905c386a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/BoxInTheBox/Prefabs/CreateGun.prefab using Guid(1be17ccc589691b43a1597cf905c386a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd235abcd532c2037c2822074ba657016') in 0.041794 seconds
-  Import took 0.048090 seconds .
+  Time since last request: 0.000136 seconds.
+  path: Assets/BoxInTheBox/Assets/UF Creator LITE/Prefabs/Bandits, Camps/Boats, Ships, Docks/Quays, Docks/Dock_2D2.prefab
+  artifactKey: Guid(24bb4d8514a5eff4497d9918e97c0f57) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BoxInTheBox/Assets/UF Creator LITE/Prefabs/Bandits, Camps/Boats, Ships, Docks/Quays, Docks/Dock_2D2.prefab using Guid(24bb4d8514a5eff4497d9918e97c0f57) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2a7874bfdce7d96248b7e6f61df7fb9f') in 0.018290 seconds
+  Import took 0.020856 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 3.298848 seconds.
-  path: Assets/BoxInTheBox/Prefabs/CreateGun.prefab
-  artifactKey: Guid(1be17ccc589691b43a1597cf905c386a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/BoxInTheBox/Prefabs/CreateGun.prefab using Guid(1be17ccc589691b43a1597cf905c386a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3fa899098880c291fc7d6b0080a14082') in 0.047109 seconds
-  Import took 0.053679 seconds .
+  Time since last request: 0.000188 seconds.
+  path: Assets/BoxInTheBox/Assets/UF Creator LITE/Prefabs/Bandits, Camps/Boats, Ships, Docks/Quays, Docks/Dock_1D2.prefab
+  artifactKey: Guid(b15acb09236c76347b318aee417f5cbf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BoxInTheBox/Assets/UF Creator LITE/Prefabs/Bandits, Camps/Boats, Ships, Docks/Quays, Docks/Dock_1D2.prefab using Guid(b15acb09236c76347b318aee417f5cbf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ed4125cdb46d24a6102244a460cad1f2') in 0.022095 seconds
+  Import took 0.025145 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 1.789009 seconds.
-  path: Assets/BoxInTheBox/Prefabs/CreateGun.prefab
-  artifactKey: Guid(1be17ccc589691b43a1597cf905c386a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/BoxInTheBox/Prefabs/CreateGun.prefab using Guid(1be17ccc589691b43a1597cf905c386a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '63b2f6131b318776190446bb5f215215') in 0.045965 seconds
-  Import took 0.052358 seconds .
+  Time since last request: 0.000151 seconds.
+  path: Packages/com.unity.2d.spriteshape/Editor/ObjectMenuCreation/DefaultAssets/Sprite Shapes/Closed Sprite Shape.prefab
+  artifactKey: Guid(c0583b4e855c74b8c82e7b9b5efb5ce9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.2d.spriteshape/Editor/ObjectMenuCreation/DefaultAssets/Sprite Shapes/Closed Sprite Shape.prefab using Guid(c0583b4e855c74b8c82e7b9b5efb5ce9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.001876 seconds
+  ERROR: Build asset version error: packages/com.unity.2d.spriteshape/editor/objectmenucreation/defaultassets/sprite shapes/closed sprite shape.prefab in SourceAssetDB has modification time of '2021-12-13T17:44:09Z' while content on disk has modification time of '0001-01-01T00:00:00Z'
+  Import took 0.003802 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000100 seconds.
+  path: Assets/BoxInTheBox/Assets/UF Creator LITE/Prefabs/Bandits, Camps/Boats, Ships, Docks/Quays, Docks/Dock_1B2.prefab
+  artifactKey: Guid(fcfaa489735a8444f8f3bac6f7c5d0cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BoxInTheBox/Assets/UF Creator LITE/Prefabs/Bandits, Camps/Boats, Ships, Docks/Quays, Docks/Dock_1B2.prefab using Guid(fcfaa489735a8444f8f3bac6f7c5d0cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f4f52b7444c9a1c79252c6e007f05740') in 0.018823 seconds
+  Import took 0.021428 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000131 seconds.
+  path: Assets/BoxInTheBox/Assets/UF Creator LITE/Prefabs/Bandits, Camps/Boats, Ships, Docks/Quays, Docks/Dock_2A2.prefab
+  artifactKey: Guid(45a73657f78c520478b594e428c93c8a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BoxInTheBox/Assets/UF Creator LITE/Prefabs/Bandits, Camps/Boats, Ships, Docks/Quays, Docks/Dock_2A2.prefab using Guid(45a73657f78c520478b594e428c93c8a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a25908954371187ca327876fa3d4929c') in 0.026998 seconds
+  Import took 0.029734 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000166 seconds.
+  path: Packages/com.unity.2d.spriteshape/Editor/ObjectMenuCreation/DefaultAssets/Sprite Shapes/Closed Sprite Shape.prefab
+  artifactKey: Guid(c0583b4e855c74b8c82e7b9b5efb5ce9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.2d.spriteshape/Editor/ObjectMenuCreation/DefaultAssets/Sprite Shapes/Closed Sprite Shape.prefab using Guid(c0583b4e855c74b8c82e7b9b5efb5ce9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.001954 seconds
+  ERROR: Build asset version error: packages/com.unity.2d.spriteshape/editor/objectmenucreation/defaultassets/sprite shapes/closed sprite shape.prefab in SourceAssetDB has modification time of '2021-12-13T17:44:09Z' while content on disk has modification time of '0001-01-01T00:00:00Z'
+  Import took 0.003968 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000107 seconds.
+  path: Assets/BoxInTheBox/Assets/UF Creator LITE/Prefabs/Bandits, Camps/Boats, Ships, Docks/Quays, Docks/Dock_2D.prefab
+  artifactKey: Guid(ba534c1af05765c41a73b534423cff93) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BoxInTheBox/Assets/UF Creator LITE/Prefabs/Bandits, Camps/Boats, Ships, Docks/Quays, Docks/Dock_2D.prefab using Guid(ba534c1af05765c41a73b534423cff93) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '87b01462253c7b4826cbb13b1a84991f') in 0.017918 seconds
+  Import took 0.020572 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000141 seconds.
+  path: Assets/BoxInTheBox/Assets/UF Creator LITE/Prefabs/Bandits, Camps/Boats, Ships, Docks/Quays, Docks/Dock_2B.prefab
+  artifactKey: Guid(faf16fcb8512e1c4fa612e38efc9c60d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BoxInTheBox/Assets/UF Creator LITE/Prefabs/Bandits, Camps/Boats, Ships, Docks/Quays, Docks/Dock_2B.prefab using Guid(faf16fcb8512e1c4fa612e38efc9c60d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1b5607f805152e79f9651ad559ab39c2') in 0.024802 seconds
+  Import took 0.027711 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000147 seconds.
+  path: Packages/com.unity.2d.spriteshape/Editor/ObjectMenuCreation/DefaultAssets/Sprite Shapes/Closed Sprite Shape.prefab
+  artifactKey: Guid(c0583b4e855c74b8c82e7b9b5efb5ce9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.2d.spriteshape/Editor/ObjectMenuCreation/DefaultAssets/Sprite Shapes/Closed Sprite Shape.prefab using Guid(c0583b4e855c74b8c82e7b9b5efb5ce9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.002009 seconds
+  ERROR: Build asset version error: packages/com.unity.2d.spriteshape/editor/objectmenucreation/defaultassets/sprite shapes/closed sprite shape.prefab in SourceAssetDB has modification time of '2021-12-13T17:44:09Z' while content on disk has modification time of '0001-01-01T00:00:00Z'
+  Import took 0.003969 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000109 seconds.
+  path: Assets/BoxInTheBox/Assets/UF Creator LITE/Prefabs/Bandits, Camps/Boats, Ships, Docks/Quays, Docks/Dock_1C2.prefab
+  artifactKey: Guid(e0174c06d00984747a7c4556660405f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BoxInTheBox/Assets/UF Creator LITE/Prefabs/Bandits, Camps/Boats, Ships, Docks/Quays, Docks/Dock_1C2.prefab using Guid(e0174c06d00984747a7c4556660405f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '86a492ada07c34fc8400d24324ac90a6') in 0.019838 seconds
+  Import took 0.022912 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000145 seconds.
+  path: Assets/BoxInTheBox/Assets/UF Creator LITE/Prefabs/Bandits, Camps/Boats, Ships, Docks/Quays, Docks/Dock_2A.prefab
+  artifactKey: Guid(cb4f052029ed1db4086fcdcaffb2faa1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BoxInTheBox/Assets/UF Creator LITE/Prefabs/Bandits, Camps/Boats, Ships, Docks/Quays, Docks/Dock_2A.prefab using Guid(cb4f052029ed1db4086fcdcaffb2faa1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '60670daeecddaeb2b91148cee941c47d') in 0.022976 seconds
+  Import took 0.025588 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000150 seconds.
+  path: Packages/com.unity.2d.spriteshape/Editor/ObjectMenuCreation/DefaultAssets/Sprite Shapes/Closed Sprite Shape.prefab
+  artifactKey: Guid(c0583b4e855c74b8c82e7b9b5efb5ce9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.2d.spriteshape/Editor/ObjectMenuCreation/DefaultAssets/Sprite Shapes/Closed Sprite Shape.prefab using Guid(c0583b4e855c74b8c82e7b9b5efb5ce9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.001888 seconds
+  ERROR: Build asset version error: packages/com.unity.2d.spriteshape/editor/objectmenucreation/defaultassets/sprite shapes/closed sprite shape.prefab in SourceAssetDB has modification time of '2021-12-13T17:44:09Z' while content on disk has modification time of '0001-01-01T00:00:00Z'
+  Import took 0.003749 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.031370 seconds.
+  path: Packages/com.unity.2d.spriteshape/Editor/ObjectMenuCreation/DefaultAssets/Sprite Shapes/Closed Sprite Shape.prefab
+  artifactKey: Guid(c0583b4e855c74b8c82e7b9b5efb5ce9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.2d.spriteshape/Editor/ObjectMenuCreation/DefaultAssets/Sprite Shapes/Closed Sprite Shape.prefab using Guid(c0583b4e855c74b8c82e7b9b5efb5ce9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.001844 seconds
+  ERROR: Build asset version error: packages/com.unity.2d.spriteshape/editor/objectmenucreation/defaultassets/sprite shapes/closed sprite shape.prefab in SourceAssetDB has modification time of '2021-12-13T17:44:09Z' while content on disk has modification time of '0001-01-01T00:00:00Z'
+  Import took 0.004334 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.050063 seconds.
+  path: Packages/com.unity.2d.spriteshape/Editor/ObjectMenuCreation/DefaultAssets/Sprite Shapes/Closed Sprite Shape.prefab
+  artifactKey: Guid(c0583b4e855c74b8c82e7b9b5efb5ce9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.2d.spriteshape/Editor/ObjectMenuCreation/DefaultAssets/Sprite Shapes/Closed Sprite Shape.prefab using Guid(c0583b4e855c74b8c82e7b9b5efb5ce9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.002111 seconds
+  ERROR: Build asset version error: packages/com.unity.2d.spriteshape/editor/objectmenucreation/defaultassets/sprite shapes/closed sprite shape.prefab in SourceAssetDB has modification time of '2021-12-13T17:44:09Z' while content on disk has modification time of '0001-01-01T00:00:00Z'
+  Import took 0.004716 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.058695 seconds.
+  path: Packages/com.unity.2d.spriteshape/Editor/ObjectMenuCreation/DefaultAssets/Sprite Shapes/Closed Sprite Shape.prefab
+  artifactKey: Guid(c0583b4e855c74b8c82e7b9b5efb5ce9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.2d.spriteshape/Editor/ObjectMenuCreation/DefaultAssets/Sprite Shapes/Closed Sprite Shape.prefab using Guid(c0583b4e855c74b8c82e7b9b5efb5ce9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.001956 seconds
+  ERROR: Build asset version error: packages/com.unity.2d.spriteshape/editor/objectmenucreation/defaultassets/sprite shapes/closed sprite shape.prefab in SourceAssetDB has modification time of '2021-12-13T17:44:09Z' while content on disk has modification time of '0001-01-01T00:00:00Z'
+  Import took 0.004727 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.054367 seconds.
+  path: Packages/com.unity.2d.spriteshape/Editor/ObjectMenuCreation/DefaultAssets/Sprite Shapes/Closed Sprite Shape.prefab
+  artifactKey: Guid(c0583b4e855c74b8c82e7b9b5efb5ce9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.2d.spriteshape/Editor/ObjectMenuCreation/DefaultAssets/Sprite Shapes/Closed Sprite Shape.prefab using Guid(c0583b4e855c74b8c82e7b9b5efb5ce9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.001917 seconds
+  ERROR: Build asset version error: packages/com.unity.2d.spriteshape/editor/objectmenucreation/defaultassets/sprite shapes/closed sprite shape.prefab in SourceAssetDB has modification time of '2021-12-13T17:44:09Z' while content on disk has modification time of '0001-01-01T00:00:00Z'
+  Import took 0.004532 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 156.107945 seconds.
+  path: Assets/BoxInTheBox/Sprites/propimages.png
+  artifactKey: Guid(855d99bd8be038c4abac2942ec30c419) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BoxInTheBox/Sprites/propimages.png using Guid(855d99bd8be038c4abac2942ec30c419) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aa0a8ddb530e731a2802a00131c1d000') in 0.009475 seconds
+  Import took 0.012518 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.688483 seconds.
+  path: Assets/BoxInTheBox/Sprites/propimages.png
+  artifactKey: Guid(855d99bd8be038c4abac2942ec30c419) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BoxInTheBox/Sprites/propimages.png using Guid(855d99bd8be038c4abac2942ec30c419) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '36f999d3fd88fe41e45449793003a07b') in 0.013686 seconds
+  Import took 0.016967 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.002058 seconds.
+  path: Assets/BoxInTheBox/Sprites/propimages.png
+  artifactKey: Guid(855d99bd8be038c4abac2942ec30c419) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BoxInTheBox/Sprites/propimages.png using Guid(855d99bd8be038c4abac2942ec30c419) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '36f999d3fd88fe41e45449793003a07b') in 0.020158 seconds
+  Import took 0.022983 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 118.291151 seconds.
+  path: Assets/BoxInTheBox/Sprites/propimages.png
+  artifactKey: Guid(855d99bd8be038c4abac2942ec30c419) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BoxInTheBox/Sprites/propimages.png using Guid(855d99bd8be038c4abac2942ec30c419) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd42e36a2b5fd4108006400dd82f35c8d') in 0.103904 seconds
+  Import took 0.107613 seconds .
 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.005364 seconds.
+Registered in 0.004761 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.81 ms, found 9 plugins.
-Preloading 1 native plugins for Editor in 0.10 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-NullReferenceException: Object reference not set to an instance of an object
-  at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x00048] in C:\Users\Angelo\Documents\SAE\3Tesis\FrameworkVR\Library\PackageCache\com.unity.xr.oculus@1.8.1\Runtime\OculusLoader.cs:243 
-  at Unity.XR.Oculus.OculusLoader.EditorLoadOVRPlugin () [0x0007b] in C:\Users\Angelo\Documents\SAE\3Tesis\FrameworkVR\Library\PackageCache\com.unity.xr.oculus@1.8.1\Runtime\OculusLoader.cs:228 
-
-(Filename: C:/Users/Angelo/Documents/SAE/3Tesis/FrameworkVR/Library/PackageCache/com.unity.xr.oculus@1.8.1/Runtime/OculusLoader.cs Line: 243)
-
-Mono: successfully reloaded assembly
-- Completed reload, in  0.804 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.82 ms, found 9 plugins.
-Preloading 1 native plugins for Editor in 0.09 ms.
-Unloading 1872 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 189.8 MB.
-System memory in use after: 189.9 MB.
-
-Unloading 25 unused Assets to reduce memory usage. Loaded Objects now: 2517.
-Total: 2.219500 ms (FindLiveObjects: 0.217500 ms CreateObjectMapping: 0.044300 ms MarkObjects: 1.844400 ms  DeleteObjects: 0.111900 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.005786 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.77 ms, found 9 plugins.
-Preloading 1 native plugins for Editor in 0.10 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-NullReferenceException: Object reference not set to an instance of an object
-  at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x00048] in C:\Users\Angelo\Documents\SAE\3Tesis\FrameworkVR\Library\PackageCache\com.unity.xr.oculus@1.8.1\Runtime\OculusLoader.cs:243 
-  at Unity.XR.Oculus.OculusLoader.EditorLoadOVRPlugin () [0x0007b] in C:\Users\Angelo\Documents\SAE\3Tesis\FrameworkVR\Library\PackageCache\com.unity.xr.oculus@1.8.1\Runtime\OculusLoader.cs:228 
-
-(Filename: C:/Users/Angelo/Documents/SAE/3Tesis/FrameworkVR/Library/PackageCache/com.unity.xr.oculus@1.8.1/Runtime/OculusLoader.cs Line: 243)
-
-Mono: successfully reloaded assembly
-- Completed reload, in  0.817 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.96 ms, found 9 plugins.
-Preloading 1 native plugins for Editor in 0.10 ms.
-Unloading 1872 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 189.9 MB.
-System memory in use after: 189.9 MB.
-
-Unloading 24 unused Assets to reduce memory usage. Loaded Objects now: 2521.
-Total: 2.453400 ms (FindLiveObjects: 0.307900 ms CreateObjectMapping: 0.050400 ms MarkObjects: 1.904700 ms  DeleteObjects: 0.189000 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.005273 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.81 ms, found 9 plugins.
-Preloading 1 native plugins for Editor in 0.09 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-NullReferenceException: Object reference not set to an instance of an object
-  at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x00048] in C:\Users\Angelo\Documents\SAE\3Tesis\FrameworkVR\Library\PackageCache\com.unity.xr.oculus@1.8.1\Runtime\OculusLoader.cs:243 
-  at Unity.XR.Oculus.OculusLoader.EditorLoadOVRPlugin () [0x0007b] in C:\Users\Angelo\Documents\SAE\3Tesis\FrameworkVR\Library\PackageCache\com.unity.xr.oculus@1.8.1\Runtime\OculusLoader.cs:228 
-
-(Filename: C:/Users/Angelo/Documents/SAE/3Tesis/FrameworkVR/Library/PackageCache/com.unity.xr.oculus@1.8.1/Runtime/OculusLoader.cs Line: 243)
-
-Mono: successfully reloaded assembly
-- Completed reload, in  0.803 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.81 ms, found 9 plugins.
+Refreshing native plugins compatible for Editor in 0.80 ms, found 9 plugins.
 Preloading 1 native plugins for Editor in 0.08 ms.
-Unloading 1872 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 189.9 MB.
-System memory in use after: 190.0 MB.
-
-Unloading 24 unused Assets to reduce memory usage. Loaded Objects now: 2525.
-Total: 2.233900 ms (FindLiveObjects: 0.248800 ms CreateObjectMapping: 0.043400 ms MarkObjects: 1.822100 ms  DeleteObjects: 0.118300 ms)
-
-========================================================================
-Received Import Request.
-  Time since last request: 1474.338765 seconds.
-  path: Assets/BoxInTheBox/Prefabs/UI/Button.prefab
-  artifactKey: Guid(5f5a5fd319658a24383fef3e28ee624e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/BoxInTheBox/Prefabs/UI/Button.prefab using Guid(5f5a5fd319658a24383fef3e28ee624e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '233d49851b53a340635874cb71484376') in 0.041218 seconds
-  Import took 0.045092 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 20.503760 seconds.
-  path: Assets/BoxInTheBox/Prefabs/TransformGun.prefab
-  artifactKey: Guid(96fde2be9295b4a4c90bac9e0a9b8573) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/BoxInTheBox/Prefabs/TransformGun.prefab using Guid(96fde2be9295b4a4c90bac9e0a9b8573) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6e1a02dc84af2abe18a700b12fda54a4') in 0.093087 seconds
-  Import took 0.097272 seconds .
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.004970 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.89 ms, found 9 plugins.
-Preloading 1 native plugins for Editor in 0.12 ms.
 Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
 NullReferenceException: Object reference not set to an instance of an object
-  at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x00048] in C:\Users\Angelo\Documents\SAE\3Tesis\FrameworkVR\Library\PackageCache\com.unity.xr.oculus@1.8.1\Runtime\OculusLoader.cs:243 
-  at Unity.XR.Oculus.OculusLoader.EditorLoadOVRPlugin () [0x0007b] in C:\Users\Angelo\Documents\SAE\3Tesis\FrameworkVR\Library\PackageCache\com.unity.xr.oculus@1.8.1\Runtime\OculusLoader.cs:228 
+  at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x00048] in C:\Users\Angelo\Documents\SAE\3Tesis\FrameworkVR\FrameworkVR\Library\PackageCache\com.unity.xr.oculus@1.8.1\Runtime\OculusLoader.cs:243 
+  at Unity.XR.Oculus.OculusLoader.EditorLoadOVRPlugin () [0x0007b] in C:\Users\Angelo\Documents\SAE\3Tesis\FrameworkVR\FrameworkVR\Library\PackageCache\com.unity.xr.oculus@1.8.1\Runtime\OculusLoader.cs:228 
 
-(Filename: C:/Users/Angelo/Documents/SAE/3Tesis/FrameworkVR/Library/PackageCache/com.unity.xr.oculus@1.8.1/Runtime/OculusLoader.cs Line: 243)
+(Filename: Library/PackageCache/com.unity.xr.oculus@1.8.1/Runtime/OculusLoader.cs Line: 243)
 
 Mono: successfully reloaded assembly
-- Completed reload, in  0.798 seconds
+- Completed reload, in  0.772 seconds
 Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.85 ms, found 9 plugins.
+Refreshing native plugins compatible for Editor in 0.83 ms, found 9 plugins.
 Preloading 1 native plugins for Editor in 0.09 ms.
-Unloading 1872 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 189.9 MB.
-System memory in use after: 190.0 MB.
+Unloading 2168 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 189.5 MB.
+System memory in use after: 189.6 MB.
 
-Unloading 25 unused Assets to reduce memory usage. Loaded Objects now: 2530.
-Total: 2.197900 ms (FindLiveObjects: 0.260200 ms CreateObjectMapping: 0.043400 ms MarkObjects: 1.771000 ms  DeleteObjects: 0.122000 ms)
+Unloading 25 unused Assets to reduce memory usage. Loaded Objects now: 2698.
+Total: 2.315800 ms (FindLiveObjects: 0.226500 ms CreateObjectMapping: 0.050500 ms MarkObjects: 1.923400 ms  DeleteObjects: 0.114400 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 77.873802 seconds.
+  path: Assets/BoxInTheBox/Prefabs/CreateGun.prefab
+  artifactKey: Guid(1be17ccc589691b43a1597cf905c386a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BoxInTheBox/Prefabs/CreateGun.prefab using Guid(1be17ccc589691b43a1597cf905c386a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b54c21d5a3f285b1e35e55ac5d2d70dd') in 0.147196 seconds
+  Import took 0.155397 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 24.444796 seconds.
+  path: Assets/BoxInTheBox/Prefabs/CreateGun.prefab
+  artifactKey: Guid(1be17ccc589691b43a1597cf905c386a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BoxInTheBox/Prefabs/CreateGun.prefab using Guid(1be17ccc589691b43a1597cf905c386a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c55a08a5ad99b9e78e0fa33bc0659f28') in 0.053637 seconds
+  Import took 0.060236 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 490.413263 seconds.
+  path: Assets/BoxInTheBox/Prefabs/CreateGun.prefab
+  artifactKey: Guid(1be17ccc589691b43a1597cf905c386a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BoxInTheBox/Prefabs/CreateGun.prefab using Guid(1be17ccc589691b43a1597cf905c386a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cfc0b37d128d8a89630585b0740119d1') in 0.050921 seconds
+  Import took 0.057175 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 15.883352 seconds.
+  path: Assets/BoxInTheBox/Prefabs/CreateGun.prefab
+  artifactKey: Guid(1be17ccc589691b43a1597cf905c386a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BoxInTheBox/Prefabs/CreateGun.prefab using Guid(1be17ccc589691b43a1597cf905c386a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b03433aa90ee4833027f4588c74dbca1') in 0.046773 seconds
+  Import took 0.053092 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 8.721483 seconds.
+  path: Assets/BoxInTheBox/Prefabs/CreateGun.prefab
+  artifactKey: Guid(1be17ccc589691b43a1597cf905c386a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BoxInTheBox/Prefabs/CreateGun.prefab using Guid(1be17ccc589691b43a1597cf905c386a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2d2496d02b1e0375747bce5ba9c039a3') in 0.044879 seconds
+  Import took 0.051639 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.128208 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.91 ms, found 9 plugins.
+Preloading 1 native plugins for Editor in 0.14 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+NullReferenceException: Object reference not set to an instance of an object
+  at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x00048] in C:\Users\Angelo\Documents\SAE\3Tesis\FrameworkVR\FrameworkVR\Library\PackageCache\com.unity.xr.oculus@1.8.1\Runtime\OculusLoader.cs:243 
+  at Unity.XR.Oculus.OculusLoader.EditorLoadOVRPlugin () [0x0007b] in C:\Users\Angelo\Documents\SAE\3Tesis\FrameworkVR\FrameworkVR\Library\PackageCache\com.unity.xr.oculus@1.8.1\Runtime\OculusLoader.cs:228 
+
+(Filename: Library/PackageCache/com.unity.xr.oculus@1.8.1/Runtime/OculusLoader.cs Line: 243)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  0.893 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.04 ms, found 9 plugins.
+Preloading 1 native plugins for Editor in 0.10 ms.
+Unloading 2168 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 190.0 MB.
+System memory in use after: 190.1 MB.
+
+Unloading 26 unused Assets to reduce memory usage. Loaded Objects now: 2705.
+Total: 2.873300 ms (FindLiveObjects: 0.324200 ms CreateObjectMapping: 0.052200 ms MarkObjects: 2.332300 ms  DeleteObjects: 0.162500 ms)
+
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 877.00 ms, found 9 plugins.
+Preloading 1 native plugins for Editor in 17.97 ms.
+Unloading 22 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 147.6 MB.
+System memory in use after: 147.7 MB.
+
+Unloading 22 unused Assets to reduce memory usage. Loaded Objects now: 2705.
+Total: 80.495000 ms (FindLiveObjects: 0.598400 ms CreateObjectMapping: 0.086600 ms MarkObjects: 79.463100 ms  DeleteObjects: 0.344000 ms)
 
