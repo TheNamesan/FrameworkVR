@@ -115,7 +115,10 @@ namespace FrameworkVR
 
         protected virtual void GetHandController()
         {
+            if (grabbableObjectOrigin == null) Debug.Log("Grabbable") ;
+            if (grabbableObjectOrigin.holder == null) Debug.Log("Holder");
             handController = grabbableObjectOrigin.holder.GetComponent<HandController>();
+            if (handController == null) Debug.Log("Hand Controller");
             triggerButton = m_ActionAsset.FindActionMap(handController.handSide + "Hand", true).FindAction("Trigger", true);
         }
 

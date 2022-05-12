@@ -21,9 +21,17 @@ namespace FrameworkVR
         [Tooltip("Player speed for X and Z axis relative to Time.deltaTime.")]
         public float playerSpeed = 0f;
 
+        public enum RotationMode { SmoothRotation = 0, QuickRotation = 1, FlickStick = 2 };
+        [Tooltip("The rotation type to use for rotation the camera.\n\n" +
+            "Smooth Rotation: Camera rotates continuosly until the player stops pushing the joystick.\n\n" +
+            "Quick Rotation: Camera rotates a certain amount of degrees depending on the joystick's direction.\n\n" +
+            "Flick Stick: Camera rotates immediately towards the joystick's direction.")]
+        public RotationMode rotationMode = RotationMode.SmoothRotation;
         [SerializeField]
         [Tooltip("Multiplier to player's speed for rotating the camera.")]
         public float playerTurnSpeed = 1f;
+        [Tooltip("The amount of degrees to turn for the camera with Quick Rotation.")]
+        public float rotationDegree = 30f;
 
         [SerializeField]
         [Tooltip("Force applied to player jump.")]
@@ -59,13 +67,14 @@ namespace FrameworkVR
         private Transform leftHandTransform;
         private Transform rightHandTransform;
 
-        private float rotationValue;
+        [SerializeField] private float rotationValue;
 
         public float gravityVelocity = 0f;
         
-
         private InputAction leftJoystickInput;
         private InputAction rightJoystickInput;
+
+        private bool rightJoystickHold = false;
 
         public bool disableWalk = false;
         public bool disableGravity = false;
@@ -95,11 +104,41 @@ namespace FrameworkVR
                 Debug.LogWarning("WARNING: Input Action Asset not set!");
             }
         }
+        private void Start()
+        {
+            
+        }
         void Update()
         {
             GetInputs();
             AdjustRigHeight();
             MoveAndRotation();
+        }
+
+        void RightJoystickDown(InputAction.CallbackContext ctx)
+        {
+
+            if(rotationMode == RotationMode.QuickRotation)
+            {
+                if (rotationMode == RotationMode.QuickRotation && Mathf.Abs(ctx.ReadValue<Vector2>().x) > 0.4f)
+                {
+                    if (rightJoystickHold) return;
+                    rotationValue += rotationDegree * Mathf.Sign(ctx.ReadValue<Vector2>().x);
+                    rightJoystickHold = true;
+                }
+                else rightJoystickHold = false;
+            }
+            else if(rotationMode == RotationMode.FlickStick)
+            {
+                if (Mathf.Abs(ctx.ReadValue<Vector2>().x) > 0.4f || Mathf.Abs(ctx.ReadValue<Vector2>().y) > 0.4f)
+                {
+                    if (rightJoystickHold) return;
+                    rotationValue += Mathf.Atan2(ctx.ReadValue<Vector2>().x, ctx.ReadValue<Vector2>().y) * Mathf.Rad2Deg;
+                    Debug.Log("RotationVal: " + rotationValue + " | VEC2: " + ctx.ReadValue<Vector2>());
+                    rightJoystickHold = true;
+                }
+                else rightJoystickHold = false;
+            }
         }
 
         private void GetInputs()
@@ -108,6 +147,8 @@ namespace FrameworkVR
             {
                 m_LeftJoystick = leftJoystickInput.ReadValue<Vector2>();
                 m_RightJoystick = rightJoystickInput.ReadValue<Vector2>();
+
+                rightJoystickInput.performed += RightJoystickDown;
             }
 
             jumpInput.action.performed += (ctx) =>
@@ -155,7 +196,7 @@ namespace FrameworkVR
 
             if(!disableRotation)
             {
-                rotationValue += playerTurnSpeed * m_RightJoystick.x;
+                if(rotationMode == RotationMode.SmoothRotation) rotationValue += playerTurnSpeed * m_RightJoystick.x;
                 transform.rotation = Quaternion.Euler(transform.eulerAngles.x,
                                                         rotationValue,
                                                         transform.eulerAngles.z);

@@ -28,7 +28,9 @@ namespace FrameworkVR
 
         [SerializeField]
         [Tooltip("Current holder.")]
-        public GameObject holder = null;
+        public HandController holder = null;
+        [Tooltip("Current holder collider.")]
+        public Collider holderCol = null;
 
         public Transform previousParent = null;
         public Rigidbody previousJointBody = null;
@@ -49,16 +51,13 @@ namespace FrameworkVR
             if (enableWeightSystem) m_mass = rb.mass;
         }
 
-        public void Hold(GameObject whoHolds)
+        public void Hold(HandController handController)
         {
-            holder = whoHolds;
+            holder = handController;
+            holderCol = handController.handCol;
             m_isHeld = true;
-            
-            if(holder.transform.parent != null)
-            {
-                if (holder.transform.parent.GetComponent<Collider>() != null)
-                    Physics.IgnoreCollision(holder.transform.parent.GetComponent<Collider>(), coll);
-            }
+
+            IgnoreCollisionsWithHolder(true, holderCol);
 
             FixedJoint fj;
             if (gameObject.GetComponent<FixedJoint>() == null) fj = gameObject.AddComponent<FixedJoint>();
@@ -74,15 +73,26 @@ namespace FrameworkVR
 
         public void Release()
         {
+            IgnoreCollisionsWithHolder(false, holderCol);
             holder = null;
             m_isHeld = false;
             transform.parent = previousParent;
             rb.isKinematic = false;
             coll.enabled = true;
             FixedJoint fj = gameObject.GetComponent<FixedJoint>();
-            if(fj != null) Destroy(fj);
+            if (fj != null) Destroy(fj);
             if (enableWeightSystem) m_mass = rb.mass;
             OnObjectRelease();
+        }
+
+        private void IgnoreCollisionsWithHolder(bool ignoreCollisions, Collider holderCollider)
+        {
+            if (holderCollider != null)
+            {
+                Collider holderCol = holderCollider.GetComponent<Collider>();
+                if (holderCol != null)
+                    Physics.IgnoreCollision(holderCol, coll, ignoreCollisions);
+            }
         }
 
         public void SetCollider(Collider newcoll)

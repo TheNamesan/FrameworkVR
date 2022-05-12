@@ -47,10 +47,11 @@ namespace FrameworkVR
         [Tooltip("Currently held Game Object.")]
         public Grabbable heldItem;
 
-        [Header("Character Collision")]
-        [SerializeField]
+        [Header("Collision")]
         [Tooltip("Set the GameObject with the Player Rig Controller component. This is used to avoid the grabbable's collision with the Player Rig.")]
         public GameObject characterRig;
+        [Tooltip("The hand follower's physical collider. This is used to avoid the grabbable's collision with the collider.")]
+        public Collider handCol;
 
         [Header("Weight System")]
         [SerializeField]
@@ -133,14 +134,6 @@ namespace FrameworkVR
             {
                 rumble.SendImpulse(amplitude, duration);
             }
-            else
-            {
-                control = gripButton.activeControl;
-                if (control.device is XRControllerWithRumble rum)
-                    rumble = rum;
-
-                rumble.SendImpulse(amplitude, duration);
-            }
         }
 
         void GetItemMass()
@@ -196,16 +189,13 @@ namespace FrameworkVR
             }
 
             heldItem = grabbable;
-            modelClone = Instantiate(handModel);
-            modelClone.transform.position = handModel.transform.position;
-            modelClone.transform.rotation = handModel.transform.rotation;
-            modelClone.transform.localScale = handModel.transform.localScale;
-            modelClone.transform.parent = grabbable.transform;
+            modelClone = Instantiate(handModel, grabbable.transform, true);
+
             handModel.SetActive(false);
 
             Physics.IgnoreCollision(characterRig.GetComponent<CharacterController>(), heldItem.GetComponent<Collider>(), true);
 
-            heldItem.Hold(gameObject);
+            heldItem.Hold(this);
             GetItemMass();
             ControllerRumble(grabRumbleAmplitude, grabRumbleDuration);
             OnObjectHold();

@@ -8,7 +8,6 @@ public class ResetCharacterPosition : MonoBehaviour
 
     private void OnControllerColliderHit(ControllerColliderHit hit)
     {
-        Debug.Log("Touch" + hit.gameObject.name);
         if(hit.gameObject.tag == "PlayerCheck")  
         {
             transform.position = resetPosition;

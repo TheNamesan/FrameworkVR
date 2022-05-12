@@ -23,8 +23,12 @@ namespace FrameworkVR
             EditorGUILayout.PropertyField(jin);
             SerializedProperty spd = serializedObject.FindProperty("playerSpeed");
             EditorGUILayout.PropertyField(spd);
+            SerializedProperty rtm = serializedObject.FindProperty("rotationMode");
+            EditorGUILayout.PropertyField(rtm);
             SerializedProperty tsp = serializedObject.FindProperty("playerTurnSpeed");
             EditorGUILayout.PropertyField(tsp);
+            SerializedProperty rtd = serializedObject.FindProperty("rotationDegree");
+            EditorGUILayout.PropertyField(rtd);
             SerializedProperty jfc = serializedObject.FindProperty("jumpForce");
             EditorGUILayout.PropertyField(jfc);
             SerializedProperty phe = serializedObject.FindProperty("m_playerHeight");
@@ -49,6 +53,8 @@ namespace FrameworkVR
                 EditorGUILayout.PropertyField(dgr);
                 SerializedProperty drt = serializedObject.FindProperty("disableRotation");
                 EditorGUILayout.PropertyField(drt);
+                SerializedProperty rtv = serializedObject.FindProperty("rotationValue");
+                EditorGUILayout.PropertyField(rtv);
                 GUI.enabled = true;
                 EditorGUI.indentLevel--;
             }
