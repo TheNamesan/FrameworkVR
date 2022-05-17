@@ -68,6 +68,7 @@ namespace FrameworkVR
         private Transform rightHandTransform;
 
         [SerializeField] private float rotationValue;
+        private Vector3 lastHMDPosition;
 
         public float gravityVelocity = 0f;
         
@@ -75,8 +76,6 @@ namespace FrameworkVR
         private InputAction rightJoystickInput;
 
         private bool rightJoystickHold = false;
-        private float rotationValueSaved;
-        private float stickRotation;
 
         public bool disableWalk = false;
         public bool disableGravity = false;
@@ -94,6 +93,7 @@ namespace FrameworkVR
             rightHandTransform = transform.GetChild(2);
             leftJoystickInput = m_ActionAsset.FindActionMap("LeftHand", true).FindAction("Primary2DAxis", true);
             rightJoystickInput = m_ActionAsset.FindActionMap("RightHand", true).FindAction("Primary2DAxis", true);
+            lastHMDPosition = HMDTransform.position;
         }
         private void OnEnable()
         {
@@ -111,6 +111,7 @@ namespace FrameworkVR
             GetInputs();
             AdjustRigHeight();
             MoveAndRotation();
+            lastHMDPosition = HMDTransform.position;
         }
 
         void RightJoystickDown(InputAction.CallbackContext ctx)
@@ -129,30 +130,12 @@ namespace FrameworkVR
             else if(rotationMode == RotationMode.FlickStick)
             {
                 float threshold = 0.4f;
-                float rotationThresholdOffset = 10f;
                 bool holdingThreshold = Mathf.Abs(ctx.ReadValue<Vector2>().x) > threshold || Mathf.Abs(ctx.ReadValue<Vector2>().y) > threshold;
                 if (!rightJoystickHold && holdingThreshold)
                 {
-                    stickRotation = Mathf.Atan2(ctx.ReadValue<Vector2>().x, ctx.ReadValue<Vector2>().y) * Mathf.Rad2Deg;
-                    rotationValue += stickRotation;
-                    rotationValueSaved = rotationValue;
+                    rotationValue += Mathf.Atan2(ctx.ReadValue<Vector2>().x, ctx.ReadValue<Vector2>().y) * Mathf.Rad2Deg;
                     Debug.Log("RotationVal: " + rotationValue + " | VEC2: " + ctx.ReadValue<Vector2>());
                     rightJoystickHold = true;
-                }
-                else if(rightJoystickHold && holdingThreshold)
-                {
-                    float currentRotation = Mathf.Atan2(ctx.ReadValue<Vector2>().x, ctx.ReadValue<Vector2>().y) * Mathf.Rad2Deg;
-                    float rotTarget = rotationValueSaved + (currentRotation);
-                    float distance = rotTarget - rotationValue;
-                    Debug.Log("Ror: " + (distance));
-                    if (distance > rotationThresholdOffset || distance < -rotationThresholdOffset)
-                        rotationValue += playerTurnSpeed * Mathf.Sign(distance);
-                    
-                    if (/*currentRotation > rotationSaved + rotationThresholdOffset || currentRotation < rotationSaved - rotationThresholdOffset*/
-                        rotationValue + currentRotation != rotTarget)
-                    {
-                        
-                    }
                 }
                 else if(!holdingThreshold) rightJoystickHold = false;
             }
@@ -200,14 +183,15 @@ namespace FrameworkVR
             
             if(!disableWalk)
             {
+                Vector3 HMDDelta = new Vector3(HMDTransform.position.x - lastHMDPosition.x, 0, HMDTransform.position.z - lastHMDPosition.z);
                 Vector3 moveX = new Vector3(HMDTransform.forward.x, 0, HMDTransform.forward.z) * playerSpeed;
                 float moveY = gravityVelocity;
                 Vector3 moveZ = new Vector3(HMDTransform.right.x, 0, HMDTransform.right.z) * playerSpeed;
-
-                Vector3 moveTowards = (moveX * m_LeftJoystick.y +
+                Vector3 moveDelta = (moveX * m_LeftJoystick.y +
                                         Vector3.up * moveY +
-                                        moveZ * m_LeftJoystick.x)
-                                        * Time.deltaTime;
+                                        moveZ * m_LeftJoystick.x) * Time.deltaTime;
+
+                Vector3 moveTowards = moveDelta + HMDDelta;
                 charController.Move(moveTowards);
             }
 
