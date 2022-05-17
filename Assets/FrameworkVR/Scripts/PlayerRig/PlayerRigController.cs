@@ -171,13 +171,16 @@ namespace FrameworkVR
         {
             if (!disableGravity)
             {
-                touchingGround = Physics.Raycast(transform.position - Vector3.up * charController.height * 0.5F, -transform.up, 0.3f, groundLayers);
+                RaycastHit hit;
+                touchingGround = Physics.SphereCast(transform.position - Vector3.up * charController.height * 0.5F + Vector3.up * charController.radius,
+                    charController.radius,
+                    - transform.up, out hit, 0.3f, groundLayers);
 
                 gravityVelocity += -gravity * Time.deltaTime;
                 if (m_Jump) gravityVelocity = jumpForce;
                 if (touchingGround)
                 {
-                    if (gravity < 0) gravityVelocity = 0;
+                    if (gravityVelocity < 0) gravityVelocity = 0;
                 }
             }
             
@@ -231,6 +234,15 @@ namespace FrameworkVR
                     Physics.IgnoreCollision(collision.transform.GetComponent<Collider>(), GetComponent<Collider>());
                 }
             }
+        }
+
+        private void OnDrawGizmos()
+        {
+            if (touchingGround) Gizmos.color = Color.blue;
+            else Gizmos.color = Color.red;
+            if (charController != null)
+                Gizmos.DrawWireSphere(transform.position - Vector3.up * charController.height * 0.5F + Vector3.up * charController.radius, 
+                    charController.radius);
         }
     }
 }
