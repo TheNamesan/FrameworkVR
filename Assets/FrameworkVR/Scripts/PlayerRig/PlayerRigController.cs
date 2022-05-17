@@ -75,6 +75,8 @@ namespace FrameworkVR
         private InputAction rightJoystickInput;
 
         private bool rightJoystickHold = false;
+        private float rotationValueSaved;
+        private float stickRotation;
 
         public bool disableWalk = false;
         public bool disableGravity = false;
@@ -104,10 +106,6 @@ namespace FrameworkVR
                 Debug.LogWarning("WARNING: Input Action Asset not set!");
             }
         }
-        private void Start()
-        {
-            
-        }
         void Update()
         {
             GetInputs();
@@ -130,14 +128,33 @@ namespace FrameworkVR
             }
             else if(rotationMode == RotationMode.FlickStick)
             {
-                if (Mathf.Abs(ctx.ReadValue<Vector2>().x) > 0.4f || Mathf.Abs(ctx.ReadValue<Vector2>().y) > 0.4f)
+                float threshold = 0.4f;
+                float rotationThresholdOffset = 10f;
+                bool holdingThreshold = Mathf.Abs(ctx.ReadValue<Vector2>().x) > threshold || Mathf.Abs(ctx.ReadValue<Vector2>().y) > threshold;
+                if (!rightJoystickHold && holdingThreshold)
                 {
-                    if (rightJoystickHold) return;
-                    rotationValue += Mathf.Atan2(ctx.ReadValue<Vector2>().x, ctx.ReadValue<Vector2>().y) * Mathf.Rad2Deg;
+                    stickRotation = Mathf.Atan2(ctx.ReadValue<Vector2>().x, ctx.ReadValue<Vector2>().y) * Mathf.Rad2Deg;
+                    rotationValue += stickRotation;
+                    rotationValueSaved = rotationValue;
                     Debug.Log("RotationVal: " + rotationValue + " | VEC2: " + ctx.ReadValue<Vector2>());
                     rightJoystickHold = true;
                 }
-                else rightJoystickHold = false;
+                else if(rightJoystickHold && holdingThreshold)
+                {
+                    float currentRotation = Mathf.Atan2(ctx.ReadValue<Vector2>().x, ctx.ReadValue<Vector2>().y) * Mathf.Rad2Deg;
+                    float rotTarget = rotationValueSaved + (currentRotation);
+                    float distance = rotTarget - rotationValue;
+                    Debug.Log("Ror: " + (distance));
+                    if (distance > rotationThresholdOffset || distance < -rotationThresholdOffset)
+                        rotationValue += playerTurnSpeed * Mathf.Sign(distance);
+                    
+                    if (/*currentRotation > rotationSaved + rotationThresholdOffset || currentRotation < rotationSaved - rotationThresholdOffset*/
+                        rotationValue + currentRotation != rotTarget)
+                    {
+                        
+                    }
+                }
+                else if(!holdingThreshold) rightJoystickHold = false;
             }
         }
 
