@@ -31,16 +31,16 @@ namespace FrameworkVR
         public float releaseForce = 0.5f;
 
         [SerializeField]
+        [Tooltip("The multiplier of the amount of force applied after throwing an object.")]
+        public float throwForce = 1500;
+
+        [SerializeField]
         [Tooltip("Current controller's grip force.")]
         public float gripForce = 0;
 
         [SerializeField]
         [Tooltip("Current controller's trigger force.")]
         public float triggerForce = 0;
-
-        [SerializeField]
-        [Tooltip("The multiplier of the amount of force applied after throwing an object.")]
-        public float throwForce = 1500;
 
         [Header("Grabbing System")]
         [SerializeField]

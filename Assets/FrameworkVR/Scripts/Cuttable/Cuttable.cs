@@ -21,7 +21,7 @@ namespace FrameworkVR
         public bool noCollisionOnCut = false;
 
         [SerializeField]
-        [Tooltip("Read only.")]
+        [Tooltip("Object has been cut at least once?")]
         private bool m_isCut = false;
         public bool isCut { get => m_isCut; }
 

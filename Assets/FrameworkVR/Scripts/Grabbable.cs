@@ -7,12 +7,12 @@ namespace FrameworkVR
 {
     public class Grabbable : MonoBehaviour
     {
-        [Header("Grabbable Properties")]
         [SerializeField]
-        [Tooltip("Read only.")]
+        [Tooltip("This object is currently held by the player?")]
         private bool m_isHeld = false;
         public bool isHeld { get => m_isHeld; }
 
+        [Header("Grab Points")]
         [SerializeField]
         [Tooltip("Disables the ability to grab anywhere. Use this if your grabbable object has grab points.")]
         public bool hasGrabPoints = false;

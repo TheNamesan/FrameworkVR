@@ -6886,7 +6886,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 21e746e52f677d3448d9da1a6055afed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_ActionAsset: {fileID: -944628639613478452, guid: ec1f13e0cb1acfb4ca71dd3731138b8c, type: 3}
+  m_actionAsset: {fileID: -944628639613478452, guid: ec1f13e0cb1acfb4ca71dd3731138b8c, type: 3}
   unloadInput: {fileID: 5113088590926889233, guid: ec1f13e0cb1acfb4ca71dd3731138b8c, type: 3}
   holdForce: 0.8
   releaseForce: 0.5

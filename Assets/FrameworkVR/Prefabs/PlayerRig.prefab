@@ -1311,8 +1311,9 @@ MonoBehaviour:
   handToTrack: {fileID: 8088679698059228994}
   handController: {fileID: 8088679697285044521}
   playerLayerNumber: 6
-  m_basePositionSmooth: 0.01
-  m_baseRotationSmooth: 0.01
+  playerLayer:
+    serializedVersion: 2
+    m_Bits: 64
   positionSmooth: 0
   rotationSmooth: 0
 --- !u!54 &8088679697036222300
@@ -2784,8 +2785,9 @@ MonoBehaviour:
   handToTrack: {fileID: 8088679697487159828}
   handController: {fileID: 8088679697306758754}
   playerLayerNumber: 6
-  m_basePositionSmooth: 0.01
-  m_baseRotationSmooth: 0.01
+  playerLayer:
+    serializedVersion: 2
+    m_Bits: 64
   positionSmooth: 0
   rotationSmooth: 0
 --- !u!54 &8088679697834325823

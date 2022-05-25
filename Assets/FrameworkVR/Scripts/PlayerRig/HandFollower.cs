@@ -16,17 +16,14 @@ namespace FrameworkVR
         public HandController handController;
 
         [Header("Hand Collision")]
-        [SerializeField]
         [Tooltip("Set the layer bound to the GameObject with the Player Rig Controller component. This is used to avoid the hand's collision with the Player Rig.")]
-        public int playerLayerNumber;
+        public LayerMask playerLayer;
 
         [Header("Weight System")]
-        [SerializeField]
         [Tooltip("Set the follower's position base speed. The higher the number the slower it moves.")]
         private float m_basePositionSmooth = 0.01f;
         public float basePositionSmooth { get => Mathf.Abs(m_basePositionSmooth); set => m_basePositionSmooth = Mathf.Abs(value); }
 
-        [SerializeField]
         [Tooltip("Set the follower's rotation base speed. The higher the number the slower it turns.")]
         private float m_baseRotationSmooth = 0.01f;
         public float baseRotationSmooth { get => Mathf.Abs(m_baseRotationSmooth); set => m_baseRotationSmooth = Mathf.Abs(value); }
@@ -47,7 +44,14 @@ namespace FrameworkVR
         void Awake()
         {
             rb = GetComponent<Rigidbody>();
-            Physics.IgnoreLayerCollision(playerLayerNumber, gameObject.layer);
+            for (int i = 0; i < 32; i++)
+            {
+                if (playerLayer == ((playerLayer | (1 << i))))
+                {
+                    Physics.IgnoreLayerCollision(i, gameObject.layer);
+                    return;
+                }
+            }
         }
 
         private void OnEnable()

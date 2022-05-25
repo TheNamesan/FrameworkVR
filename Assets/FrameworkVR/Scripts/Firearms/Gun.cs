@@ -11,11 +11,12 @@ namespace FrameworkVR
         [Header("Input")]
         [SerializeField]
         [Tooltip("Input Action Asset. Set from ActionMap folder.")]
-        private InputActionAsset m_ActionAsset;
+        private InputActionAsset m_actionAsset;
+        public InputActionAsset actionAsset { get => m_actionAsset; set => m_actionAsset = value; }
         [SerializeField]
         [Tooltip("Optional. Button to unload the magazine.")]
         private InputActionReference unloadInput;
-        public InputActionAsset actionAsset { get => m_ActionAsset; set => m_ActionAsset = value; }
+        
 
         [SerializeField]
         [Range(0f, 1f)]
@@ -138,7 +139,7 @@ namespace FrameworkVR
             if (grabbableObjectOrigin.holder == null) Debug.Log("Holder");
             handController = grabbableObjectOrigin.holder.GetComponent<HandController>();
             if (handController == null) Debug.Log("Hand Controller");
-            triggerButton = m_ActionAsset.FindActionMap(handController.handSide + "Hand", true).FindAction("Trigger", true);
+            triggerButton = m_actionAsset.FindActionMap(handController.handSide + "Hand", true).FindAction("Trigger", true);
         }
 
         void GetTriggerForce()

@@ -6,10 +6,12 @@ using UnityEngine.InputSystem;
 
 namespace FrameworkVR
 {
+    [CanEditMultipleObjects]
     [CustomEditor(typeof(PlayerRigController))]
     public class PlayerRigControllerEditor : Editor
     {
         bool showDebug = false;
+        bool enableModification = false;
         override public void OnInspectorGUI()
         {
             GUI.enabled = false;
@@ -25,10 +27,17 @@ namespace FrameworkVR
             EditorGUILayout.PropertyField(spd);
             SerializedProperty rtm = serializedObject.FindProperty("rotationMode");
             EditorGUILayout.PropertyField(rtm);
-            SerializedProperty tsp = serializedObject.FindProperty("playerTurnSpeed");
-            EditorGUILayout.PropertyField(tsp);
-            SerializedProperty rtd = serializedObject.FindProperty("rotationDegree");
-            EditorGUILayout.PropertyField(rtd);
+            if(rtm.enumValueIndex == 0)
+            {
+                SerializedProperty tsp = serializedObject.FindProperty("playerTurnSpeed");
+                EditorGUILayout.PropertyField(tsp);
+            }
+            else if (rtm.enumValueIndex == 1)
+            {
+                SerializedProperty rtd = serializedObject.FindProperty("rotationDegree");
+                EditorGUILayout.PropertyField(rtd);
+            }    
+
             SerializedProperty jfc = serializedObject.FindProperty("jumpForce");
             EditorGUILayout.PropertyField(jfc);
             SerializedProperty phe = serializedObject.FindProperty("m_playerHeight");
@@ -39,14 +48,14 @@ namespace FrameworkVR
             EditorGUILayout.PropertyField(grv);
             SerializedProperty gly = serializedObject.FindProperty("groundLayers");
             EditorGUILayout.PropertyField(gly);
-            SerializedProperty tgr = serializedObject.FindProperty("touchingGround");
-            EditorGUILayout.PropertyField(tgr);
+
 
             showDebug = EditorGUILayout.BeginFoldoutHeaderGroup(showDebug, "Debug");
             if(showDebug)
             {
                 EditorGUI.indentLevel++;
-                GUI.enabled = false;
+                enableModification = EditorGUILayout.Toggle("Enable Modification", enableModification);
+                if (!enableModification) GUI.enabled = false;
                 SerializedProperty dwl = serializedObject.FindProperty("disableWalk");
                 EditorGUILayout.PropertyField(dwl);
                 SerializedProperty dgr = serializedObject.FindProperty("disableGravity");
@@ -55,6 +64,8 @@ namespace FrameworkVR
                 EditorGUILayout.PropertyField(drt);
                 SerializedProperty rtv = serializedObject.FindProperty("rotationValue");
                 EditorGUILayout.PropertyField(rtv);
+                SerializedProperty tgr = serializedObject.FindProperty("touchingGround");
+                EditorGUILayout.PropertyField(tgr);
                 GUI.enabled = true;
                 EditorGUI.indentLevel--;
             }

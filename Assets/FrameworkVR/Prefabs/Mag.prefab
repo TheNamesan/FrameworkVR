@@ -378,7 +378,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6728736243062709762}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.426587, y: 0.85209805, z: 7.237}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.06, y: 0.06, z: 0.06}
   m_Children:
   - {fileID: 6728736243176681678}
@@ -402,9 +402,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   firearmType: Glock
   m_ammo: 12
+  m_isLoaded: 0
   gunLoadedTo: {fileID: 0}
-  modelLoaded: {fileID: 6728736242147470615}
   grabbable: {fileID: 6728736243062709772}
+  modelLoaded: {fileID: 6728736242147470615}
+  onMagazineEmpty:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!114 &6728736243062709772
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -419,9 +423,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_isHeld: 0
   hasGrabPoints: 1
+  enableWeightSystem: 1
   holder: {fileID: 0}
+  holderCol: {fileID: 0}
   previousParent: {fileID: 0}
+  previousJointBody: {fileID: 0}
+  rb: {fileID: 0}
   coll: {fileID: 0}
+  onObjectHold:
+    m_PersistentCalls:
+      m_Calls: []
+  onObjectRelease:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!65 &6728736243062709774
 BoxCollider:
   m_ObjectHideFlags: 0
