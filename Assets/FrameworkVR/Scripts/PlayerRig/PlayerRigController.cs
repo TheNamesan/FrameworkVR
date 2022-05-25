@@ -64,6 +64,7 @@ namespace FrameworkVR
         private Camera cam;
         private Transform headTransform;
         private Transform HMDTransform;
+        private Transform camTransform;
         private Transform leftHandTransform;
         private Transform rightHandTransform;
 
@@ -89,6 +90,7 @@ namespace FrameworkVR
             charController = GetComponent<CharacterController>();
             headTransform = transform.GetChild(0);
             HMDTransform = headTransform.GetChild(0);
+            camTransform = HMDTransform.GetChild(0);
             leftHandTransform = transform.GetChild(1);
             rightHandTransform = transform.GetChild(2);
             leftJoystickInput = m_ActionAsset.FindActionMap("LeftHand", true).FindAction("Primary2DAxis", true);
@@ -149,22 +151,42 @@ namespace FrameworkVR
                 m_RightJoystick = rightJoystickInput.ReadValue<Vector2>();
 
                 rightJoystickInput.performed += RightJoystickDown;
+                Debug.Log("Kek");
             }
-
-            jumpInput.action.performed += (ctx) =>
+            InputAction tmp = m_ActionAsset.FindActionMap("RightHand", true).FindAction("PrimaryButton", true);
+            tmp.performed += (ctx) =>
             {
+                Debug.Log("Help1");
                 if (touchingGround)
                 {
                     m_Jump = true;
                     touchingGround = false;
                 }
             };
+
+            jumpInput.action.performed += (ctx) =>
+            {
+                Debug.Log("Help");
+                if (touchingGround)
+                {
+                    m_Jump = true;
+                    touchingGround = false;
+                }
+            };
+            if(jumpInput.action.phase == InputActionPhase.Waiting)
+                Debug.Log("Help");
         }
 
         private void AdjustRigHeight()
         {
-            float playerHeightScaledToRig = Mathf.InverseLerp(0, playerHeight, HMDTransform.localPosition.y);
+            float previousHeight = charController.height;
+            float playerHeightScaledToRig = Mathf.InverseLerp(0, playerHeight, HMDTransform.position.y);
+            
             charController.height = rigHeight * playerHeightScaledToRig;
+            transform.position -= Vector3.up * ((previousHeight - charController.height) * 2f);
+            headTransform.position = new Vector3(headTransform.position.x, transform.position.y - charController.height * 0.5f, headTransform.position.z);
+            leftHandTransform.position = new Vector3(leftHandTransform.position.x, transform.position.y - charController.height * 0.5f, leftHandTransform.position.z);
+            rightHandTransform.position = new Vector3(rightHandTransform.position.x, transform.position.y - charController.height * 0.5f, rightHandTransform.position.z);
         }
 
         private void MoveAndRotation()
@@ -172,6 +194,7 @@ namespace FrameworkVR
             if (!disableGravity)
             {
                 RaycastHit hit;
+                
                 touchingGround = Physics.SphereCast(transform.position - Vector3.up * charController.height * 0.5F + Vector3.up * charController.radius,
                     charController.radius,
                     - transform.up, out hit, 0.3f, groundLayers);
@@ -240,7 +263,8 @@ namespace FrameworkVR
         {
             if (touchingGround) Gizmos.color = Color.blue;
             else Gizmos.color = Color.red;
-            if (charController != null)
+            if (charController == null) return;
+            if (charController.height <= 0) return;
                 Gizmos.DrawWireSphere(transform.position - Vector3.up * charController.height * 0.5F + Vector3.up * charController.radius, 
                     charController.radius);
         }

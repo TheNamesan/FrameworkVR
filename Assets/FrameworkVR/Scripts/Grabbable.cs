@@ -32,8 +32,8 @@ namespace FrameworkVR
         [Tooltip("Current holder collider.")]
         public Collider holderCol = null;
 
-        public Transform previousParent = null;
-        public Rigidbody previousJointBody = null;
+        [HideInInspector] public Transform previousParent = null;
+        [HideInInspector] public Rigidbody previousJointBody = null;
 
         [HideInInspector]
         public Rigidbody rb;
@@ -66,6 +66,8 @@ namespace FrameworkVR
             Rigidbody holderRb = holder.GetComponent<Rigidbody>(); ;
             if(holderRb != null) fj.connectedBody = holderRb;
             else fj.connectedBody = holder.transform.parent.GetComponent<Rigidbody>();
+            rb.useGravity = false;
+            fj.massScale = 9999f;
 
             if (enableWeightSystem) m_mass = rb.mass;
             OnObjectHold();
@@ -73,16 +75,24 @@ namespace FrameworkVR
 
         public void Release()
         {
+            Unparent();
+            
+            transform.parent = previousParent;
+            rb.isKinematic = false;
+            rb.useGravity = true;
+            coll.enabled = true;
+            
+            OnObjectRelease();
+        }
+
+        public void Unparent()
+        {
             IgnoreCollisionsWithHolder(false, holderCol);
             holder = null;
             m_isHeld = false;
-            transform.parent = previousParent;
-            rb.isKinematic = false;
-            coll.enabled = true;
             FixedJoint fj = gameObject.GetComponent<FixedJoint>();
             if (fj != null) Destroy(fj);
             if (enableWeightSystem) m_mass = rb.mass;
-            OnObjectRelease();
         }
 
         private void IgnoreCollisionsWithHolder(bool ignoreCollisions, Collider holderCollider)

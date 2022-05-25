@@ -59,13 +59,13 @@ namespace FrameworkVR
             transform.rotation = handToTrack.rotation;
         }
 
-        void Update()
+        void LateUpdate()
         {
             positionSmooth = handController.heldItemMass <= 0 ? basePositionSmooth : basePositionSmooth * handController.heldItemMass;
             rotationSmooth = handController.heldItemMass <= 0 ? baseRotationSmooth : baseRotationSmooth * handController.heldItemMass;
 
-            Vector3.SmoothDamp(transform.position, handToTrack.position, ref velocity, positionSmooth);
-            rb.velocity = velocity;
+            transform.localPosition = Vector3.SmoothDamp(transform.localPosition, handToTrack.localPosition, ref velocity, positionSmooth);
+            rb.velocity = Vector3.zero;
 
             transform.eulerAngles = new Vector3(
                 Mathf.SmoothDampAngle(transform.eulerAngles.x, handToTrack.eulerAngles.x, ref angularVelocity.x, rotationSmooth),

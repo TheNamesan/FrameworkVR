@@ -736,7 +736,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8088679696753545389}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -1, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 8088679697487159828}
@@ -827,7 +827,9 @@ MonoBehaviour:
   m_ActionAsset: {fileID: -944628639613478452, guid: ec1f13e0cb1acfb4ca71dd3731138b8c, type: 3}
   jumpInput: {fileID: 11711766586467970, guid: ec1f13e0cb1acfb4ca71dd3731138b8c, type: 3}
   playerSpeed: 5
+  rotationMode: 0
   playerTurnSpeed: 1.1
+  rotationDegree: 30
   jumpForce: 2.5
   m_playerHeight: 1.7
   rigHeight: 2
@@ -836,6 +838,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 128
   touchingGround: 0
+  rotationValue: 0
   gravityVelocity: 0
   disableWalk: 0
   disableGravity: 0
@@ -1365,7 +1368,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8088679697052250643}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -1, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 8088679698360347219}
@@ -1634,7 +1637,7 @@ SphereCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.1
+  m_Radius: 0.11
   m_Center: {x: -0.07, y: 0, z: 0}
 --- !u!114 &8088679697285044521
 MonoBehaviour:
@@ -1715,7 +1718,7 @@ SphereCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.1
+  m_Radius: 0.11
   m_Center: {x: 0.07, y: 0, z: 0}
 --- !u!114 &8088679697306758754
 MonoBehaviour:
@@ -2723,7 +2726,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8088679697783060864}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -1, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 8088679698059228994}

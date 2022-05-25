@@ -207,9 +207,21 @@ namespace FrameworkVR
             handModel.SetActive(true);
             if (heldItem == null) return;
             Physics.IgnoreCollision(characterRig.GetComponent<CharacterController>(), heldItem.GetComponent<Collider>(), false);
-            heldItem.transform.parent = heldItem.previousParent;
-            heldItem.Release();
-            GetThrowForce();
+            
+            Magazine heldItemMag = heldItem.GetComponent<Magazine>();
+            if (heldItemMag == null)
+            {
+                heldItem.Release();
+                GetThrowForce();
+            }
+            else 
+            {
+                if (!heldItemMag.isLoaded)
+                {
+                    heldItem.Release();
+                    GetThrowForce();
+                }
+            }
             heldItem = null;
             heldItemMass = 0;
             ControllerRumble(releaseRumbleAmplitude, releaseRumbleDuration);

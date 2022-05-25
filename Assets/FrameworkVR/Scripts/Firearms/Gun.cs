@@ -12,6 +12,9 @@ namespace FrameworkVR
         [SerializeField]
         [Tooltip("Input Action Asset. Set from ActionMap folder.")]
         private InputActionAsset m_ActionAsset;
+        [SerializeField]
+        [Tooltip("Optional. Button to unload the magazine.")]
+        private InputActionReference unloadInput;
         public InputActionAsset actionAsset { get => m_ActionAsset; set => m_ActionAsset = value; }
 
         [SerializeField]
@@ -83,6 +86,7 @@ namespace FrameworkVR
                     {
                         GetHandController();
                     }
+                    Unload();
                     GetTriggerForce();
                     CheckTriggerHeld();
                 }
@@ -111,6 +115,21 @@ namespace FrameworkVR
             {
                 onReload.Invoke();
             }
+        }
+
+        void Unload()
+        {
+            if (unloadInput == null) return;
+            unloadInput.action.performed += (ctx) =>
+            {
+                if(mag != null)
+                {
+                    mag.SetIsLoaded(false, null);
+                    mag.transform.parent = null;
+                    mag.grabbable.Release();
+                    mag.grabbable.previousParent = null;
+                }
+            };
         }
 
         protected virtual void GetHandController()

@@ -23,11 +23,10 @@ namespace FrameworkVR
             ChamberDetector tmp = other.GetComponent<ChamberDetector>();
             if (tmp != null)
             {
-                if (tmp.magazineOrigin.firearmType == gunOrigin.firearmType &&
-                    !tmp.magazineOrigin.grabbable.isHeld && !tmp.magazineOrigin.isLoaded && gunOrigin.mag == null)
+                if (tmp.magazineOrigin.firearmType == gunOrigin.firearmType && !tmp.magazineOrigin.isLoaded && gunOrigin.mag == null)
                 {
                     tmp.magazineOrigin.SetIsLoaded(true, gunOrigin);
-                    //tmp.magazineOrigin.grabbable.Hold(gunOrigin.gameObject);
+                    tmp.magazineOrigin.grabbable.Unparent();
                     tmp.magazineOrigin.transform.position = magTransform.position;
                     tmp.magazineOrigin.transform.rotation = magTransform.rotation;
                     tmp.magazineOrigin.transform.parent = magTransform;
