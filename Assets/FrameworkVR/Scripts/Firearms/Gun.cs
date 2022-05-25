@@ -122,12 +122,12 @@ namespace FrameworkVR
             if (unloadInput == null) return;
             unloadInput.action.performed += (ctx) =>
             {
-                if(mag != null)
+                if (mag != null)
                 {
-                    mag.SetIsLoaded(false, null);
                     mag.transform.parent = null;
-                    mag.grabbable.Release();
                     mag.grabbable.previousParent = null;
+                    mag.grabbable.Release();
+                    mag.SetIsLoaded(false, null);
                 }
             };
         }

@@ -6887,6 +6887,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_ActionAsset: {fileID: -944628639613478452, guid: ec1f13e0cb1acfb4ca71dd3731138b8c, type: 3}
+  unloadInput: {fileID: 5113088590926889233, guid: ec1f13e0cb1acfb4ca71dd3731138b8c, type: 3}
   holdForce: 0.8
   releaseForce: 0.5
   triggerForce: 0

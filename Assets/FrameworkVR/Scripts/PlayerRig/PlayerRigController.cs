@@ -151,30 +151,16 @@ namespace FrameworkVR
                 m_RightJoystick = rightJoystickInput.ReadValue<Vector2>();
 
                 rightJoystickInput.performed += RightJoystickDown;
-                Debug.Log("Kek");
             }
-            InputAction tmp = m_ActionAsset.FindActionMap("RightHand", true).FindAction("PrimaryButton", true);
-            tmp.performed += (ctx) =>
-            {
-                Debug.Log("Help1");
-                if (touchingGround)
-                {
-                    m_Jump = true;
-                    touchingGround = false;
-                }
-            };
 
             jumpInput.action.performed += (ctx) =>
             {
-                Debug.Log("Help");
                 if (touchingGround)
                 {
                     m_Jump = true;
                     touchingGround = false;
                 }
             };
-            if(jumpInput.action.phase == InputActionPhase.Waiting)
-                Debug.Log("Help");
         }
 
         private void AdjustRigHeight()
@@ -197,7 +183,7 @@ namespace FrameworkVR
                 
                 touchingGround = Physics.SphereCast(transform.position - Vector3.up * charController.height * 0.5F + Vector3.up * charController.radius,
                     charController.radius,
-                    - transform.up, out hit, 0.3f, groundLayers);
+                    - transform.up, out hit, 0.15f, groundLayers);
 
                 gravityVelocity += -gravity * Time.deltaTime;
                 if (m_Jump) gravityVelocity = jumpForce;

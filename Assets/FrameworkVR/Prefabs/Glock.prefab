@@ -5293,15 +5293,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_ActionAsset: {fileID: -944628639613478452, guid: ec1f13e0cb1acfb4ca71dd3731138b8c, type: 3}
-  grabbableObjectOrigin: {fileID: 7061549239671281186}
-  muzzleFlash: {fileID: 7061549239186444973}
+  unloadInput: {fileID: 5113088590926889233, guid: ec1f13e0cb1acfb4ca71dd3731138b8c, type: 3}
   holdForce: 0.8
   releaseForce: 0.5
   triggerForce: 0
   rateOfFire: 0
   firearmType: Glock
-  mag: {fileID: 0}
+  grabbableObjectOrigin: {fileID: 7061549239671281186}
+  m_mag: {fileID: 0}
   triggerHeld: 0
+  muzzleFlash: {fileID: 7061549239186444973}
+  onShoot:
+    m_PersistentCalls:
+      m_Calls: []
+  onReload:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!114 &7061549239671281186
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5316,9 +5323,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_isHeld: 0
   hasGrabPoints: 1
+  enableWeightSystem: 1
   holder: {fileID: 0}
+  holderCol: {fileID: 0}
   previousParent: {fileID: 0}
+  previousJointBody: {fileID: 0}
+  rb: {fileID: 0}
   coll: {fileID: 0}
+  onObjectHold:
+    m_PersistentCalls:
+      m_Calls: []
+  onObjectRelease:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!65 &7061549239671281196
 BoxCollider:
   m_ObjectHideFlags: 0
