@@ -9,7 +9,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
+  m_Script: {fileID: 11500000, guid: 9d04e63d3bdf4c54c864dac40cde5324, type: 3}
   m_Name: WizardPrefabs
   m_EditorClassIdentifier: Assembly-CSharp:FrameworkVR:WizardPrefabs
   grabbable: {fileID: 3496255695498781595, guid: a14d3c3bba62dfc4fb6f537d10b4e105, type: 3}
