@@ -12,6 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 0}
   m_Name: WizardPrefabs
   m_EditorClassIdentifier: Assembly-CSharp:FrameworkVR:WizardPrefabs
-  grabbable: {fileID: 0}
-  cutter: {fileID: 0}
-  gun: {fileID: 0}
+  grabbable: {fileID: 3496255695498781595, guid: a14d3c3bba62dfc4fb6f537d10b4e105, type: 3}
+  cutter: {fileID: 5628605348305330925, guid: 14a2bf6cdc2a7ea4d9df4f98e73a7750, type: 3}
+  cuttable: {fileID: 3603443776337754605, guid: cd9abf14ea429c844a7fcdcd71b9bcc2, type: 3}
+  gun: {fileID: 7061549239671281184, guid: 80f9334e0d0460c4e92d2db1cdb42f40, type: 3}
+  mag: {fileID: 6728736243062709762, guid: d85f0e26c4ad7b645ad54ba051ea635f, type: 3}

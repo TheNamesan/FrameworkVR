@@ -5,16 +5,6 @@ using UnityEditor;
 
 namespace FrameworkVR
 {
-#if UNITY_EDITOR
-    public class WizardPrefabs : ScriptableObject
-    {
-        public GameObject grabbable;
-        public GameObject cutter;
-        public GameObject cuttable;
-        public GameObject gun;
-        public GameObject mag;
-    }
-
     public class FrameworkVRWizard
     {
         private const string wizardPrefabsPath = "Assets/FrameworkVR/Scripts/Wizard/WizardPrefabs.asset";
@@ -86,5 +76,4 @@ namespace FrameworkVR
             Selection.activeObject = instance;
         }
     }
-#endif
 }
