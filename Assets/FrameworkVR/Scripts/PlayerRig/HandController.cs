@@ -201,7 +201,6 @@ namespace FrameworkVR
             if (modelClone != null) Destroy(modelClone);
             handModel.SetActive(true);
             if (heldItem == null) return;
-            Debug.Log("Object Release");
             Physics.IgnoreCollision(characterRig.GetComponent<CharacterController>(), heldItem.GetComponent<Collider>(), false);
             
             Magazine heldItemMag = heldItem.GetComponent<Magazine>();
