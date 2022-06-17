@@ -55,13 +55,12 @@ namespace FrameworkVR
         {
             holder = handController;
             holderCol = handController.handCol;
+            transform.parent = handController.transform;
             m_isHeld = true;
 
             IgnoreCollisionsWithHolder(true, holderCol);
 
-            FixedJoint fj;
-            if (gameObject.GetComponent<FixedJoint>() == null) fj = gameObject.AddComponent<FixedJoint>();
-            else fj = gameObject.GetComponent<FixedJoint>();
+            FixedJoint fj = gameObject.AddComponent<FixedJoint>();
             previousJointBody = fj.connectedBody;
             Rigidbody holderRb = holder.GetComponent<Rigidbody>(); ;
             if(holderRb != null) fj.connectedBody = holderRb;
@@ -76,12 +75,10 @@ namespace FrameworkVR
         public void Release()
         {
             Unparent();
-            
             transform.parent = previousParent;
             rb.isKinematic = false;
             rb.useGravity = true;
             coll.enabled = true;
-            
             OnObjectRelease();
         }
 

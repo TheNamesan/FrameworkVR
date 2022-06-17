@@ -1310,7 +1310,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   handToTrack: {fileID: 8088679698059228994}
   handController: {fileID: 8088679697285044521}
-  playerLayerNumber: 6
   playerLayer:
     serializedVersion: 2
     m_Bits: 64
@@ -1329,9 +1328,9 @@ Rigidbody:
   m_AngularDrag: 0
   m_UseGravity: 0
   m_IsKinematic: 0
-  m_Interpolate: 0
+  m_Interpolate: 2
   m_Constraints: 112
-  m_CollisionDetection: 3
+  m_CollisionDetection: 2
 --- !u!135 &8088679697036222301
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -1656,9 +1655,9 @@ MonoBehaviour:
   handSide: 1
   holdForce: 0.8
   releaseForce: 0.5
+  throwForce: 1500
   gripForce: 0
   triggerForce: 0
-  throwForce: 1500
   heldItem: {fileID: 0}
   characterRig: {fileID: 8088679696832568009}
   handCol: {fileID: 8088679697036222301}
@@ -1737,9 +1736,9 @@ MonoBehaviour:
   handSide: 0
   holdForce: 0.8
   releaseForce: 0.5
+  throwForce: 1500
   gripForce: 0
   triggerForce: 0
-  throwForce: 1500
   heldItem: {fileID: 0}
   characterRig: {fileID: 8088679696832568009}
   handCol: {fileID: 8088679697834325821}
@@ -2784,7 +2783,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   handToTrack: {fileID: 8088679697487159828}
   handController: {fileID: 8088679697306758754}
-  playerLayerNumber: 6
   playerLayer:
     serializedVersion: 2
     m_Bits: 64
@@ -2803,9 +2801,9 @@ Rigidbody:
   m_AngularDrag: 0
   m_UseGravity: 0
   m_IsKinematic: 0
-  m_Interpolate: 0
+  m_Interpolate: 2
   m_Constraints: 112
-  m_CollisionDetection: 3
+  m_CollisionDetection: 2
 --- !u!135 &8088679697834325821
 SphereCollider:
   m_ObjectHideFlags: 0

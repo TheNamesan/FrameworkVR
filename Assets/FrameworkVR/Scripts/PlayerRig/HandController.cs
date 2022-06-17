@@ -91,8 +91,6 @@ namespace FrameworkVR
         private float prevFrameGripForce = 0;
         private Vector3 prevFrameHandPosition;
 
-        private SphereCollider grabTrigger;
-
         InputAction gripButton;
         InputAction triggerButton;
         InputControl control;
@@ -100,7 +98,6 @@ namespace FrameworkVR
 
         void Awake()
         {
-            grabTrigger = GetComponent<SphereCollider>();
             gripForce = 0;
             prevFrameGripForce = 0;
             prevFrameHandPosition = Vector3.zero;
@@ -176,7 +173,6 @@ namespace FrameworkVR
                 {
                     grabbable.holder.GetComponent<HandController>().ObjectRelease();
                 }
-                grabbable.Release();
                 grabbable.previousParent = null;
             }
             if (grabbable.GetComponent<Magazine>() != null)
@@ -190,7 +186,6 @@ namespace FrameworkVR
 
             heldItem = grabbable;
             modelClone = Instantiate(handModel, grabbable.transform, true);
-
             handModel.SetActive(false);
 
             Physics.IgnoreCollision(characterRig.GetComponent<CharacterController>(), heldItem.GetComponent<Collider>(), true);
@@ -206,6 +201,7 @@ namespace FrameworkVR
             if (modelClone != null) Destroy(modelClone);
             handModel.SetActive(true);
             if (heldItem == null) return;
+            Debug.Log("Object Release");
             Physics.IgnoreCollision(characterRig.GetComponent<CharacterController>(), heldItem.GetComponent<Collider>(), false);
             
             Magazine heldItemMag = heldItem.GetComponent<Magazine>();

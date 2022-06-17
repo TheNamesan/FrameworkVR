@@ -586,6 +586,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   firearmType: Glock
   m_ammo: 12
+  m_isLoaded: 0
   gunLoadedTo: {fileID: 0}
   grabbable: {fileID: 229215914}
   modelLoaded: {fileID: 1892135000}
@@ -7238,6 +7239,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   firearmType: Glock
   m_ammo: 0
+  m_isLoaded: 0
   gunLoadedTo: {fileID: 0}
   grabbable: {fileID: 0}
   modelLoaded: {fileID: 0}
@@ -7604,6 +7606,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   firearmType: Glock
   m_ammo: 12
+  m_isLoaded: 0
   gunLoadedTo: {fileID: 0}
   grabbable: {fileID: 1180650180}
   modelLoaded: {fileID: 1150234245}

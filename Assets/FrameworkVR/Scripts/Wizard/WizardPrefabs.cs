@@ -4,7 +4,6 @@ using UnityEngine;
 
 namespace FrameworkVR
 {
-    //[CreateAssetMenu(fileName = "WizardPrefabs", menuName = "FrameworkVR/WizardPrefabs")]
     public class WizardPrefabs : ScriptableObject
     {
         public GameObject grabbable;
